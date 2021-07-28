@@ -50,12 +50,18 @@ h3 {
 }
 
 li {
-  background-color: rgb(207, 207, 207);
+  background-color: rgba(163, 163, 163, 0.507);
+  border: rgba(163, 163, 163, 0.507) solid 1px;
+
   width: 170px;
   text-align: center;
   margin-bottom: 10px;
   list-style-type: none;
   border-radius: 5px;
+}
+
+li:hover {
+  border: black solid 1px;
 }
 
 .link {
