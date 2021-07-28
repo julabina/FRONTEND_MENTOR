@@ -6,7 +6,16 @@
   font-family: "Chakra Petch", sans-serif;
 }
 
+h1 {
+  margin: 80px 0 300px 0;
+}
+
 h2 {
+  text-align: center;
+  margin: 30px 0 50px 0;
+}
+
+h3 {
   text-align: center;
 }
 
@@ -38,4 +47,22 @@ h2 {
   height: auto;
   display: flex;
   flex-direction: column;
+}
+
+li {
+  background-color: rgb(207, 207, 207);
+  width: 170px;
+  text-align: center;
+  margin-bottom: 10px;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+.link {
+  margin: 50px 0 80px 0;
+}
+
+.link a {
+  text-decoration: none;
+  color: black;
 }

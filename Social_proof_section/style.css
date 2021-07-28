@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  display: flex;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.name {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.rate {
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 0 20px 0;
+  padding: 0 50px 0 30px;
+}
+
+.topUserCard {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+
+.userCard {
+  background-color: hsl(300, 43%, 22%);
+  width: 26%;
+  padding: 40px 35px 40px 35px;
+  border-radius: 10px;
+}
+
+span {
+  color: hsl(333, 80%, 67%);
+}
+
+.ratedPara {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+}
+
+.textUserCard {
+  color: hsl(300, 24%, 96%);
+  line-height: 1.8em;
+}
+
+.userCardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pictureUser {
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  margin: 0 25px 0 0;
+}
+
+.mainContainer {
+  width: 68%;
+}
+
+.introContainer {
+  width: 37%;
+  margin: 0 0 70px 0;
+}
+
+.star {
+  margin: 0 5px 0 0;
+}
+
+.starContainer {
+  margin: 0 25px 0 0;
+  padding: 1px 0 0 0;
+}
+
+.rateContainer {
+  margin: 20px 0 0 0;
+}
+
+#textIntro {
+  color: hsl(303, 10%, 53%);
+  line-height: 1.8em;
+}
+
+#card2 {
+  margin: 20px 0 -20px 0;
+}
+
+#card3 {
+  margin: 40px 0 -40px 0;
+}
+
+#rate1 {
+  margin-left: -90px;
+  margin-right: 90px;
+}
+
+#rate2 {
+  margin-left: -45px;
+  margin-right: 45px;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainContainer {
+    width: 78%;
+  }
+
+  .textUserCard {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #rate1 {
+    margin-left: initial;
+    margin-right: initial;
+  }
+
+  #rate2 {
+    margin-left: initial;
+    margin-right: initial;
+  }
+
+  #card2 {
+    margin: initial;
+  }
+
+  #card3 {
+    margin: initial;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .mainContainer {
+    width: 90%;
+  }
+
+  .topContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .attribution {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+
+  .introContainer {
+    width: 100%;
+    margin: 100px 0 30px 0;
+  }
+
+  .userCardContainer {
+    flex-direction: column;
+    justify-content: initial;
+  }
+
+  .rateContainer {
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
+
+  .userCard {
+    width: initial;
+  }
+
+  .starContainer {
+    margin: 10px 0 7px 0;
+  }
+
+  .star {
+    margin: 0 2.5px 0 2.5px;
+  }
+
+  .rate {
+    flex-direction: column;
+    margin: 10px 0 0 0;
+    padding: initial;
+    line-height: initial;
+    align-items: center;
+    height: initial;
+  }
+
+  .ratedPara {
+    margin: 0 0 10px 0;
+  }
+
+  #card2 {
+    margin: 20px 0 0 0;
+  }
+
+  #card3 {
+    margin: 20px 0 0 0;
+  }
+
+  #textIntro {
+    text-align: center;
+  }
+}
+
+/* display: flex;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 0 20px 0;
+  padding: 0 50px 0 30px; */
