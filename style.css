@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+
+.intro {
+  background-color: white;
+  text-align: center;
+}
+
+.back1 {
+  background-color: whitesmoke;
+}
+
+.back2 {
+  background-color: white;
+}
