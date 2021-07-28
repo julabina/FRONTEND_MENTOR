@@ -22,3 +22,7 @@ h2 {
 .back2 {
   background-color: white;
 }
+
+#challenge1--screenshot {
+  background-image: url("/Stats\ preview\ card\ component/screenshot");
+}
