@@ -16,13 +16,26 @@ h2 {
 }
 
 .back1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: whitesmoke;
 }
 
 .back2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
 }
 
-#challenge1--screenshot {
-  background-image: url("/Stats\ preview\ card\ component/screenshot");
+.screenshot {
+  border: solid black 1px;
+}
+
+.screenshotContainer {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
