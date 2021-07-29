@@ -114,11 +114,11 @@ footer h3 {
 
 footer p:hover {
   border-bottom: black 1px solid;
+  transition: all 2s ease-out;
 }
 
 footer p {
   border-bottom: transparent 1px solid;
-  transition: all 1s ease-out;
   margin-bottom: 10px;
   text-align: center;
 }
