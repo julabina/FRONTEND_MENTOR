@@ -10,6 +10,7 @@ body {
 
 h1 {
   font-size: 1.7em;
+  color: hsl(217, 19%, 35%);
 }
 
 body {
@@ -18,12 +19,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: hsl(210, 46%, 95%);
 }
 
 main {
   display: flex;
   width: 40%;
   height: 280px;
+  min-width: 741px;
+  max-width: 741px;
 }
 
 .attribution {
@@ -47,14 +51,18 @@ main {
 .container--bot--share--image {
   width: 15px;
   height: 13px;
+  background-color: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 5px;
 }
 
 .container--bot--share--image--activated {
-  background-color: greenyellow;
+  filter: invert(50%);
 }
 
 .bubbleContainer {
-  position: relative;
+  position: absolute;
 }
 
 .invisible {
@@ -71,7 +79,7 @@ main {
   height: 60px;
   width: 40%;
   min-width: 220px;
-  background: gray;
+  background: hsl(217, 19%, 35%);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -88,7 +96,7 @@ main {
 .pointer {
   height: 20px;
   width: 20px;
-  background: gray;
+  background: hsl(217, 19%, 35%);
   margin: 0 auto;
   transform: rotate(45deg);
   margin-top: -12px;
@@ -103,10 +111,19 @@ main {
 .imgContainer {
   min-width: 280px;
   overflow: hidden;
+  border-radius: 15px 0 0 15px;
 }
 
 .container {
-  padding: 38px;
+  padding: 20px 38px 20px 38px;
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+}
+
+.container--para {
+  line-height: 1.6em;
+  margin: 15px 0 20px 0;
+  color: hsl(214, 17%, 51%);
 }
 
 .container--bot {
@@ -122,4 +139,10 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 40px;
+  margin: 0 30px 0 0;
+}
+
+.container--bot--user--info--name {
+  margin: 0 0 3px 0;
+  font-weight: 700;
 }
