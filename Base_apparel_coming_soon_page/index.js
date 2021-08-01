@@ -1,18 +1,30 @@
 const mail = document.querySelector(".mailInput");
 const btn = document.querySelector(".arrowContainer");
-const error = document.getElementById("error");
+let itValid;
 
 const displayError = (message, valid) => {
   const span = document.querySelector(".mailSpan > span");
   const mailBox = document.querySelector(".mail");
+  const error = document.getElementById("error");
+
+  if (!valid) {
+    span.textContent = message;
+    error.classList.remove("invisible");
+    mailBox.classList.add("red");
+  } else {
+    span.textContent = message;
+    error.classList.add("invisible");
+    mailBox.classList.remove("red");
+  }
 };
 
 const mailCheck = (value) => {
   if (!value.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i)) {
-    displayError("");
-    console.log("pas bon");
+    displayError("Please provide a valid email");
+    itValid = false;
   } else {
-    console.log("bon");
+    displayError("", true);
+    itValid = true;
   }
 };
 
@@ -22,9 +34,7 @@ mail.addEventListener("input", (e) => {
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
-  if (mailCheck) {
-    console.log("popopo");
-  } else {
-    console.log("doingdoingdoing");
+  if (itValid === true) {
+    alert("Valid email");
   }
 });
