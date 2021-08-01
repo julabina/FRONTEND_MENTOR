@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: rgb(0, 75, 85);
+}
+
+.attribution a {
+  color: hsl(256, 100%, 41%);
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+h1 {
+  font-size: 4em;
+  width: 50%;
+  line-height: 1.1em;
+  margin: 130px 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: hsl(0, 6%, 24%);
+}
+
+.spanH1 {
+  font-weight: 200;
+  color: hsl(0, 36%, 70%);
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.7em;
+  width: 85%;
+  margin: 0 0 40px 0;
+}
+
+.arrow {
+  background-color: hsl(0, 36%, 70%);
+}
+
+.arrowContainer {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 36%, 70%);
+  border-radius: 50px;
+  margin-left: -23px;
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-image: url("./images/bg-pattern-desktop.svg");
+  height: 100%;
+  width: 60%;
+  margin: 70px 0 70px 0;
+}
+
+.pictureHero {
+  height: 100%;
+  width: auto;
+}
+
+.hero {
+  height: 100%;
+}
+
+.mailBox {
+  display: flex;
+  width: 100%;
+}
+
+.mail {
+  border: hsl(0, 36%, 70%) solid 2px;
+  height: 55px;
+  border-radius: 50px 0 0 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+}
+
+#mailInput {
+  border: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.errorIcon {
+  margin: 0 30px 0 0;
+}
