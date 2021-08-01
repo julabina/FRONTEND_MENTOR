@@ -43,11 +43,14 @@ main {
   color: hsl(228, 45%, 44%);
 }
 
+.botBg {
+  background: hsl(217, 19%, 35%);
+  border-radius: 0 0 15px 15px;
+}
+
 .container--bot--share {
   display: flex;
   width: 154px;
-  /*   flex-direction: column;
- */
 }
 
 .container--bot--share--image {
@@ -83,6 +86,7 @@ main {
   text-transform: uppercase;
   font-size: 1.2em;
   letter-spacing: 4px;
+  color: hsl(210, 46%, 95%);
 }
 
 .bubble {
@@ -173,9 +177,6 @@ main {
     border-radius: 0 0 15px 15px;
     width: 350px;
     height: auto;
-    /*     max-width: 90%;
- 
-    padding: 4% 6% 4% 6%;*/
     padding: 0;
   }
 
@@ -189,7 +190,21 @@ main {
   }
 
   .container--bot {
-    margin: 0 40px 30px 40px;
+    margin: 0;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  .container--bot--user {
+    margin: 0 0 30px 40px;
+  }
+
+  .container--bot--share {
+    width: auto;
+  }
+  .container--bot--share--image {
+    right: initial;
+    margin: 10px 40px 30px 0;
   }
 
   h1 {
@@ -199,34 +214,19 @@ main {
   .pointer {
     display: none;
   }
+
+  .bubbleContainer {
+    right: initial;
+    bottom: initial;
+    padding: 0 0 20px 0;
+  }
+
+  .bubble {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    min-width: none;
+  }
 }
-
-/* 
-
-.container--bot--share {
-  display: flex;
-  width: 154px;
-   flex-direction: column;
-
-}
-
-.container--bot--share--image {
-  width: 15px;
-  height: 13px;
-  background-color: hsl(210, 46%, 95%);
-  padding: 10px;
-  border-radius: 25px;
-  margin-top: 5px;
-}
-
-.container--bot--share--image--activated {
-  background-color: hsl(217, 19%, 35%);
-  color: aliceblue;
-}
-
-.bubbleContainer {
-  position: relative;
-  right: -150px;
-  bottom: 100px;
-}
- */

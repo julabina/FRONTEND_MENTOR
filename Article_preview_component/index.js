@@ -1,27 +1,51 @@
 const shareBtn = document.querySelector(".container--bot--share--image");
-const container = document.querySelector(".bubbleContainer");
-const mediaQueries = matchMedia("(min-width: 960px)");
+const bubbleContainer = document.querySelector(".bubbleContainer");
+const user = document.querySelector(".container--bot--user--info");
+const userPicture = document.querySelector(".container--bot--user--picture");
+const mq = window.matchMedia("(min-width: 960px)");
+const contBot = document.querySelector(".container--bot");
 
 const displayVisible = () => {
-  container.classList.remove("invisible");
+  bubbleContainer.classList.remove("invisible");
   shareBtn.classList.add("container--bot--share--image--activated");
 };
 
-const displayInvisble = () => {
-  container.classList.add("invisible");
+const displayInvisible = () => {
+  bubbleContainer.classList.add("invisible");
+  shareBtn.classList.remove("container--bot--share--image--activated");
+};
+
+const queriesVisible = () => {
+  user.classList.add("invisible");
+  userPicture.classList.add("invisible");
+  contBot.classList.add("botBg");
+  bubbleContainer.classList.remove("invisible");
+  shareBtn.classList.add("container--bot--share--image--activated");
+};
+
+const queriesInvisible = () => {
+  user.classList.remove("invisible");
+  userPicture.classList.remove("invisible");
+  contBot.classList.remove("botBg");
+  bubbleContainer.classList.add("invisible");
   shareBtn.classList.remove("container--bot--share--image--activated");
 };
 
 shareBtn.addEventListener("click", () => {
-  if (mediaQueries.matches) {
-    console.log("11111111111");
+  if (mq.matches) {
+    user.classList.remove("invisible");
+    userPicture.classList.remove("invisible");
+    contBot.classList.remove("botBg");
+    if (bubbleContainer.classList.contains("invisible")) {
+      displayVisible();
+    } else {
+      displayInvisible();
+    }
   } else {
-    console.log("2222222222222");
+    if (user.classList.contains("invisible")) {
+      queriesInvisible();
+    } else {
+      queriesVisible();
+    }
   }
 });
-
-/* if (container.classList.contains("invisible")) {
-  displayVisible();
-} else {
-  displayInvisble();
-} */
