@@ -13,12 +13,163 @@ body {
 body {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  font-size: 2.2em;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.top--firstH1 {
+  font-weight: 200;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 80px 0 50px 0;
+}
+
+.top p {
+  text-align: center;
+  width: 44%;
+  margin-top: 20px;
+}
+
+.bot {
+  display: flex;
+  justify-content: center;
+}
+
+.bot--left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bot--middle {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.bot--right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box {
+  max-width: 400px;
+  height: 250px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.24);
+}
+
+.box h2 {
+  margin: 30px 30px 10px 30px;
+  font-size: 1.4em;
+  color: hsl(234, 12%, 34%);
+}
+
+.box p {
+  font-weight: 200;
+  font-size: 13px;
+  margin: 0 30px 35px 30px;
+}
+
+.box--icon {
+  margin: 0 30px 0 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.lineCyan {
+  height: 4px;
+  background: hsl(180, 62%, 55%);
+}
+
+.lineRed {
+  height: 4px;
+  background: hsl(0, 78%, 62%);
+}
+
+.lineOrange {
+  height: 4px;
+  background: hsl(34, 97%, 64%);
+}
+
+.lineBlue {
+  height: 4px;
+  background: hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 900px) {
+  h1 {
+    text-align: center;
+    font-size: 1.6em;
+  }
+
+  .top {
+    margin-top: 100px;
+  }
+
+  .top p {
+    width: initial;
+    width: 90%;
+  }
+
+  main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bot {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .bot--left {
+    width: 100%;
+  }
+
+  .bot--middle {
+    width: 100%;
+  }
+
+  .bot--right {
+    width: 100%;
+  }
+
+  .attribution {
+    position: relative;
+  }
 }
