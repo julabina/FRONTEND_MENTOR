@@ -154,6 +154,11 @@ main {
 .container--bot--user--info--name {
   margin: 0 0 3px 0;
   font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.container--bot--user--info--date {
+  color: hsl(214, 17%, 51%);
 }
 
 @media screen and (max-width: 960px) {
