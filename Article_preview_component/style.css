@@ -45,7 +45,9 @@ main {
 
 .container--bot--share {
   display: flex;
-  flex-direction: column;
+  width: 154px;
+  /*   flex-direction: column;
+ */
 }
 
 .container--bot--share--image {
@@ -55,17 +57,22 @@ main {
   padding: 10px;
   border-radius: 25px;
   margin-top: 5px;
+  position: relative;
+  right: -120px;
 }
 
 .container--bot--share--image--activated {
   background-color: hsl(217, 19%, 35%);
   color: aliceblue;
+  right: 200px;
+  padding: 10px;
+  margin-top: 5px;
 }
 
 .bubbleContainer {
-  position: absolute;
-  right: 485px;
-  bottom: 430px;
+  position: relative;
+  right: 22px;
+  bottom: 82px;
 }
 
 .invisible {
@@ -145,28 +152,81 @@ main {
   font-weight: 700;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 960px) {
   main {
     flex-direction: column;
+    align-items: center;
     min-width: 280px;
     max-width: initial;
     height: auto;
-    width: 90;
+    width: 90%;
   }
 
   .imgContainer {
     border-radius: 15px 15px 0 0;
-    width: 95%;
+    height: 232px;
+    min-width: initial;
+    overflow: initial;
   }
 
   .container {
     border-radius: 0 0 15px 15px;
-    width: 90%;
-    overflow: initial;
-    max-width: 90%;
+    width: 350px;
+    height: auto;
+    /*     max-width: 90%;
+ 
+    padding: 4% 6% 4% 6%;*/
+    padding: 0;
   }
 
   #imgScene {
     width: initial;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .container--top {
+    margin: 50px 40px 30px 40px;
+  }
+
+  .container--bot {
+    margin: 0 40px 30px 40px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .pointer {
+    display: none;
   }
 }
+
+/* 
+
+.container--bot--share {
+  display: flex;
+  width: 154px;
+   flex-direction: column;
+
+}
+
+.container--bot--share--image {
+  width: 15px;
+  height: 13px;
+  background-color: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+
+.container--bot--share--image--activated {
+  background-color: hsl(217, 19%, 35%);
+  color: aliceblue;
+}
+
+.bubbleContainer {
+  position: relative;
+  right: -150px;
+  bottom: 100px;
+}
+ */

@@ -1,5 +1,6 @@
 const shareBtn = document.querySelector(".container--bot--share--image");
 const container = document.querySelector(".bubbleContainer");
+const mediaQueries = matchMedia("(min-width: 960px)");
 
 const displayVisible = () => {
   container.classList.remove("invisible");
@@ -12,9 +13,15 @@ const displayInvisble = () => {
 };
 
 shareBtn.addEventListener("click", () => {
-  if (container.classList.contains("invisible")) {
-    displayVisible();
+  if (mediaQueries.matches) {
+    console.log("11111111111");
   } else {
-    displayInvisble();
+    console.log("2222222222222");
   }
 });
+
+/* if (container.classList.contains("invisible")) {
+  displayVisible();
+} else {
+  displayInvisble();
+} */
