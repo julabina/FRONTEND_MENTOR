@@ -34,7 +34,10 @@ mail.addEventListener("input", (e) => {
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
-  if (itValid === true) {
+  if (mail.value === "") {
+    displayError("Email is empty");
+  } else if (itValid === true) {
     alert("Valid email");
+    mail.value = "";
   }
 });
