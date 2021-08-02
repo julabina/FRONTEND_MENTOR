@@ -81,16 +81,12 @@ p {
 .container {
   height: 100%;
   width: 60%;
-  margin: 70px 0 70px 0;
+  margin: 0 0 70px 0;
 }
 
 .pictureHero {
   height: 100%;
   width: auto;
-}
-
-.hero {
-  height: 100%;
 }
 
 .mailBox {
@@ -139,8 +135,85 @@ p {
   margin: 0 0 0 25px;
 }
 
+.heroMobile {
+  display: none;
+}
+
+#logo {
+  margin: 70px 0 0 0;
+}
+
+.logoContainer {
+  width: 60%;
+}
+
 @media screen and (max-width: 1280px) {
   main {
-    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+  }
+
+  .heroMobile {
+    display: initial;
+  }
+
+  .pictureHero {
+    display: none;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: initial;
+  }
+
+  .containerRight {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .attribution {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    width: 80%;
+    text-align: center;
+    margin: 100px 0 25px 0;
+  }
+
+  .mail {
+    height: 45px;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .mailInput {
+    font-size: 0.9em;
+    height: 55%;
+    margin-left: 15px;
+  }
+
+  .arrowContainer {
+    width: 60px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #logo {
+    width: 100px;
+    margin: 30px 0 30px 30px;
   }
 }
