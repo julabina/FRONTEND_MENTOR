@@ -1,3 +1,7 @@
+const inputs = document.querySelectorAll("input");
+const btn = document.querySelector(".rightContainer--formBox--btn--h3");
+let lastName, firstName, mail, password;
+
 const displayError = (tag, message, valid) => {
   const input = document.getElementById("formBox--" + tag);
   const span = document.querySelector(".formBox--" + tag + "--span");
@@ -16,52 +20,85 @@ const displayError = (tag, message, valid) => {
   }
 };
 
+const emptyInputs = () => {};
+
 const lastNameCheck = (value) => {
-  if (value.lenght > 0 && (value.lenght > 2 || value.lenght < 25)) {
+  if (value.length > 0 && (value.length < 2 || value.length > 25)) {
     displayError(
       "lastName",
       "Last name must contain between 2 and 25 characters"
     );
   } else if (!value.match(/^[a-zA-Zé èà]*$/)) {
-    displayError("lastName", "The first name must contain only letters");
+    displayError("lastName", "The last name must contain only letters");
   } else {
-    displayError("lastName", "", valid);
+    displayError("lastName", "", true);
+    lastName = value;
   }
 };
 
 const FirstNameCheck = (value) => {
-  if (value.lenght > 0 && (value.lenght > 2 || value.lenght < 25)) {
+  if (value.length > 0 && (value.length < 2 || value.length > 25)) {
     displayError(
       "firstName",
       "First name must contain between 2 and 25 characters"
     );
-  } else if (!value.match(/^[a-zA-Zé -è]*$/)) {
+  } else if (!value.match(/^[a-zA-Zé èà]*$/)) {
     displayError("firstName", "The first name must contain only letters");
   } else {
-    displayError("firstName", "", valid);
+    displayError("firstName", "", true);
+    firstName = value;
   }
 };
 
 const emailCheck = (value) => {
-  if (value.lenght > 0) {
-    displayError("mail", "Email must not be empty");
-  } else if (!value.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i)) {
+  if (!value.match(/^[\w_-]+@[\w-]+\.[a-z]{2,4}$/i)) {
     displayError("mail", "Email is not valid");
   } else {
-    displayError("mail", "", valid);
+    displayError("mail", "", true);
+    mail = value;
   }
 };
 
 const passwordCheck = (value) => {
-  if (!value.match("^(?=.*[a-z])(?=.*[A-Z])(?=.*d)[a-zA-Zd]{8,}$")) {
+  /* https://regexr.com/3bfsi */
+  if (!value.match(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/)) {
     displayError(
       "password",
       "The password need contain 8 characters, 1 uppercase letter and 1 number"
     );
-    /*
-    https://stackoverflow.com/questions/19605150/regex-for-password-must-contain-at-least-eight-characters-at-least-one-number-a
-    Minimum eight characters, at least one uppercase letter, one lowercase letter and one number*/
   } else {
-    displayError("password", "", valid);
+    displayError("password", "", true);
+    password = value;
   }
 };
+
+inputs.forEach((input) => {
+  input.addEventListener("input", (e) => {
+    switch (e.target.id) {
+      case "formBox--lastName":
+        lastNameCheck(e.target.value);
+        break;
+      case "formBox--firstName":
+        FirstNameCheck(e.target.value);
+        break;
+      case "formBox--mail":
+        emailCheck(e.target.value);
+        break;
+      case "formBox--password":
+        passwordCheck(e.target.value);
+        break;
+      default:
+        null;
+    }
+  });
+});
+
+btn.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (lastName && firstName && mail && password) {
+    console.log("test");
+    emptyInputs();
+  } else {
+    console.log("test2");
+  }
+});
