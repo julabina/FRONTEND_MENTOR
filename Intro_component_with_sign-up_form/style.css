@@ -119,3 +119,7 @@ main {
   font-size: 14px;
   color: hsl(246, 25%, 77%);
 }
+
+.hidden {
+  visibility: hidden;
+}
