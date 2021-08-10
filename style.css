@@ -60,6 +60,24 @@ li:hover {
   border: black solid 1px;
 }
 
+.menuNav-li {
+  background-color: initial;
+  border: initial;
+
+  width: initial;
+  text-align: initial;
+  margin-bottom: initial;
+  list-style-type: none;
+  border-radius: initial;
+}
+
+.menuNav-li:hover {
+  border: initial;
+}
+
+.subMenu {
+}
+
 .link {
   margin: 50px 0 80px 0;
 }
@@ -129,4 +147,29 @@ footer p {
 
 #link2:hover {
   width: 110px;
+}
+
+.menuNav {
+  background: rgba(82, 82, 82, 0.445);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  color: white;
+}
+
+.menuNavLeft {
+  padding: 20px 20px 30px 30px;
+}
+
+.menuNavRight {
+  width: 10px;
+  border: rgba(0, 0, 0, 0.247) solid 1px;
+}
+
+.menuNavRight:hover {
+  cursor: pointer;
+  background: rgba(82, 82, 82, 0.479);
 }
