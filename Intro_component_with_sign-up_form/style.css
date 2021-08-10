@@ -45,6 +45,12 @@ main {
   color: white;
 }
 
+.leftContainer h1 {
+  font-size: 50px;
+  line-height: 1.1em;
+  margin: 0 0 35px 0;
+}
+
 .rightContainer {
   width: 60%;
   margin-left: 40px;
@@ -55,7 +61,7 @@ main {
   height: 55px;
   line-height: 55px;
   white-space: nowrap;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 10px 2px rgba(0, 0, 0, 0.226);
   margin: 0 0 30px 0;
 }
@@ -128,10 +134,21 @@ main {
   background-color: hsl(154, 86%, 60%);
 }
 
+.rightContainer--formBox--btn--h3 {
+  font-weight: 500;
+}
+
 .rightContainer--formBox--term {
   text-align: center;
-  font-size: 14px;
+  font-size: 11px;
   color: hsl(246, 25%, 77%);
+  margin: 15px 0 0 0;
+}
+
+.rightContainer--formBox--term a {
+  text-decoration: none;
+  font-weight: bold;
+  color: hsl(0, 100%, 74%);
 }
 
 .hidden {
@@ -140,8 +157,88 @@ main {
 
 .error {
   border: hsl(0, 100%, 74%) 2px solid;
+  color: hsl(0, 100%, 74%);
 }
 
 .error:focus {
   border: hsl(0, 100%, 74%) 2px solid;
+}
+
+@media screen and (max-width: 1450px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  main {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  body {
+    display: initial;
+  }
+
+  .leftContainer {
+    width: 90%;
+    margin: initial;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  .leftContainer h1 {
+    font-size: 24px;
+    width: 60%;
+    line-height: 1.3em;
+    margin: 80px 0 20px 0;
+  }
+
+  .leftContainer p {
+    font-size: 13px;
+    font-weight: 500;
+    width: 85%;
+    text-align: center;
+  }
+
+  .rightContainer {
+    width: 90%;
+    margin: initial;
+    height: auto;
+  }
+
+  .rightContainer--topBox {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25% 0 25%;
+    white-space: initial;
+    line-height: initial;
+  }
+
+  .rightContainer--topBox h2 {
+    font-size: 14px;
+  }
+
+  .attribution {
+    margin-top: 50px;
+    position: relative;
+  }
+
+  .rightContainer--formBox--term {
+    width: 80%;
+    margin: 10px 10% 0 10%;
+  }
+
+  .formBox--span {
+    font-size: 9px;
+  }
 }
