@@ -1,0 +1,28 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+}
