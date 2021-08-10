@@ -20,7 +20,17 @@ const displayError = (tag, message, valid) => {
   }
 };
 
-const emptyInputs = () => {};
+const emptyInputs = () => {
+  const inputss = document.querySelectorAll("input");
+  inputss[0].value = "";
+  inputss[1].value = "";
+  inputss[2].value = "";
+  inputss[3].value = "";
+  lastName = null;
+  firstName = null;
+  mail = null;
+  password = null;
+};
 
 const lastNameCheck = (value) => {
   if (value.length > 0 && (value.length < 2 || value.length > 25)) {
@@ -96,9 +106,15 @@ inputs.forEach((input) => {
 btn.addEventListener("click", (e) => {
   e.preventDefault();
   if (lastName && firstName && mail && password) {
-    console.log("test");
+    const userData = {
+      lastName,
+      firstName,
+      mail,
+      password,
+    };
+    console.log(userData);
     emptyInputs();
   } else {
-    console.log("test2");
+    alert("All required fields");
   }
 });
