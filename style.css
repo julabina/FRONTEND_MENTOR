@@ -76,6 +76,8 @@ li:hover {
 }
 
 .subMenu {
+  font-size: 0.9em;
+  line-height: 1.6em;
 }
 
 .link {
