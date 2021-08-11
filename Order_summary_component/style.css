@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -18,11 +20,92 @@ body {
 
 body {
   background-image: url("./images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 main {
   background-color: white;
+  width: 30%;
+}
+
+.heroIllustration {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  font-size: 1.7em;
+  font-weight: 900;
+}
+
+h2 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1em;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.middleMiddle {
+  line-height: 0.3em;
+}
+
+.middleLeft {
+  display: flex;
+}
+
+.bot {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.para {
+  text-align: center;
+  width: 71%;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+}
+
+.paymentContainer {
+  background: hsl(245, 75%, 52%);
+  width: 70%;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+}
+
+.paymentContainer:hover {
+  background: hsl(245, 94%, 67%);
+  cursor: pointer;
+}
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+.change:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.middlePara {
+  color: hsl(224, 23%, 55%);
 }
