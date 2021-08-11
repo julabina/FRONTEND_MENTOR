@@ -154,7 +154,7 @@ footer p {
 .menuNav {
   background: rgba(82, 82, 82, 0.445);
   position: fixed;
-  top: 0;
+  top: 20px;
   left: 0;
   width: auto;
   height: auto;
@@ -162,8 +162,13 @@ footer p {
   color: white;
 }
 
+.menuBack {
+  left: -390px;
+}
+
 .menuNavLeft {
-  padding: 20px 20px 30px 30px;
+  width: 350px;
+  padding: 20px 20px 30px;
 }
 
 .menuNavRight {
