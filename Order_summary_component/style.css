@@ -32,10 +32,13 @@ body {
 main {
   background-color: white;
   width: 30%;
+  border-radius: 20px;
+  min-width: 354px;
 }
 
 .heroIllustration {
   width: 100%;
+  border-radius: 20px 20px 0 0;
 }
 
 h1 {
@@ -48,17 +51,18 @@ h1 {
 h2 {
   color: hsl(223, 47%, 23%);
   font-size: 1em;
+  font-weight: 900;
 }
 
 .middle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 75%;
+  width: 85%;
 }
 
 .middleMiddle {
-  line-height: 0.3em;
+  line-height: 0.7em;
 }
 
 .middleLeft {
@@ -73,18 +77,28 @@ h2 {
 }
 
 .para {
+  margin-top: 2px;
   text-align: center;
-  width: 71%;
+  width: 81%;
   font-size: 16px;
   color: hsl(224, 23%, 55%);
+  margin-bottom: 50px;
+  line-height: 1.6em;
 }
 
 .paymentContainer {
   background: hsl(245, 75%, 52%);
-  width: 70%;
+  width: 95%;
   text-align: center;
   color: white;
   border-radius: 10px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.paymentContainer h3 {
+  margin-top: 15px;
+  font-size: 1em;
 }
 
 .paymentContainer:hover {
@@ -94,11 +108,18 @@ h2 {
 
 .cancel {
   color: hsl(224, 23%, 55%);
+  font-size: 0.9em;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .cancel:hover {
   cursor: pointer;
   color: hsl(223, 47%, 23%);
+}
+
+.change {
+  font-weight: bold;
 }
 
 .change:hover {
@@ -108,4 +129,52 @@ h2 {
 
 .middlePara {
   color: hsl(224, 23%, 55%);
+}
+
+#musicIcon {
+  margin-right: 20px;
+  margin-top: 8px;
+  width: 55px;
+  height: 55px;
+}
+
+@media screen and (max-width: 1240px) {
+  .middleMiddle h2 {
+    font-size: 0.9em;
+  }
+
+  .change {
+    font-size: 0.8em;
+  }
+
+  #musicIcon {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+
+  .para {
+    width: 92%;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .paymentContainer {
+    margin-top: 40px;
+  }
+
+  .attribution {
+    position: relative;
+    bottom: initial;
+    left: initial;
+    right: initial;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
 }
