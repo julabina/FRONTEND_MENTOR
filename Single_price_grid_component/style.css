@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(204, 43%, 93%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 43%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
+  border-radius: 10px;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.6em;
+}
+
+h2 {
+  color: white;
+  font-size: 1.1em;
+}
+
+h3 {
+  color: hsl(71, 73%, 54%);
+  margin: 20px 0 10px 0;
+  font-size: 1.2em;
+}
+
+p {
+  color: hsl(204, 43%, 93%);
+}
+
+.topContainer {
+  background: white;
+  padding: 6%;
+  border-radius: 10px 10px 0 0;
+}
+
+.botContainer {
+  display: flex;
+  border-radius: 0 0 10px 10px;
+}
+
+.botLeft {
+  width: 50%;
+  background: hsl(179, 62%, 43%);
+  padding: 6%;
+  border-radius: 0 0 0 10px;
+}
+
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  text-align: center;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+h4:hover {
+  border-radius: 10px;
+  background-color: hsl(71, 73%, 54%);
+  cursor: pointer;
+}
+
+.botRight {
+  border-radius: 0 0 10px 0;
+  padding: 6%;
+  width: 50%;
+  background: hsl(218, 22%, 67%);
+}
+
+.paraTop {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6em;
+}
+
+.paraRight {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin: 17px 50px 0 0;
+}
+
+.paraLeft1 {
+  margin: 18px 0 10px 0;
+  color: hsl(218, 22%, 67%);
+}
+
+.paraLeft1 span {
+  font-size: 1.9em;
+  font-weight: 700;
+  color: white;
+  margin-right: 7px;
+}
+
+@media screen and (max-width: 1050px) {
+  main {
+    width: 90%;
+    margin: 60px;
+    height: auto;
+  }
+
+  body {
+    align-items: initial;
+  }
+
+  .botContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .botLeft {
+    width: 100%;
+    border-radius: initial;
+  }
+
+  .botRight {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .attribution {
+    position: relative;
+  }
+}
