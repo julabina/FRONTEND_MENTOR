@@ -1,4 +1,6 @@
-* ::before ::after {
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -12,13 +14,25 @@ body {
 body {
   display: flex;
   justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
 }
 
 main {
-  width: 45%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.1em;
 }
 
 .error {
@@ -26,14 +40,84 @@ main {
 }
 
 .logo {
-  height: 30px;
-  width: 30px;
+  height: 18px;
+  width: 18px;
+  margin: 0 7px 0 7px;
 }
 
-.mailContainer-input {
-  display: flex;
+.logo:hover {
+  cursor: pointer;
 }
 
 #illustration {
   width: 100%;
+}
+
+#pingLogo {
+  width: 75px;
+  margin: 70px 0 45px 0;
+}
+
+.h1Span {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.btn {
+  background: hsl(223, 87%, 63%);
+  width: 30%;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: hsl(223, 87%, 70%);
+  cursor: pointer;
+}
+
+.notify {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+.mailContainer {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.mailContainer-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mail {
+  width: 67%;
+  border: hsl(223, 100%, 88%) solid 1px;
+  border-radius: 30px;
+  padding-left: 30px;
+  height: 50px;
+}
+
+#mail::placeholder {
+  color: hsl(223, 100%, 88%);
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#mail:focus {
+  outline: none;
+}
+
+.subscribe {
+  font-size: 0.9em;
+  margin: 20px 0 36px 0;
+}
+
+footer p {
+  font-size: 0.6em;
+  margin: 20px 0 40px 0;
+  color: hsl(0, 0%, 59%);
 }
