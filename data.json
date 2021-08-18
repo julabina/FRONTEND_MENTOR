@@ -1,17 +1,7 @@
 {
     "challenge_15": {
-        "Order": "1",
-        "title": "tert",
-        "folder_name": "",
-        "live_url": "",
-        "repo_url": ""
+        "Order": "42",
+        "title": "test",
+        "folder_name": "test_folder"
     },
-
-    /* "challenge_": {
-        "Order": "",
-        "title": "",
-        "img_url": "",
-        "live_url": "",
-        "repo_url": ""
-    }, */
 }
