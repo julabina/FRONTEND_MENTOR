@@ -163,7 +163,7 @@ footer p {
 }
 
 .menuBack {
-  left: -390px;
+  display: none;
 }
 
 .menuNavLeft {
@@ -174,9 +174,35 @@ footer p {
 .menuNavRight {
   width: 10px;
   border: rgba(0, 0, 0, 0.247) solid 1px;
+  min-height: 250px;
 }
 
 .menuNavRight:hover {
   cursor: pointer;
   background: rgba(82, 82, 82, 0.479);
+}
+
+.hideMenu {
+  display: none;
+}
+
+.hideBtn {
+  height: 10px;
+  border: rgba(0, 0, 0, 0.247) solid 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.hideBtn:hover {
+  cursor: pointer;
+  background: rgba(82, 82, 82, 0.479);
+}
+
+.focusSub {
+  transform: rotate(180deg);
+}
+
+.arrow {
+  filter: brightness(0) opacity(30%);
+  width: 10px;
 }
