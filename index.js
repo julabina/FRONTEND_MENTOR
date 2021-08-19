@@ -13,7 +13,7 @@ menuBtn.addEventListener("click", () => {
   menuIN();
 });
 
-fetch('data.json').then(function(response)) {
+/* fetch('data.json').then(function(response)) {
   console.log(response);
   return response;
-}
+} */
