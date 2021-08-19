@@ -4,17 +4,30 @@ console.log("https://github.com/julabina");
 const mail = document.getElementById("mail");
 const btn = document.querySelector(".btn");
 const span = document.getElementById("error");
+const spanQueries = document.getElementById("errorQueries");
 
 const errorDisplay = (message, valid) => {
-  span.classList.remove("error");
-  span.textContent = message;
-  mail.classList.add("errorInput");
+  if (window.matchMedia("(min-width: 1141px)").matches) {
+    span.classList.remove("error");
+    span.textContent = message;
+    mail.classList.add("errorInput");
+    spanQueries.classList.add("error");
+    btn.classList.remove("btnError");
+  } else {
+    spanQueries.classList.remove("error");
+    spanQueries.textContent = message;
+    mail.classList.add("errorInput");
+    span.classList.add("error");
+    btn.classList.add("btnError");
+  }
 };
 
 const emptyInput = () => {
   span.classList.add("error");
+  spanQueries.classList.add("error");
   mail.value = "";
   mail.classList.remove("errorInput");
+  btn.classList.remove("btnError");
 };
 
 btn.addEventListener("click", (e) => {

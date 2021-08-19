@@ -41,8 +41,14 @@ h1 {
   color: hsl(354, 100%, 66%);
 }
 
+#errorQueries {
+  font-size: 0.52em;
+  color: hsl(354, 100%, 66%);
+  text-align: center;
+}
+
 .error {
-  visibility: hidden;
+  display: none;
 }
 
 .errorInput {
@@ -52,11 +58,8 @@ h1 {
 .logo {
   height: 18px;
   width: 18px;
-  margin: 0 7px 0 7px;
-}
-
-.logo:hover {
-  cursor: pointer;
+  filter: contrast(1000%) invert(100%) sepia(100%) saturate(10000%)
+    hue-rotate(90deg);
 }
 
 #illustration {
@@ -130,4 +133,107 @@ footer p {
   font-size: 0.6em;
   margin: 20px 0 40px 0;
   color: hsl(0, 0%, 59%);
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logoContainer {
+  margin: 0 5px 0 5px;
+  padding-top: 3px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer:hover img {
+  filter: brightness(100%);
+  filter: invert();
+}
+
+.logoContainer:hover {
+  cursor: pointer;
+  background-color: hsl(223, 87%, 70%);
+  border-radius: 34px;
+}
+
+@media screen and (max-width: 1140px) {
+  main {
+    width: 90%;
+  }
+
+  #pingLogo {
+    width: 54px;
+  }
+
+  .subscribe {
+    font-size: 0.6em;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  .mailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .mailContainer-input {
+    flex-direction: column;
+    justify-content: initial;
+    width: 82%;
+  }
+
+  #mail {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    /*  margin-top: 22px; */
+    width: 100%;
+    height: 40px;
+    margin: 0 0 70px 0;
+  }
+
+  .btnError {
+    margin: 22px 0 25px 0;
+  }
+
+  .notify {
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 0.6em;
+    font-weight: 600;
+  }
+
+  #illustration {
+    width: 95%;
+  }
+
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 100px;
+  }
+
+  footer p {
+    font-size: 0.5em;
+  }
 }
