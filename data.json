@@ -60,6 +60,11 @@
         "index": 12,
         "title": "Ping single column coming soon page",
         "folder_name": "Ping_single_column_coming_soon_page"
+    },
+    {
+        "index": 13,
+        "title": "Huddle landing page with single introductory section",
+        "folder_name": "Huddle_landing_page_with_single_introductory_section"
     }
     ]
 }
