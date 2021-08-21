@@ -81,7 +81,56 @@ menus[4].addEventListener("click", () => {
   }
 });
 
-/* fetch('data.json').then(function(response)) {
-  console.log(response);
-  return response;
-} */
+let challenges;
+
+fetch("data.json")
+  .then((res) => res.json())
+  .then((data) => {
+    challenges = data;
+  });
+
+const challengeDisplay = () => {
+  for (let i = 0; i < challenges.challenge.length; i++) {
+    let a = i + 1;
+
+    const sect = document.getElementById("challengeContainer" + a);
+
+    if (i % 2 == 0) {
+      sect.innerHTML = `
+  <section class="back1" id="challenge${a}">
+  <h2>${challenges.challenge[i].title}</h2>
+  <span class="challengeLink"></span>
+  <div class="screenshotContainer">
+      <img src="./${challenges.challenge[i].folder_name}/screenshot.png" alt="screenshot challenge 12" class="screenshot">
+      <ul class="link">
+          <li><a href="./${challenges.challenge[i].folder_name}/index.html"><p>Online websit</p></a></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/julabina/FRONTEND_MENTOR/tree/master/${challenges.challenge[i].folder_name}"><p>Github repository</p></a></li>
+      </ul>
+  </div>
+</section>
+  `;
+    } else {
+      sect.innerHTML = `
+    <section class="back2" id="challenge${i + 1}">
+    <h2>${challenges.challenge[i].title}</h2>
+    <span class="challengeLink"></span>
+    <div class="screenshotContainer">
+        <img src="./${
+          challenges.challenge[i].folder_name
+        }/screenshot.png" alt="screenshot challenge 12" class="screenshot">
+        <ul class="link">
+            <li><a href="./${
+              challenges.challenge[i].folder_name
+            }/index.html"><p>Online websit</p></a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/julabina/FRONTEND_MENTOR/tree/master/${
+              challenges.challenge[i].folder_name
+            }"><p>Github repository</p></a></li>
+        </ul>
+    </div>
+</section>
+    `;
+    }
+  }
+};
+
+challengeDisplay();
