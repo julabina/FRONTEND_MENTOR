@@ -1,51 +1,63 @@
 {
     "challenge" : [
     {
+        "index": 1,
         "title": "Stats preview card component",
         "folder_name": "Stats_preview_card_component"
     },
 
     {
+        "index": 2,
         "title": "3-column preview card component",
         "folder_name": "3-column_preview_car_component"
     },
     {
+        "index": 3,
         "title": "Profile card component",
         "folder_name": "Profile_card_component"
     },
     {
+        "index": 4,
         "title": "FAQ accordion card",
         "folder_name": "FAQ_accordion_card"
     },
     {
+        "index": 5,
         "title": "Social proof section",
         "folder_name": "Social_proof_section"
     },
     {
+        "index": 6,
         "title": "Article preview component",
         "folder_name": "Article_preview_component"
     },
     {
+        "index": 7,
         "title": "Four card feature section",
         "folder_name": "Four_card_feature_section"
     },
     {
+        "index": 8,
         "title": "Base apparel coming soon page",
         "folder_name": "Base_apparel_coming_soon_page"
     },
     {
+        "index": 9,
         "title": "Intro component with sign-up form",
         "folder_name": "Intro_component_with_sign-up_form"
     },
     {
+        "index": 10,
         "title": "Order summary component",
         "folder_name": "Order_summary_component"
     },
     {
+        "index": 11,
         "title": "Single price grid component",
         "folder_name": "Single_price_grid_component"
     },
     {
+        "index": 12,
         "title": "Ping single column coming soon page",
         "folder_name": "Ping_single_column_coming_soon_page"
     }

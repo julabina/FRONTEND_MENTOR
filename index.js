@@ -80,7 +80,7 @@ menus[4].addEventListener("click", () => {
     arrow.classList.remove("focusSub");
   }
 });
-
+/* --challenge display-- */
 let challenges;
 
 fetch("data.json")
