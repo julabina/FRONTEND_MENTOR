@@ -15,17 +15,18 @@
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
 
 body {
+  position: absolute;
   background-image: url("./images/bg-desktop.svg");
   background-color: hsl(257, 40%, 49%);
+  height: 100vh;
 }
 
 footer {
@@ -35,9 +36,201 @@ footer {
   right: 0;
 }
 
-/*
+main {
+  margin: 4% 7% 0 15%;
+}
 
-font-family: "Poppins", sans-serif;
-font-family: "Open Sans", sans-serif;
+h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 24px;
+}
 
-*/
+.textIllustration {
+  margin: 3% 14% 0 5%;
+}
+
+.textIllustration p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1em;
+  line-height: 28px;
+}
+
+.registerBtn {
+  margin-top: 19px;
+  border: solid rgba(0, 0, 0, 0.322) 1px;
+  width: 205px;
+  height: 55px;
+  border-radius: 55px;
+  text-align: center;
+  background-color: white;
+}
+
+.registerBtn:hover {
+  background-color: hsl(300, 71%, 61%);
+  cursor: pointer;
+}
+
+.registerBtn:hover p {
+  color: white;
+}
+
+.registerBtn p {
+  color: hsl(300, 71%, 61%);
+  line-height: 52px;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo img {
+  width: 210px;
+  margin-bottom: 85px;
+}
+
+.mainContent {
+  display: flex;
+}
+
+.social {
+  position: absolute;
+  bottom: 30px;
+  right: 17%;
+  display: flex;
+  justify-content: end;
+  margin-top: 18px;
+}
+
+.socialLogo {
+  width: 38px;
+  margin-left: 20px;
+}
+
+.socialLogo:hover {
+  cursor: pointer;
+  filter: opacity(40%);
+}
+
+@media screen and (max-width: 1670px) {
+  .textIllustration {
+    margin: 3% 4% 0 4%;
+  }
+  main {
+    margin: 4% 7% 0 10%;
+  }
+  .social {
+    right: 7%;
+    margin-right: 4%;
+  }
+}
+
+@media screen and (max-width: 1445px) {
+  main {
+    margin: 4% 4.5% 0 4.5%;
+  }
+
+  .textIllustration {
+    margin: 3% 2% 0 4%;
+  }
+
+  .social {
+    right: 6%;
+    margin-right: initial;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .illustration img {
+    width: 550px;
+  }
+
+  main {
+    margin: 4% 4.5% 0 4.5%;
+  }
+
+  .textIllustration {
+    margin: 3% 2% 0 4%;
+  }
+
+  .social {
+    margin-right: initial;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .illustration img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .illustration img {
+    width: 90%;
+  }
+
+  .mainContent {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .logo img {
+    width: 125px;
+  }
+
+  body {
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  main {
+    margin: 30px 40px;
+  }
+
+  .mainContent {
+    flex-direction: column;
+  }
+
+  .illustration img {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .textIllustration p {
+    text-align: center;
+    font-size: 1em;
+    line-height: 25px;
+    margin: -10px -10px 0 -10px;
+  }
+
+  .registerBtn {
+    height: 41px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .registerBtn p {
+    line-height: 58px;
+  }
+
+  .social {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    right: initial;
+    bottom: initial;
+    display: flex;
+    justify-content: center;
+  }
+
+  .socialLogo {
+    width: 20px;
+    margin: 40px 10px 0 10px;
+  }
+}
