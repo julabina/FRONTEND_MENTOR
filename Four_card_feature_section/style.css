@@ -129,6 +129,36 @@ p {
   background: hsl(212, 86%, 64%);
 }
 
+.backToHome {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.289);
+  border-radius: 0 40px 40px 0;
+  background: rgba(128, 128, 128, 0.189);
+}
+
+.backToHome p {
+  line-height: 40px;
+  white-space: nowrap;
+  font-size: 0.7em;
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.backToHome:hover {
+  border-right: black 1px solid;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  cursor: pointer;
+}
+
+.backToHome:hover p {
+  color: black;
+}
+
 @media screen and (max-width: 900px) {
   h1 {
     text-align: center;
@@ -171,5 +201,15 @@ p {
 
   .attribution {
     position: relative;
+  }
+
+  .backToHome {
+    width: 25px;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .backToHome p {
+    margin-left: 1px;
+    font-size: 0.6em;
   }
 }

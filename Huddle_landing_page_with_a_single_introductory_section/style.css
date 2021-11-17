@@ -112,6 +112,36 @@ h1 {
   filter: opacity(40%);
 }
 
+.backToHome {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.289);
+  border-radius: 0 40px 40px 0;
+  background: rgba(128, 128, 128, 0.189);
+}
+
+.backToHome p {
+  line-height: 40px;
+  white-space: nowrap;
+  font-size: 0.7em;
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.backToHome:hover {
+  border-right: black 1px solid;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  cursor: pointer;
+}
+
+.backToHome:hover p {
+  color: black;
+}
+
 @media screen and (max-width: 1670px) {
   .textIllustration {
     margin: 3% 4% 0 4%;
@@ -137,6 +167,19 @@ h1 {
   .social {
     right: 6%;
     margin-right: initial;
+  }
+
+  .backToHome {
+    left: initial;
+    right: 0;
+    border-radius: 40px 0 0 40px;
+  }
+
+  .backToHome:hover {
+    border-right: none;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-left: black 1px solid;
   }
 }
 

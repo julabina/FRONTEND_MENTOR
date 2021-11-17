@@ -206,3 +206,10 @@ footer p {
   filter: brightness(0) opacity(30%);
   width: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .menuNavLeft {
+    width: 300px;
+    overflow: hidden;
+  }
+}
