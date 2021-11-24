@@ -194,10 +194,8 @@ main {
 
 .timeCategoryContainer-top {
   display: flex;
-  background: red;
   justify-content: end;
   height: 40px;
-  /* margin-bottom: -10px; */
   border-radius: 10px 10px 0 0;
   overflow: hidden;
 }
@@ -209,7 +207,6 @@ main {
 }
 
 .timeCategoryContainer-main {
-  background: blue;
   border-radius: 10px;
   background: hsl(235, 46%, 20%);
   overflow: hidden;
@@ -287,4 +284,116 @@ main {
 
 .backToHome:hover p {
   color: black;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1080px) {
+  html {
+    height: initial;
+  }
+
+  body {
+    height: initial;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: initial;
+  }
+
+  main {
+    margin: 50px 0;
+    width: 60%;
+    grid-template-columns: 100%;
+    grid-template-rows: 190px repeat(6, 175px);
+    grid-gap: 15px;
+  }
+
+  .caractereContainer {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  #work {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  #play {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  #study {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  #exercise {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  #social {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  #selfCare {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+
+  .caractereContainer {
+    margin-bottom: 12px;
+  }
+
+  .caratectereContainer-caractere {
+    display: flex;
+  }
+
+  .caratectereContainer-caractere img {
+    margin-right: 20px;
+    height: 75px;
+  }
+
+  .caratectereContainer-caractere p {
+    font-size: 0.8em;
+  }
+
+  .caratectereContainer-caractere h1 {
+    font-size: 1.2em;
+  }
+
+  .caractereInfoContainer {
+    margin-top: 20px;
+  }
+
+  .caratectereContainer-menu {
+    flex-direction: initial;
+    padding: initial 20px;
+    align-items: center;
+  }
+
+  .timeCatStats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .timeCategoryContainer-main {
+    height: auto;
+  }
+
+  .timeCategoryContainer-main--mid {
+    font-size: 2.4em;
+    margin-top: 0;
+  }
+
+  .timeCategoryContainer-main--bot {
+    font-size: 0.9em;
+    line-height: 49px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  main {
+    margin: 50px 0;
+    width: 90%;
+    grid-template-columns: 100%;
+    grid-template-rows: 190px repeat(6, 175px);
+    grid-gap: 15px;
+  }
 }
