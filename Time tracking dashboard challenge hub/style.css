@@ -386,6 +386,10 @@ main {
     font-size: 0.9em;
     line-height: 49px;
   }
+
+  .attribution {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 580px) {
