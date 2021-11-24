@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+
+main {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.1em;
+}
+
+#error {
+  font-size: 0.56em;
+  margin-left: 30px;
+  color: hsl(354, 100%, 66%);
+}
+
+#errorQueries {
+  font-size: 0.52em;
+  color: hsl(354, 100%, 66%);
+  text-align: center;
+}
+
+.error {
+  display: none;
+}
+
+.errorInput {
+  border: hsl(354, 100%, 66%) solid 1px !important;
+}
+
+.logo {
+  height: 18px;
+  width: 18px;
+  filter: contrast(1000%) invert(100%) sepia(100%) saturate(10000%)
+    hue-rotate(90deg);
+}
+
+#illustration {
+  width: 100%;
+}
+
+#pingLogo {
+  width: 75px;
+  margin: 70px 0 45px 0;
+}
+
+.h1Span {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+
+.btn {
+  background: hsl(223, 87%, 63%);
+  width: 30%;
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: hsl(223, 87%, 70%);
+  cursor: pointer;
+}
+
+.notify {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+.mailContainer {
+  width: 100%;
+  margin-bottom: 55px;
+}
+
+.mailContainer-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mail {
+  width: 67%;
+  border: hsl(223, 100%, 88%) solid 1px;
+  border-radius: 30px;
+  padding-left: 30px;
+  height: 50px;
+}
+
+#mail::placeholder {
+  color: hsl(223, 100%, 88%);
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#mail:focus {
+  outline: none;
+}
+
+.subscribe {
+  font-size: 0.9em;
+  margin: 20px 0 36px 0;
+}
+
+footer p {
+  font-size: 0.6em;
+  margin: 20px 0 40px 0;
+  color: hsl(0, 0%, 59%);
+}
+
+.socialContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logoContainer {
+  margin: 0 5px 0 5px;
+  padding-top: 3px;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer:hover img {
+  filter: brightness(100%);
+  filter: invert();
+}
+
+.logoContainer:hover {
+  cursor: pointer;
+  background-color: hsl(223, 87%, 70%);
+  border-radius: 34px;
+}
+
+.backToHome {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.289);
+  border-radius: 0 40px 40px 0;
+  background: rgba(128, 128, 128, 0.189);
+}
+
+.backToHome p {
+  line-height: 40px;
+  white-space: nowrap;
+  font-size: 0.6em;
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.backToHome:hover {
+  border-right: black 1px solid;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  cursor: pointer;
+}
+
+.backToHome:hover p {
+  color: black;
+}
+
+@media screen and (max-width: 1140px) {
+  main {
+    width: 90%;
+  }
+
+  #pingLogo {
+    width: 54px;
+  }
+
+  .subscribe {
+    font-size: 0.6em;
+  }
+
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  .mailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .mailContainer-input {
+    flex-direction: column;
+    justify-content: initial;
+    width: 82%;
+  }
+
+  #mail {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    /*  margin-top: 22px; */
+    width: 100%;
+    height: 40px;
+    margin: 0 0 70px 0;
+  }
+
+  .btnError {
+    margin: 22px 0 25px 0;
+  }
+
+  .notify {
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    font-size: 0.6em;
+    font-weight: 600;
+  }
+
+  #illustration {
+    width: 95%;
+  }
+
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    position: relative;
+    margin-top: 100px;
+  }
+
+  footer p {
+    font-size: 0.5em;
+  }
+}

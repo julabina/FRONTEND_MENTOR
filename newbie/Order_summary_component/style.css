@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  background-color: white;
+  width: 30%;
+  border-radius: 20px;
+  min-width: 354px;
+}
+
+.heroIllustration {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+h1 {
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+  font-size: 1.7em;
+  font-weight: 900;
+}
+
+h2 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1em;
+  font-weight: 900;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+}
+
+.middleMiddle {
+  line-height: 0.7em;
+}
+
+.middleLeft {
+  display: flex;
+}
+
+.bot {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.para {
+  margin-top: 2px;
+  text-align: center;
+  width: 81%;
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  margin-bottom: 50px;
+  line-height: 1.6em;
+}
+
+.paymentContainer {
+  background: hsl(245, 75%, 52%);
+  width: 95%;
+  text-align: center;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.paymentContainer h3 {
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.paymentContainer:hover {
+  background: hsl(245, 94%, 67%);
+  cursor: pointer;
+}
+
+.cancel {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.9em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+}
+
+.change {
+  font-weight: bold;
+}
+
+.change:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.middlePara {
+  color: hsl(224, 23%, 55%);
+}
+
+#musicIcon {
+  margin-right: 20px;
+  margin-top: 8px;
+  width: 55px;
+  height: 55px;
+}
+
+.backToHome {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.289);
+  border-radius: 0 40px 40px 0;
+  background: rgba(128, 128, 128, 0.189);
+}
+
+.backToHome p {
+  line-height: 18px;
+  white-space: nowrap;
+  font-size: 0.7em;
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.backToHome:hover {
+  border-right: black 1px solid;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  cursor: pointer;
+}
+
+.backToHome:hover p {
+  color: black;
+}
+
+@media screen and (max-width: 1240px) {
+  .middleMiddle h2 {
+    font-size: 0.9em;
+  }
+
+  .change {
+    font-size: 0.8em;
+  }
+
+  #musicIcon {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+
+  .para {
+    width: 92%;
+    margin-bottom: 40px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .paymentContainer {
+    margin-top: 40px;
+  }
+
+  .attribution {
+    position: relative;
+    bottom: initial;
+    left: initial;
+    right: initial;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .backToHome {
+    top: 10px;
+  }
+}

@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: rgb(0, 75, 85);
+}
+
+.attribution a {
+  color: hsl(256, 100%, 41%);
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+h1 {
+  font-size: 4em;
+  width: 50%;
+  line-height: 1.1em;
+  margin: 130px 0 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: hsl(0, 6%, 24%);
+}
+
+.spanH1 {
+  font-weight: 200;
+  color: hsl(0, 36%, 70%);
+}
+
+p {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.7em;
+  width: 85%;
+  margin: 0 0 40px 0;
+}
+
+.arrowContainer {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 36%, 70%);
+  border-radius: 50px;
+  margin-left: -23px;
+}
+
+.arrowContainer:hover {
+  background-color: hsl(0, 56%, 89%);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.171);
+}
+
+.containerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("./images/bg-pattern-desktop.svg");
+}
+
+.container {
+  height: 100%;
+  width: 60%;
+  margin: 0 0 70px 0;
+}
+
+.pictureHero {
+  height: 100%;
+  width: auto;
+}
+
+.mailBox {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.mail {
+  border: hsl(0, 36%, 70%) solid 1px;
+  height: 55px;
+  border-radius: 50px 0 0 50px;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
+}
+
+.mailInput {
+  border: none;
+  height: 90%;
+  width: 70%;
+  font-size: 1.1em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.mailInput:focus {
+  outline: none;
+}
+
+.invisible {
+  display: none;
+}
+
+.errorIcon {
+  margin: 0 30px 0 0;
+}
+
+.red {
+  border: hsl(0, 93%, 68%) solid 2px;
+}
+
+.mailSpan span {
+  font-size: 13px;
+  color: hsl(0, 93%, 68%);
+  margin: 0 0 0 25px;
+}
+
+.heroMobile {
+  display: none;
+}
+
+#logo {
+  margin: 70px 0 0 0;
+}
+
+.logoContainer {
+  width: 60%;
+}
+
+.backToHome {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.289);
+  border-radius: 0 40px 40px 0;
+  background: rgba(128, 128, 128, 0.189);
+}
+
+.backToHome p {
+  line-height: 40px;
+  white-space: nowrap;
+  font-size: 0.7em;
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.backToHome:hover {
+  border-right: black 1px solid;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  cursor: pointer;
+}
+
+.backToHome:hover p {
+  color: black;
+}
+
+@media screen and (max-width: 1280px) {
+  main {
+    height: auto;
+    width: 100%;
+  }
+
+  .heroMobile {
+    display: initial;
+  }
+
+  .pictureHero {
+    display: none;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: initial;
+  }
+
+  .containerRight {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .attribution {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    width: 80%;
+    text-align: center;
+    margin: 100px 0 25px 0;
+  }
+
+  .mail {
+    height: 45px;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  .mailInput {
+    font-size: 0.9em;
+    height: 55%;
+    margin-left: 15px;
+  }
+
+  .arrowContainer {
+    width: 60px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #logo {
+    width: 100px;
+    margin: 30px 0 30px 30px;
+  }
+
+  .backToHome {
+    left: initial;
+    right: 0;
+    border-radius: 40px 0 0 40px;
+  }
+
+  .backToHome:hover {
+    border-right: none;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+    border-left: black 1px solid;
+  }
+}

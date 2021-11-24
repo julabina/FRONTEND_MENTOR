@@ -1,0 +1,268 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 1.7em;
+  color: hsl(217, 19%, 35%);
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  display: flex;
+  width: 40%;
+  height: 280px;
+  min-width: 741px;
+  max-width: 741px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.botBg {
+  background: hsl(217, 19%, 35%);
+  border-radius: 0 0 15px 15px;
+}
+
+.container--bot--share {
+  display: flex;
+  width: 154px;
+}
+
+.container--bot--share--image {
+  width: 15px;
+  height: 13px;
+  background-color: hsl(210, 46%, 95%);
+  padding: 10px;
+  border-radius: 25px;
+  margin-top: 5px;
+  position: relative;
+  right: -120px;
+}
+
+.container--bot--share--image--activated {
+  background-color: hsl(217, 19%, 35%);
+  color: aliceblue;
+  right: 200px;
+  padding: 10px;
+  margin-top: 5px;
+  filter: brightness(100);
+}
+
+.bubbleContainer {
+  position: relative;
+  right: 22px;
+  bottom: 82px;
+}
+
+.invisible {
+  display: none;
+}
+
+.bubble--text {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 4px;
+  color: hsl(210, 46%, 95%);
+}
+
+.bubble {
+  height: 60px;
+  width: 40%;
+  min-width: 220px;
+  background: hsl(217, 19%, 35%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 50px 0 50px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.pointer {
+  height: 20px;
+  width: 20px;
+  background: hsl(217, 19%, 35%);
+  margin: 0 auto;
+  transform: rotate(45deg);
+  margin-top: -12px;
+  position: relative;
+}
+
+#imgScene {
+  width: 340px;
+  height: 280px;
+}
+
+.imgContainer {
+  min-width: 280px;
+  overflow: hidden;
+  border-radius: 15px 0 0 15px;
+}
+
+.container {
+  padding: 20px 38px 20px 38px;
+  background-color: white;
+  border-radius: 0 15px 15px 0;
+}
+
+.container--para {
+  line-height: 1.6em;
+  margin: 15px 0 20px 0;
+  color: hsl(214, 17%, 51%);
+}
+
+.container--bot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container--bot--user {
+  display: flex;
+}
+
+.container--bot--user--picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 0 30px 0 0;
+}
+
+.container--bot--user--info--name {
+  margin: 0 0 3px 0;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+}
+
+.container--bot--user--info--date {
+  color: hsl(214, 17%, 51%);
+}
+
+.backToHome {
+  position: fixed;
+  left: 0;
+  top: 20px;
+  height: 40px;
+  width: 40px;
+  border: 1px solid rgba(128, 128, 128, 0.289);
+  border-radius: 0 40px 40px 0;
+  background: rgba(128, 128, 128, 0.189);
+}
+
+.backToHome p {
+  line-height: 40px;
+  white-space: nowrap;
+  font-size: 0.7em;
+  margin-left: 3px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+.backToHome:hover {
+  border-right: black 1px solid;
+  border-top: black 1px solid;
+  border-bottom: black 1px solid;
+  cursor: pointer;
+}
+
+.backToHome:hover p {
+  color: black;
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    min-width: 280px;
+    max-width: initial;
+    height: auto;
+    width: 90%;
+  }
+
+  .imgContainer {
+    border-radius: 15px 15px 0 0;
+    height: 232px;
+    min-width: initial;
+    overflow: initial;
+  }
+
+  .container {
+    border-radius: 0 0 15px 15px;
+    width: 350px;
+    height: auto;
+    padding: 0;
+  }
+
+  #imgScene {
+    width: initial;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .container--top {
+    margin: 50px 40px 30px 40px;
+  }
+
+  .container--bot {
+    margin: 0;
+    width: 100%;
+    padding: 20px 0 0 0;
+  }
+
+  .container--bot--user {
+    margin: 0 0 30px 40px;
+  }
+
+  .container--bot--share {
+    width: auto;
+  }
+  .container--bot--share--image {
+    right: initial;
+    margin: 10px 40px 30px 0;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  .pointer {
+    display: none;
+  }
+
+  .bubbleContainer {
+    right: initial;
+    bottom: initial;
+    padding: 0 0 20px 0;
+  }
+
+  .bubble {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+
+    min-width: none;
+  }
+}
