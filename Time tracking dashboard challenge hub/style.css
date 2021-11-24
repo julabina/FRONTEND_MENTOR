@@ -255,6 +255,10 @@ main {
   color: hsl(236, 100%, 87%);
 }
 
+.selected {
+  color: white;
+}
+
 .backToHome {
   position: fixed;
   left: 0;
