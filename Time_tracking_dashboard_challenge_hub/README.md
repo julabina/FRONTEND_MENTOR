@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github repository](https://github.com/julabina/FRONTEND_MENTOR/tree/master/Time%20tracking%20dashboard%20challenge%20hub)
-- Live Site URL: [Github page](https://your-live-site-url.com)
+- Solution URL: [Github repository](https://github.com/julabina/FRONTEND_MENTOR/tree/master/Time_tracking_dashboard_challenge_hub)
+- Live Site URL: [Github page](https://julabina.github.io/FRONTEND_MENTOR/Time_tracking_dashboard_challenge_hub/)
 
 ## My process
 
