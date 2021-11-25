@@ -1,0 +1,52 @@
+body {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-size: 100%;
+}
+
+main {
+  display: flex;
+}
+
+.leftContainer {
+  width: 450px;
+  height: 382px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 253px 0 0 170px;
+}
+
+.leftContainer p {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: normal;
+}
+
+.exploreBtn {
+  height: 274px;
+  width: 274px;
+  border-radius: 274px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exploreBtn h4 {
+  color: black;
+}
+
+.rightContainer {
+  margin: 367px 0 0 380px;
+}
+
+/* .test {
+  position: absolute;
+  border: 1px solid yellow;
+  width: 274px;
+  height: 274px;
+  left: 1001px;
+  top: 495px;
+}
+ */

@@ -1,0 +1,94 @@
+header {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  width: 830px;
+  height: 96px;
+  margin: 32px 0 0 -43px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(81.5485px);
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.headerLine {
+  margin: 80px 0 0 84px;
+  border-top: 1px solid white;
+  width: 473px;
+  mix-blend-mode: normal;
+  z-index: 100;
+  opacity: 0.25;
+}
+
+header img {
+  width: 48px;
+  height: 48px;
+  margin: 57px 0 0 48px;
+}
+
+.menu {
+  margin: 0 55px 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu p:hover {
+  color: #d0d6f9;
+  margin: 39px 0 0 0;
+  padding-bottom: 35px;
+  border-bottom: solid 3px #d0d6f9;
+  cursor: pointer;
+}
+
+.menuSelected {
+  color: white;
+  margin: 38px 55px 0 0;
+  padding-bottom: 35px;
+  border-bottom: solid 3px white;
+}
+/* 
+.menuSelected:hover {
+  color: #d0d6f9;
+  margin: 36px 55px 0 0;
+  padding-bottom: 35px;
+  border-bottom: solid 2px #d0d6f9;
+  cursor: pointer;
+} */
+
+.noMenu {
+  width: 130px;
+}
+
+/* 
+  .testtest {
+    position: absolute;
+    width: 830px;
+    height: 96px;
+    left: 610px;
+    top: 40px;
+    border: black solid 1px;
+  }
+  
+  .testBar {
+    position: absolute;
+    width: 473px;
+    border-top: chartreuse solid 1px;
+    left: 167px;
+    top: 88px;
+    opacity: 0.5;
+    mix-blend-mode: normal;
+  }
+  
+  .testLogo {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 55px;
+    top: 64px;
+    border: solid white 1px;
+  }
+   */

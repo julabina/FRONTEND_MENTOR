@@ -3,25 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
-
-  Explore
-
+  <header>
+    <img src="./assets/shared/logo.svg" alt="logo">
+    <div class="headerLine"></div>
+    <nav>
+      <div class="noMenu"></div>
+      <div class="menu menuSelected">
+        <p>
+          00 Home
+        </p>
+        </div>
+      <div class="menu">
+       <a href="./destination.html"><p>
+          01 Destination
+        </p></a>
+        </div>
+      <div class="menu">
+        <p>
+          02 Crew
+        </p>
+        </div>
+      <div class="menu">
+        <p>
+          03 Technology
+        </p>
+        </div>
+    </nav>
+  </header>
+<!-- <div class="testtest"></div>
+<div class="testBar"></div>
+<div class="testLogo"></div> -->
+  <main>
+    <div class="leftContainer">
+      <h5>So, you want to travel to</h5>
+      <h1>Space</h1>
+      <p>Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!</p>
+      </div>
+      <div class="rightContainer">
+        <div class="exploreBtn">
+        <h4>Explore</h4>
+        </div>
+      </div>
+    </main>
+<!-- <div class="test"></div> -->
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
