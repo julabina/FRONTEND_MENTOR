@@ -50,45 +50,7 @@ header img {
   padding-bottom: 35px;
   border-bottom: solid 3px white;
 }
-/* 
-.menuSelected:hover {
-  color: #d0d6f9;
-  margin: 36px 55px 0 0;
-  padding-bottom: 35px;
-  border-bottom: solid 2px #d0d6f9;
-  cursor: pointer;
-} */
 
 .noMenu {
   width: 130px;
 }
-
-/* 
-  .testtest {
-    position: absolute;
-    width: 830px;
-    height: 96px;
-    left: 610px;
-    top: 40px;
-    border: black solid 1px;
-  }
-  
-  .testBar {
-    position: absolute;
-    width: 473px;
-    border-top: chartreuse solid 1px;
-    left: 167px;
-    top: 88px;
-    opacity: 0.5;
-    mix-blend-mode: normal;
-  }
-  
-  .testLogo {
-    position: absolute;
-    width: 48px;
-    height: 48px;
-    left: 55px;
-    top: 64px;
-    border: solid white 1px;
-  }
-   */
