@@ -7,13 +7,17 @@ main {
   display: flex;
 }
 
+.containerOfLeftContainer {
+  width: 50%;
+}
+
 .leftContainer {
   width: 450px;
   height: 382px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 253px 0 0 170px;
+  margin: 253px 0 0 32%;
 }
 
 .leftContainer p {
@@ -21,6 +25,10 @@ main {
   font-size: 18px;
   line-height: 32px;
   font-weight: normal;
+}
+
+.rightContainer {
+  width: 50%;
 }
 
 .exploreBtn {
@@ -31,6 +39,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 92px;
 }
 
 .exploreBtn h4 {
