@@ -40,6 +40,12 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+  font-size: 56px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
 h4 {
   font-size: 32px;
   font-weight: normal;
