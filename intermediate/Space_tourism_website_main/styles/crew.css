@@ -1,10 +1,27 @@
 body {
   background-image: url("../assets/crew/background-crew-desktop.jpg");
   background-size: 100%;
+  height: 1vh;
+  overflow: hidden;
 }
 
 main {
   display: flex;
+}
+
+.crewLeftContainer {
+  margin: 83px 0 76px 11.7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.crewLeftContainer-descr {
+  margin: 110px 0 20px 0;
+}
+
+.crewName {
+  margin: 20px 0 0 0;
 }
 
 .crewDescription {
@@ -12,12 +29,15 @@ main {
   font-size: 18px;
   line-height: 32px;
   font-weight: normal;
+  width: 444px;
+  margin: 20px 0 41px 0;
 }
 
 .crewNav {
   width: 132px;
   display: flex;
   justify-content: space-between;
+  margin: 20px 0 20px 0;
 }
 
 .crewNav-nav {
@@ -25,8 +45,68 @@ main {
   width: 15px;
   border-radius: 15px;
   background: white;
+  opacity: 0.5;
 }
 
 .crewNav-nav:hover {
   background: #d0d6f9;
 }
+
+.crewPhotoContainer {
+  margin: 72px 0 0 25%;
+}
+
+/* 
+.testMeet {
+  position: absolute;
+  width: 286px;
+  height: 34px;
+  left: 166.5px;
+  top: 212px;
+  border: yellow 1px solid;
+}
+
+.testCommand {
+  position: absolute;
+  width: 214px;
+  height: 37px;
+  left: 165.5px;
+  top: 400px;
+  border: yellow 1px solid;
+}
+
+.testName {
+  position: absolute;
+  width: 488px;
+  height: 64px;
+  left: 165.5px;
+  top: 452px;
+  border: yellow 1px solid;
+}
+
+.testText {
+  position: absolute;
+  width: 444px;
+  height: 128px;
+  left: 165px;
+  top: 543px;
+  border: yellow 1px solid;
+}
+.testMenu {
+  position: absolute;
+  width: 132px;
+  height: 15px;
+  left: 167px;
+  top: 791px;
+  border: yellow 1px solid;
+}
+
+.testImg {
+  border: yellow 1px solid;
+  position: absolute;
+  width: 568.07px;
+  height: 712px;
+  left: 734.93px;
+  top: 198px;
+}
+ */
