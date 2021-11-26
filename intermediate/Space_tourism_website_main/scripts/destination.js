@@ -11,7 +11,6 @@ fetch("../data.json")
   .then((res) => res.json())
   .then((data) => {
     datas = data;
-    console.log(datas);
     displayMoons();
   });
 

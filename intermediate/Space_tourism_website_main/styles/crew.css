@@ -48,6 +48,16 @@ main {
   opacity: 0.5;
 }
 
+.crewNavSelected {
+  opacity: 1;
+}
+
+.crewH5 span {
+  font-weight: bold;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
 .crewNav-nav:hover {
   background: #d0d6f9;
 }
