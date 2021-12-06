@@ -34,6 +34,8 @@ main {
 }
 
 .crewNav {
+  position: absolute;
+  top: 770px;
   width: 132px;
   display: flex;
   justify-content: space-between;
@@ -62,10 +64,42 @@ main {
   background: #d0d6f9;
 }
 
-.crewPhotoContainer {
-  margin: 72px 0 0 25%;
+.crewRightContainer {
+  width: 45%;
+  height: 100%;
 }
 
+.photoCrew1 img {
+  position: absolute;
+  width: 568.07px;
+  height: 712px;
+  left: 734.93px;
+  bottom: 0;
+}
+
+.photoCrew2 img {
+  position: absolute;
+  width: 453.44px;
+  height: 654px;
+  left: 800px;
+  bottom: 0;
+}
+
+.photoCrew3 img {
+  position: absolute;
+  width: 554.39px;
+  height: 681px;
+  left: 743px;
+  bottom: 0;
+}
+
+.photoCrew4 img {
+  position: absolute;
+  width: 615.57px;
+  height: 607px;
+  left: 735px;
+  bottom: 0;
+}
 /* 
 .testMeet {
   position: absolute;
@@ -102,14 +136,6 @@ main {
   top: 543px;
   border: yellow 1px solid;
 }
-.testMenu {
-  position: absolute;
-  width: 132px;
-  height: 15px;
-  left: 167px;
-  top: 791px;
-  border: yellow 1px solid;
-}
 
 .testImg {
   border: yellow 1px solid;
@@ -118,5 +144,14 @@ main {
   height: 712px;
   left: 734.93px;
   top: 198px;
+  
+  .testMenu {
+    position: absolute;
+    width: 132px;
+    height: 15px;
+    left: 167px;
+    top: 791px;
+    border: yellow 1px solid;
+  }
 }
- */
+*/

@@ -20,6 +20,13 @@ function resetCrews() {
   }
 }
 
+function resetImgClass() {
+  imgC.classList.remove("photoCrew1");
+  imgC.classList.remove("photoCrew2");
+  imgC.classList.remove("photoCrew3");
+  imgC.classList.remove("photoCrew4");
+}
+
 function displayCrew() {
   for (let i = 0; i < crews.length; i++) {
     if (crews[i].classList.contains("crewNavSelected")) {
@@ -30,6 +37,16 @@ function displayCrew() {
       <img src="${datasC.crew[i].images.png}" alt="Picture of ${datasC.crew[i].name}">
       `;
     }
+  }
+  resetImgClass();
+  if (crews[0].classList.contains("crewNavSelected")) {
+    imgC.classList.add("photoCrew1");
+  } else if (crews[1].classList.contains("crewNavSelected")) {
+    imgC.classList.add("photoCrew2");
+  } else if (crews[2].classList.contains("crewNavSelected")) {
+    imgC.classList.add("photoCrew3");
+  } else if (crews[3].classList.contains("crewNavSelected")) {
+    imgC.classList.add("photoCrew4");
   }
 }
 
