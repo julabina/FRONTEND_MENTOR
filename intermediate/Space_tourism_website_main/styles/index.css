@@ -40,6 +40,22 @@ main {
   justify-content: center;
   align-items: center;
   margin-left: 92px;
+  margin-top: 88px;
+}
+
+.hoverExplore {
+  height: 450px;
+  width: 450px;
+  border-radius: 450px;
+  position: absolute;
+}
+
+.hoverExplore:hover {
+  cursor: pointer;
+  border: white solid 88px;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.1;
 }
 
 .exploreBtn h4 {
@@ -47,7 +63,7 @@ main {
 }
 
 .rightContainer {
-  margin: 367px 0 0 380px;
+  margin: 279px 0 0 380px;
 }
 
 /* .test {
