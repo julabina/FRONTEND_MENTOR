@@ -34,7 +34,7 @@ function displayCrew() {
       nameC.textContent = datasC.crew[i].name;
       descriptionC.textContent = datasC.crew[i].bio;
       imgC.innerHTML = `
-      <img src="${datasC.crew[i].images.png}" alt="Picture of ${datasC.crew[i].name}">
+      <img src="${datasC.crew[i].images.webp}" alt="Picture of ${datasC.crew[i].name}">
       `;
     }
   }

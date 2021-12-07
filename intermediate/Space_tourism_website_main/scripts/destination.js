@@ -28,7 +28,7 @@ const displayMoons = () => {
       distanceM.textContent = datas.destinations[i].distance;
       travelTimeM.textContent = datas.destinations[i].travel;
       pictureM.innerHTML = `
-      <img src="${datas.destinations[i].images.png}" alt="picture of ${datas.destinations[i].name}">
+      <img src="${datas.destinations[i].images.webp}" alt="picture of ${datas.destinations[i].name}">
       `;
     }
   }
