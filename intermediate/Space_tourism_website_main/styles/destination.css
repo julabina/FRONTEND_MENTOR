@@ -91,20 +91,3 @@ main {
   justify-content: space-between;
   width: 50%;
 }
-
-.testRContainer {
-  width: 445px;
-  height: 472px;
-  top: 310px;
-  left: 832px;
-  position: absolute;
-  border: solid yellow 1px;
-}
-.testH {
-  position: absolute;
-  border: solid 1px yellow;
-  width: 382px;
-  height: 34px;
-  left: 166.5px;
-  top: 212px;
-}
