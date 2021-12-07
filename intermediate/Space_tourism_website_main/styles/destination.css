@@ -91,3 +91,10 @@ main {
   justify-content: space-between;
   width: 50%;
 }
+
+@media screen and (max-width: 1300px) {
+  body {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+    background-position: center;
+  }
+}
