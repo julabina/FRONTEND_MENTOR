@@ -4,7 +4,7 @@ header {
 
 nav {
   display: flex;
-  width: 830px;
+  width: 59%;
   height: 96px;
   margin: 32px 0 0 -43px;
   background: rgba(255, 255, 255, 0.04);
@@ -18,7 +18,7 @@ nav {
 .headerLine {
   margin: 80px 0 0 84px;
   border-top: 1px solid white;
-  width: 473px;
+  width: 40%;
   mix-blend-mode: normal;
   z-index: 100;
   opacity: 0.25;
