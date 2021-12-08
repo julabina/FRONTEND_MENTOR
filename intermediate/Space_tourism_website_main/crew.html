@@ -12,31 +12,35 @@
 </head>
 <body>
   <header>
-    <img src="./assets/shared/logo.svg" alt="logo">
+    <img class="headerLogo" src="./assets/shared/logo.svg" alt="logo">
     <div class="headerLine"></div>
-    <nav>
-      <div class="noMenu"></div>
-      <div class="menu">
-        <a href="./index.html"><p>
-          <span class="menuSpan">00 </span>Home
-        </p></a>
+   
+      <img class="menuMobileHamb visible" src="./assets/shared/icon-hamburger.svg" alt="menu mobile icon">
+      <img class="menuMobileCross invisible" src="./assets/shared/icon-close.svg" alt="menu mobile icon">
+      <nav class="navHeader invisible">
+        <div class="noMenu"></div>
+        <div class="menu">
+          <a href="./index.html"><p>
+            <span class="menuSpan">00 </span>Home
+          </p></a>
         </div>
-      <div class="menu">
-       <a href="./destination.html"><p>
-          <span class="menuSpan">01 </span>Destination
-        </p></a>
+        <div class="menu">
+          <a href="./destination.html"><p>
+            <span class="menuSpan">01 </span>Destination
+          </p></a>
         </div>
-      <div class="menu menuSelected">
-       <a href="./crew.html"><p>
-          <span class="menuSpan">02 </span>Crew
-        </p></a>
+        <div class="menu menuSelected">
+          <a href="./crew.html"><p>
+            <span class="menuSpan">02 </span>Crew
+          </p></a>
         </div>
-      <div class="menu">
-        <a href="./technology.html"><p>
-          <span class="menuSpan">03 </span>Technology
-        </p></a>
+        <div class="menu">
+          <a href="./technology.html"><p>
+            <span class="menuSpan">03 </span>Technology
+          </p></a>
         </div>
-    </nav>
+      </nav>
+    
   </header>
   <main>
     <div class="crewLeftContainer">
@@ -64,7 +68,7 @@
       <div class="crewPhotoContainer"></div>
     </div>
   </main>
-
-    <script src="./scripts/crew.js"></script>
+  <script src="./scripts/crew.js"></script>
+  <script src="./scripts/header.js"></script>
 </body>
 </html>

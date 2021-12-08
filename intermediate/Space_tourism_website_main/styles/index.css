@@ -112,3 +112,33 @@ main {
     color: #d0d6f9;
   }
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    object-fit: cover;
+  }
+
+  .leftContainer {
+    margin: initial;
+    margin-top: 48px;
+    height: 280px;
+  }
+
+  .leftContainer p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+  }
+
+  .exploreBtn {
+    width: 150px;
+    height: 150px;
+  }
+
+  .exploreBtn h4 {
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 1.25px;
+  }
+}
