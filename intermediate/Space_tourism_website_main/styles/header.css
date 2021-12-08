@@ -1,3 +1,8 @@
+html,
+body {
+  width: 100%;
+}
+
 header {
   display: flex;
 }
@@ -53,4 +58,53 @@ header img {
 
 .noMenu {
   width: 130px;
+}
+
+@media screen and (max-width: 1300px) {
+  .menuSpan {
+    display: none;
+  }
+
+  .headerLine {
+    display: none;
+  }
+
+  nav {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    margin: initial;
+    padding: 0 32px;
+    width: 59%;
+    justify-content: space-around;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  header img {
+    margin: 24px 0 0 39px;
+  }
+
+  .menu {
+    margin: initial;
+    padding-bottom: 3px;
+  }
+
+  .menu p:hover {
+    color: initial;
+    margin: initial;
+    padding: initial;
+    border-bottom: initial;
+    cursor: initial;
+  }
+
+  .menuSelected {
+    margin: initial;
+    padding-bottom: 0px;
+  }
+
+  .noMenu {
+    display: none;
+  }
 }

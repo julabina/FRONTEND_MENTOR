@@ -29,6 +29,7 @@ main {
 
 .rightContainer {
   width: 50%;
+  margin: 279px 0 0 380px;
 }
 
 .exploreBtn {
@@ -62,13 +63,44 @@ main {
   color: black;
 }
 
-.rightContainer {
-  margin: 279px 0 0 380px;
-}
-
 @media screen and (max-width: 1300px) {
   body {
     background-image: url("../assets/home/background-home-tablet.jpg");
-    background-position: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .hoverExplore {
+    display: none;
+  }
+
+  .exploreBtn {
+    margin-left: initial;
+  }
+
+  .leftContainer {
+    margin: initial;
+    width: auto;
+    align-items: center;
+  }
+
+  .rightContainer {
+    margin: initial;
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .containerOfLeftContainer {
+    width: auto;
+  }
+
+  .leftContainer p {
+    font-size: 16px;
+    line-height: 28px;
+    width: 444px;
+    text-align: center;
   }
 }
