@@ -107,6 +107,5 @@ main {
 @media screen and (max-width: 1300px) {
   body {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
-    background-position: center;
   }
 }
