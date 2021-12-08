@@ -181,3 +181,56 @@ main {
     cursor: initial;
   }
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../assets/technology/background-technology-mobile.jpg");
+    object-fit: cover;
+  }
+
+  .technoH5 {
+    text-align: center;
+    margin: initial;
+    margin: 26px 0 30px 0;
+  }
+
+  .technoH5 span {
+    margin-right: 15px;
+  }
+
+  .technologyLeftContainer__container__menu {
+    width: 152px;
+  }
+
+  .techNav {
+    height: 40px;
+    width: 40px;
+  }
+
+  .technologyLeftContainer__container__menu h4 {
+    line-height: 40px;
+    font-size: 16px;
+  }
+
+  #technologyText {
+    text-align: center;
+    margin: initial;
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  #terminology {
+    width: 327px;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.36px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 50px;
+  }
+
+  .technologyLeftContainer__container__textContainer {
+    width: 100%;
+  }
+}

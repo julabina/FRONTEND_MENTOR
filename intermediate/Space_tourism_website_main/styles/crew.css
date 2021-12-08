@@ -223,6 +223,10 @@ main {
     margin: 26px 0 30px 0;
   }
 
+  .crewH5 span {
+    margin-right: 15px;
+  }
+
   .crewPhotoContainer {
     width: 327px;
     height: 223px;
