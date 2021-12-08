@@ -1,6 +1,7 @@
 const technoTitle = document.querySelector(".technologyTextTitle");
 const technoText = document.querySelector(".technologyText");
 const imgContainer = document.querySelector(".technologyPhotoContainer");
+const imgTabMobContainer = document.querySelector(".imageTabletAndMobile");
 const techNavs = document.querySelectorAll(".techNav");
 
 let dataT;
@@ -9,7 +10,6 @@ fetch("../data/data.json")
   .then((res) => res.json())
   .then((data) => {
     dataT = data.technology;
-    console.log(dataT);
     displayTechno();
   });
 
@@ -18,6 +18,9 @@ function displayTechno() {
     if (techNavs[i].classList.contains("techNavSelected")) {
       technoTitle.textContent = dataT[i].name;
       technoText.textContent = dataT[i].description;
+      imgTabMobContainer.innerHTML = `
+      <img src="${dataT[i].images.landscape}" alt="picture of ${dataT[i].name}"> 
+      `;
       imgContainer.innerHTML = `
             <img src="${dataT[i].images.portrait}" alt="picture of ${dataT[i].name}"> 
             `;

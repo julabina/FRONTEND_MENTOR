@@ -27,6 +27,7 @@ main {
   justify-content: space-between;
   width: 285.5px;
   height: 34px;
+  color: #d0d6f9;
 }
 
 .moonNav p:hover {
@@ -37,6 +38,7 @@ main {
 
 .moonSelected {
   border-bottom: 3px solid white;
+  color: white;
 }
 
 .moonDescription {
@@ -44,6 +46,7 @@ main {
   font-size: 18px;
   line-height: 32px;
   font-weight: normal;
+  color: #d0d6f9;
 }
 
 .moonStats {

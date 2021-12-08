@@ -20,6 +20,10 @@ main {
   margin: 253px 0 0 32%;
 }
 
+.leftContainer h5 {
+  color: #d0d6f9;
+}
+
 .leftContainer p {
   font-family: "Barlow", sans-serif;
   font-size: 18px;
@@ -105,5 +109,6 @@ main {
     line-height: 28px;
     width: 444px;
     text-align: center;
+    color: #d0d6f9;
   }
 }

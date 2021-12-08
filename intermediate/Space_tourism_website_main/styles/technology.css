@@ -27,6 +27,7 @@ main {
   line-height: 19px;
   letter-spacing: 2.7px;
   margin: -10px 0 10px 0;
+  text-transform: uppercase;
 }
 
 .technologyLeftContainer__container {
@@ -49,8 +50,7 @@ main {
   height: 80px;
   border-radius: 80px;
   mix-blend-mode: normal;
-  opacity: 0.25;
-  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .technologyLeftContainer__container__menu h4 {
@@ -72,6 +72,7 @@ main {
   font-size: 18px;
   line-height: 32px;
   margin-top: 13px;
+  color: #d0d6f9;
 }
 
 .technologyRigthContainer {
@@ -95,7 +96,7 @@ main {
 
 .techNav:hover {
   cursor: pointer;
-  opacity: 1;
+  border: 1px solid white;
 }
 
 .technoH5 span {
@@ -104,8 +105,79 @@ main {
   opacity: 0.25;
 }
 
+.imageTabletAndMobile {
+  display: none;
+}
+
 @media screen and (max-width: 1300px) {
   body {
     background-image: url("../assets/technology/background-technology-tablet.jpg");
+  }
+
+  .technoH5 {
+    margin: 42px 0 58px 39px;
+  }
+
+  .imageTabletAndMobile {
+    display: initial;
+  }
+
+  .imageTabletAndMobile img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .technologyPhotoContainer {
+    display: none;
+  }
+
+  .technologyLeftContainer {
+    margin: initial;
+    width: 100%;
+    min-width: initial;
+  }
+
+  .technologyLeftContainer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    margin-top: initial;
+    margin-right: initial;
+  }
+
+  .technologyLeftContainer__container__menu {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 210px;
+    margin-right: initial;
+    height: initial;
+    margin-top: 60px;
+  }
+
+  .technologyLeftContainer__container__menu h4 {
+    line-height: 50px;
+    font-size: 28px;
+  }
+
+  .techNav {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+  }
+
+  .technologyLeftContainer__container__textContainer {
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .technologyLeftContainer__container__textContainer p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .techNav:hover {
+    border: rgba(255, 255, 255, 0.25) 1px solid;
+    cursor: initial;
   }
 }
