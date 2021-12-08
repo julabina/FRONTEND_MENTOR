@@ -9,6 +9,10 @@ main {
   display: flex;
 }
 
+.crewH5 {
+  margin: 110px 0 0 11.7%;
+}
+
 .crewLeftContainer {
   margin: 83px 0 76px 11.7%;
   display: flex;
@@ -17,7 +21,7 @@ main {
 }
 
 .crewLeftContainer-descr {
-  margin: 110px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 .crewName {
@@ -200,5 +204,61 @@ main {
   .crewNav-nav:hover {
     background: white;
     cursor: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("../assets/crew/background-crew-mobile.jpg");
+    object-fit: cover;
+  }
+
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .crewH5 {
+    text-align: center;
+    margin: initial;
+    margin: 26px 0 30px 0;
+  }
+
+  .crewPhotoContainer {
+    width: 327px;
+    height: 223px;
+    position: relative;
+    border-bottom: rgba(255, 255, 255, 0.493) solid 1px;
+  }
+
+  .crewRightContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: initial;
+  }
+
+  .crewForCenter {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .crewDescription {
+    font-size: 15px;
+    line-height: 25px;
+    width: 327px;
+  }
+
+  .crewLeftContainer-descr {
+    margin: initial;
+  }
+
+  .crewNav {
+    margin: 30px 0 40px 0;
+  }
+
+  .photoCrew1 img,
+  .photoCrew2 img,
+  .photoCrew3 img,
+  .photoCrew4 img {
+    height: 100%;
   }
 }
