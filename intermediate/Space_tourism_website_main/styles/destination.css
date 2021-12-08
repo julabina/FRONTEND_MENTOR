@@ -95,6 +95,72 @@ main {
 @media screen and (max-width: 1300px) {
   body {
     background-image: url("../assets/destination/background-destination-tablet.jpg");
-    background-position: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .moonRightContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: initial;
+    height: initial;
+    margin: initial;
+    margin-top: 48px;
+  }
+
+  .moonLeftContainer {
+    width: 100%;
+    align-items: initial;
+  }
+
+  .moonLeftContainer img {
+    width: 300px;
+    height: 300px;
+    margin: initial;
+  }
+
+  .separateBar {
+    width: 75%;
+    margin: 47px 0 25px 0;
+  }
+
+  .moonDescription {
+    font-size: 16px;
+    line-height: 28px;
+    width: 573px;
+    text-align: center;
+  }
+
+  .imgContainerForCenter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .destiH5 {
+    margin: 40px 0 60px 39px;
+  }
+
+  .moonName {
+    margin: 17px 0 5px 0;
+  }
+
+  .moonStats {
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .moonStats-stats {
+    text-align: center;
+  }
+
+  .moonNav p:hover {
+    border-bottom: none;
+    color: white;
+    cursor: initial;
   }
 }

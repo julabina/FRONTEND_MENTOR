@@ -83,7 +83,10 @@ main {
   .leftContainer {
     margin: initial;
     width: auto;
+    height: 334px;
     align-items: center;
+    margin-top: 105px;
+    margin-bottom: 70px;
   }
 
   .rightContainer {

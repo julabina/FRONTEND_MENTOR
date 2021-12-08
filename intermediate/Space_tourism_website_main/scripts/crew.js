@@ -6,7 +6,7 @@ const crews = document.querySelectorAll(".crewNav-nav");
 
 let datasC;
 
-fetch("../data.json")
+fetch("../data/data.json")
   .then((res) => res.json())
   .then((data) => {
     datasC = data;
