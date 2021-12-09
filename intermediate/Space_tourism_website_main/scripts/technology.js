@@ -6,7 +6,7 @@ const techNavs = document.querySelectorAll(".techNav");
 
 let dataT;
 
-fetch("../data/data.json")
+fetch("./data/data.json")
   .then((res) => res.json())
   .then((data) => {
     dataT = data.technology;

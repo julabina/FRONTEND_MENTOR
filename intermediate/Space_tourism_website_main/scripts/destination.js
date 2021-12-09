@@ -7,7 +7,7 @@ const moons = document.querySelectorAll(".moonNav-p");
 
 let datas;
 
-fetch("../data/data.json")
+fetch("./data/data.json")
   .then((res) => res.json())
   .then((data) => {
     datas = data;
