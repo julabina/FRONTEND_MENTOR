@@ -53,15 +53,16 @@ main {
   width: 450px;
   border-radius: 450px;
   position: absolute;
-  transition: 500ms ease-out;
+  transition: transform 500ms ease-in-out;
 }
 
 .hoverExplore:hover {
   cursor: pointer;
-  border: white solid 88px;
+  /* border: white solid 88px; */
   background: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.1;
+  transform: scale(1.1, 1.1);
 }
 
 .exploreBtn h4 {
