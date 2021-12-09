@@ -177,4 +177,8 @@ nav {
     padding-bottom: initial;
     margin: 0 0 35px 30px;
   }
+
+  .invisibleMobile {
+    display: none;
+  }
 }

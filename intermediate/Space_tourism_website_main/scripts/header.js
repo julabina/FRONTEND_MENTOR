@@ -6,12 +6,12 @@ hamburgerBtn.addEventListener("click", () => {
   crossBtn.classList.remove("invisible");
   hamburgerBtn.classList.remove("visible");
   hamburgerBtn.classList.add("invisible");
-  nav.classList.remove("invisible");
+  nav.classList.remove("invisibleMobile");
 });
 
 crossBtn.addEventListener("click", () => {
   hamburgerBtn.classList.remove("invisible");
   hamburgerBtn.classList.add("visible");
   crossBtn.classList.add("invisible");
-  nav.classList.add("invisible");
+  nav.classList.add("invisibleMobile");
 });
