@@ -53,6 +53,7 @@ main {
   width: 450px;
   border-radius: 450px;
   position: absolute;
+  transition: 500ms ease-out;
 }
 
 .hoverExplore:hover {
