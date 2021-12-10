@@ -8,6 +8,7 @@ header {
 }
 
 nav {
+  margin-top: 2px;
   width: 600px;
   margin-left: 40px;
   font-size: 0.9em;
@@ -31,6 +32,8 @@ nav {
 }
 
 .cart {
+  display: flex;
+  align-items: center;
   &__cartImg {
     width: 22px;
     height: 20px;
