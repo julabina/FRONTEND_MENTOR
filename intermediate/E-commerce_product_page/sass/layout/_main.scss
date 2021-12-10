@@ -1,0 +1,29 @@
+main {
+  width: 81%;
+  display: flex;
+}
+
+.imgContainer {
+  width: 442px;
+  &__primaryImg {
+    width: 442px;
+    height: 442px;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  &__carrousel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    &__image img {
+      width: 87px;
+      height: 87px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.informationContainer {
+  display: flex;
+  flex-direction: column;
+}

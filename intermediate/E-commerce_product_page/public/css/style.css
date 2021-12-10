@@ -72,4 +72,34 @@ nav ul li {
   margin-left: 45px;
 }
 
+main {
+  width: 81%;
+  display: flex;
+}
+
+.imgContainer {
+  width: 442px;
+}
+.imgContainer__primaryImg {
+  width: 442px;
+  height: 442px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.imgContainer__carrousel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.imgContainer__carrousel__image img {
+  width: 87px;
+  height: 87px;
+  border-radius: 10px;
+}
+
+.informationContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=style.css.map */
