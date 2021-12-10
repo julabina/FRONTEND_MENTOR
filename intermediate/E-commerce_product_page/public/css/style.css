@@ -99,6 +99,7 @@ main {
 .imgContainer__carrousel__image img {
   width: 87px;
   height: 87px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
