@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #0d192b;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  background: #14253d;
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.card__imgEquilibrium {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h1 {
+  font-size: 1.2em;
+  color: white;
+  margin: 20px 0 20px 0;
+}
+
+.card h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card__para {
+  color: #8bacda;
+}
+
+.card__timeContainer {
+  color: #00fff7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 18px;
+  font-size: 0.9em;
+  margin-top: 30px;
+}
+
+.card__timeContainer__eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__timeContainer__eth img {
+  width: 11px;
+  height: 18px;
+  margin-right: 6px;
+}
+
+.card__timeContainer__days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__timeContainer__days img {
+  width: 17px;
+  height: 17px;
+  margin-right: 6px;
+}
+
+.card__line {
+  border-bottom: solid #2f415b 1px;
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+.card__profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__profil img {
+  width: 35px;
+  border: 2px white solid;
+  border-radius: 35px;
+}
+
+.card__profil p {
+  color: #8bacda;
+  font-size: 0.9em;
+  line-height: 35px;
+  margin-left: 15px;
+}
+
+.card__profil p span {
+  color: white;
+}
+
+.card__profil p span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.container {
+  height: auto;
+}
+
+.container__view {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__view img {
+  width: 50px;
+  opacity: 0;
+}
+
+.container__view:hover {
+  background: rgba(0, 255, 247, 0.5);
+  cursor: pointer;
+}
+
+.container__view:hover img {
+  opacity: initial;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */

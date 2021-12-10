@@ -1,0 +1,102 @@
+.card {
+  background: map-get($map: $secondary-colors, $key: dark-blue-cardBG);
+  width: 350px;
+  height: 600px;
+  padding: 25px;
+  border-radius: 20px;
+  &__imgEquilibrium {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 1.2em;
+    color: map-get($map: $secondary-colors, $key: white);
+    margin: 20px 0 20px 0;
+    &:hover {
+      color: map-get($map: $primary-colors, $key: cyan);
+      cursor: pointer;
+    }
+  }
+  &__para {
+    color: map-get($map: $primary-colors, $key: soft-blue);
+  }
+  &__timeContainer {
+    color: map-get($map: $primary-colors, $key: cyan);
+    display: flex;
+    justify-content: space-between;
+    line-height: 18px;
+    font-size: 0.9em;
+    margin-top: 30px;
+    &__eth {
+      display: flex;
+      img {
+        width: 11px;
+        height: 18px;
+        margin-right: 6px;
+      }
+    }
+    &__days {
+      display: flex;
+      img {
+        width: 17px;
+        height: 17px;
+        margin-right: 6px;
+      }
+    }
+  }
+  &__line {
+    border-bottom: solid map-get($map: $secondary-colors, $key: dark-blue-line)
+      1px;
+    width: 100%;
+    margin: 20px 0 20px 0;
+  }
+  &__profil {
+    display: flex;
+    img {
+      width: 35px;
+      border: 2px white solid;
+      border-radius: 35px;
+    }
+    p {
+      color: map-get($map: $primary-colors, $key: soft-blue);
+      font-size: 0.9em;
+      line-height: 35px;
+      margin-left: 15px;
+      span {
+        color: white;
+        &:hover {
+          color: map-get($map: $primary-colors, $key: cyan);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  height: auto;
+  &__view {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50px;
+      opacity: 0;
+    }
+    &:hover {
+      background: transparentize(
+        $color: map-get($primary-colors, cyan),
+        $amount: 0.5
+      );
+      cursor: pointer;
+      img {
+        opacity: initial;
+      }
+    }
+  }
+}
