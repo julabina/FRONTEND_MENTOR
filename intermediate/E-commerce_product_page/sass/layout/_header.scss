@@ -10,6 +10,7 @@ header {
 nav {
   margin-top: 2px;
   width: 600px;
+  color: map-get($map: $secondary-colors, $key: dark-grayish-blue);
   margin-left: 40px;
   font-size: 0.9em;
   ul {
