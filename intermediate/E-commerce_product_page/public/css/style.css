@@ -170,10 +170,26 @@ nav ul li:hover {
   width: 22px;
   height: 20px;
 }
-.cart__userImg {
+.cart__cartImg:hover {
+  filter: invert(10%) saturate(1500%) contrast(40%) hue-rotate(80deg) brightness(50%);
+  cursor: pointer;
+}
+.cart__userImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  margin-left: 45px;
+}
+.cart__userImgContainer__userImg {
   width: 50px;
   height: 50px;
-  margin-left: 45px;
+}
+.cart__userImgContainer:hover {
+  border: 5px #ff7d1a solid;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 main {

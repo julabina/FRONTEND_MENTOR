@@ -52,10 +52,27 @@ nav {
   &__cartImg {
     width: 22px;
     height: 20px;
+    &:hover {
+      filter: invert(10%) saturate(1500%) contrast(40%) hue-rotate(80deg)
+        brightness(50%);
+      cursor: pointer;
+    }
   }
-  &__userImg {
-    width: 50px;
-    height: 50px;
+  &__userImgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
     margin-left: 45px;
+    &__userImg {
+      width: 50px;
+      height: 50px;
+    }
+    &:hover {
+      border: 5px map-get($map: $primary-colors, $key: orange) solid;
+      border-radius: 50px;
+      cursor: pointer;
+    }
   }
 }
