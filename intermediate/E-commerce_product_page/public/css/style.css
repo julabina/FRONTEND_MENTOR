@@ -58,6 +58,12 @@ body {
   height: 21px;
   filter: invert(1) contrast(1000%) brightness(2000%);
 }
+.modaleZoom__container__closeContainer__closeBtn:hover {
+  cursor: pointer;
+}
+.modaleZoom__container__closeContainer__closeBtn:hover img {
+  filter: invert(30%) saturate(2500%) contrast(5000%) brightness(500%) hue-rotate(200deg);
+}
 .modaleZoom__container__imgContainer {
   display: flex;
   align-items: center;
@@ -94,20 +100,45 @@ body {
   padding: 0 10%;
   margin-top: 25px;
 }
+.modaleZoom__container__carrousel__image__whiteBox {
+  z-index: 1;
+  width: 87px;
+  height: 87px;
+  border-radius: 10px;
+  background: white;
+}
 .modaleZoom__container__carrousel__image img {
+  position: absolute;
+  z-index: 10;
   width: 87px;
   height: 87px;
   object-fit: cover;
   border-radius: 10px;
+}
+.modaleZoom__container__carrousel__image img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .previous {
   margin-right: -30px;
   z-index: 1;
 }
+.previous:hover {
+  cursor: pointer;
+}
+.previous:hover img {
+  filter: invert(20%) saturate(2500%) contrast(5000%) brightness(500%) hue-rotate(90deg);
+}
 
 .next {
   margin-left: -30px;
+}
+.next:hover {
+  cursor: pointer;
+}
+.next:hover img {
+  filter: invert(20%) saturate(2500%) contrast(5000%) brightness(500%) hue-rotate(90deg);
 }
 
 .modaleInvisible {
