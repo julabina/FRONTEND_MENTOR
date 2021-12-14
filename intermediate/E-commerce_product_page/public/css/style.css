@@ -220,6 +220,10 @@ main {
   object-fit: cover;
   border-radius: 10px;
 }
+.imgContainer__carrousel__image img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 
 .informationContainer {
   display: flex;
@@ -289,6 +293,10 @@ main {
   background-color: initial;
   border: none;
 }
+.informationContainer__addToCart__choice__minusBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
 .informationContainer__addToCart__choice__plusBtn {
   display: flex;
   align-items: center;
@@ -297,6 +305,10 @@ main {
   height: 30px;
   background-color: initial;
   border: none;
+}
+.informationContainer__addToCart__choice__plusBtn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 .informationContainer__addToCart__choice p {
   color: #1d2025;
@@ -317,6 +329,10 @@ main {
   width: 18px;
   height: 17px;
   margin-right: 15px;
+}
+.informationContainer__addToCart__btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

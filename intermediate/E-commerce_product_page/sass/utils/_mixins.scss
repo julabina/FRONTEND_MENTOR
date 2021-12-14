@@ -6,4 +6,8 @@
   height: 30px;
   background-color: initial;
   border: none;
+  &:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }
