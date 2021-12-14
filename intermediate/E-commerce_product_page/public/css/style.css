@@ -145,6 +145,16 @@ body {
   display: none;
 }
 
+.modaleActive img {
+  opacity: 0.3;
+}
+.modaleActive div {
+  border: solid 2px #ff7d1a;
+}
+.modaleActive:hover img {
+  opacity: 0.3;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -245,7 +255,12 @@ main {
   justify-content: space-between;
   margin-top: 25px;
 }
+.imgContainer__carrousel__image__forBorderActive {
+  height: 87px;
+  width: 87px;
+}
 .imgContainer__carrousel__image img {
+  position: absolute;
   width: 87px;
   height: 87px;
   object-fit: cover;
@@ -364,6 +379,17 @@ main {
 .informationContainer__addToCart__btn:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+
+.carrouselActive img {
+  opacity: 0.3;
+}
+.carrouselActive div {
+  border: #ff7d1a solid 2px;
+  border-radius: 15px;
+}
+.carrouselActive:hover img {
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=style.css.map */

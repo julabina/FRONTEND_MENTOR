@@ -117,3 +117,17 @@
 .modaleInvisible {
   display: none;
 }
+
+.modaleActive {
+  img {
+    opacity: 0.3;
+  }
+  div {
+    border: solid 2px map-get($map: $primary-colors, $key: orange);
+  }
+  &:hover {
+    img {
+      opacity: 0.3;
+    }
+  }
+}

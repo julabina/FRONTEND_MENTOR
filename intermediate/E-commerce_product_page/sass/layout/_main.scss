@@ -18,14 +18,21 @@ main {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
-    &__image img {
-      width: 87px;
-      height: 87px;
-      object-fit: cover;
-      border-radius: 10px;
-      &:hover {
-        opacity: 0.5;
-        cursor: pointer;
+    &__image {
+      &__forBorderActive {
+        height: 87px;
+        width: 87px;
+      }
+      img {
+        position: absolute;
+        width: 87px;
+        height: 87px;
+        object-fit: cover;
+        border-radius: 10px;
+        &:hover {
+          opacity: 0.5;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -118,6 +125,21 @@ main {
         opacity: 0.7;
         cursor: pointer;
       }
+    }
+  }
+}
+
+.carrouselActive {
+  img {
+    opacity: 0.3;
+  }
+  div {
+    border: map-get($map: $primary-colors, $key: orange) solid 2px;
+    border-radius: 15px;
+  }
+  &:hover {
+    img {
+      opacity: 0.3;
     }
   }
 }
