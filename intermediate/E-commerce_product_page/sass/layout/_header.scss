@@ -2,9 +2,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding: 0 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.082);
   width: 81%;
+  height: 110px;
 }
 
 nav {
@@ -15,17 +16,30 @@ nav {
   font-size: 0.9em;
   ul {
     display: flex;
+    align-items: center;
+    height: 100%;
     list-style: none;
     margin-left: 0;
     padding-left: 0;
     li {
+      display: flex;
+      align-items: center;
+      height: 105px;
       margin: 0 17px;
+      &:hover {
+        color: map-get($map: $secondary-colors, $key: very-dark-blue);
+        cursor: pointer;
+        margin-top: 3px;
+        border-bottom: map-get($map: $primary-colors, $key: orange) solid 3px;
+      }
     }
   }
 }
 
 .menu {
   display: flex;
+  align-items: center;
+  height: 120px;
   img {
     width: 138px;
     height: 20px;
