@@ -24,11 +24,13 @@ const nextBtn = document.querySelector(".next");
 const modaleCloseBtn = document.querySelector(
   ".modaleZoom__container__closeContainer__closeBtn"
 );
-const cartBtn = document.querySelector(".cart__cartImg");
+const cartBtn = document.querySelector(".cart__container__cartImg");
 const cartContainer = document.querySelector(".cartContainer");
 const cartContent = document.querySelector(
   ".cartContainer__cartContentContainer"
 );
+const miniCartNbr = document.querySelector(".cart__container__numberAdd__para");
+const miniCartDiv = document.querySelector(".cart__container__numberAdd");
 
 let cart = 0;
 let total;
@@ -64,18 +66,21 @@ const displayCart = () => {
             <p>Your cart is empty.</p>
           </div>
     `;
+    miniCartDiv.classList.add("cartInvisible");
   } else {
     cartContent.innerHTML = `
     <div class="cartContainer__content">
-            <img class="cartContainer__content__image" src="./images/image-product-1-thumbnail.jpg" alt="product 1 image">
-            <div class="cartContainer__content__item">
-              <p class="cartContainer__content__item__title">Fall Limited Edition Sneakers</p>
-              <p class="cartContainer__content__item__price">$125.00 x ${cart} <span>$${total}.00</span></p>
-            </div>
-            <img onClick="deleteCart()" class="cartContainer__content__delete" src="./images/icon-delete.svg" alt="delete button">
-          </div>
-          <button class="cartContainer__checkoutBtn">Checkout</button>
+    <img class="cartContainer__content__image" src="./images/image-product-1-thumbnail.jpg" alt="product 1 image">
+    <div class="cartContainer__content__item">
+    <p class="cartContainer__content__item__title">Fall Limited Edition Sneakers</p>
+    <p class="cartContainer__content__item__price">$125.00 x ${cart} <span>$${total}.00</span></p>
+    </div>
+    <img onClick="deleteCart()" class="cartContainer__content__delete" src="./images/icon-delete.svg" alt="delete button">
+    </div>
+    <button class="cartContainer__checkoutBtn">Checkout</button>
     `;
+    miniCartDiv.classList.remove("cartInvisible");
+    miniCartNbr.textContent = cart;
   }
 };
 

@@ -283,11 +283,28 @@ nav ul li:hover {
   display: flex;
   align-items: center;
 }
-.cart__cartImg {
+.cart__container {
+  width: 20px;
+}
+.cart__container__numberAdd {
+  position: relative;
+  z-index: 1;
+  background: #ff7d1a;
+  width: 20px;
+  height: 12px;
+  border-radius: 12px;
+  margin: 0 0 -7px 10px;
+}
+.cart__container__numberAdd__para {
+  font-size: 0.6em;
+  text-align: center;
+  color: white;
+}
+.cart__container__cartImg {
   width: 22px;
   height: 20px;
 }
-.cart__cartImg:hover {
+.cart__container__cartImg:hover {
   filter: invert(10%) saturate(1500%) contrast(40%) hue-rotate(80deg) brightness(50%);
   cursor: pointer;
 }

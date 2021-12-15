@@ -49,13 +49,30 @@ nav {
 .cart {
   display: flex;
   align-items: center;
-  &__cartImg {
-    width: 22px;
-    height: 20px;
-    &:hover {
-      filter: invert(10%) saturate(1500%) contrast(40%) hue-rotate(80deg)
-        brightness(50%);
-      cursor: pointer;
+  &__container {
+    width: 20px;
+    &__numberAdd {
+      position: relative;
+      z-index: 1;
+      background: map-get($primary-colors, orange);
+      width: 20px;
+      height: 12px;
+      border-radius: 12px;
+      margin: 0 0 -7px 10px;
+      &__para {
+        font-size: 0.6em;
+        text-align: center;
+        color: map-get($map: $secondary-colors, $key: white);
+      }
+    }
+    &__cartImg {
+      width: 22px;
+      height: 20px;
+      &:hover {
+        filter: invert(10%) saturate(1500%) contrast(40%) hue-rotate(80deg)
+          brightness(50%);
+        cursor: pointer;
+      }
     }
   }
   &__userImgContainer {
