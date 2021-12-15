@@ -32,7 +32,8 @@
   </header>
   <main>
     <div class="imgContainer">
-      <img class="imgContainer__primaryImg" src="./images/image-product-1.jpg" alt="product-1 image">
+      <div class="containerImgPrimary">
+      </div>
       <div class="imgContainer__carrousel">
         <div class="imgContainer__carrousel__image carrouselActive"><img src="./images/image-product-1-thumbnail.jpg" alt="small image product"><div class="imgContainer__carrousel__image__forBorderActive"></div></div>
         <div class="imgContainer__carrousel__image"><img src="./images/image-product-2-thumbnail.jpg" alt="small image product"><div class="imgContainer__carrousel__image__forBorderActive"></div></div>
@@ -56,7 +57,7 @@
           <div class="informationContainer__addToCart__choice">
             <!-- <img src="./images/icon-minus.svg" alt="minus logo"> -->
             <button class="informationContainer__addToCart__choice__minusBtn"><img src="./images/icon-minus.svg" alt="Minus logo"></button>
-            <p>0</p>
+            <p id="numberAdd">0</p>
             <button class="informationContainer__addToCart__choice__plusBtn"><img src="./images/icon-plus.svg" alt="plus logo"></button>
           </div>
           <div class="informationContainer__addToCart__btn">
@@ -76,13 +77,15 @@
         <div class="modaleZoom__container__imgContainer__navContainer previous">
           <img class="modaleZoom__container__imgContainer__navContainer__previous" src="./images/icon-previous.svg" alt="previous icon">
         </div>
-        <img class="modaleZoom__container__imgContainer__primaryImg" src="./images/image-product-1.jpg" alt="product-1 image">
+        <div class="modaleZoom__container__imgContainer__img">
+  
+        </div>
         <div class="modaleZoom__container__imgContainer__navContainer next">
           <img class="modaleZoom__container__imgContainer__navContainer__next" src="./images/icon-next.svg" alt="next icon">
         </div>
       </div>
       <div class="modaleZoom__container__carrousel">      
-        <div class="modaleZoom__container__carrousel__image modaleActive"><img src="./images/image-product-1-thumbnail.jpg" alt="small image product"><div class="modaleZoom__container__carrousel__image__whiteBox"></div></div>
+        <div class="modaleZoom__container__carrousel__image"><img src="./images/image-product-1-thumbnail.jpg" alt="small image product"><div class="modaleZoom__container__carrousel__image__whiteBox"></div></div>
         <div class="modaleZoom__container__carrousel__image"><img src="./images/image-product-2-thumbnail.jpg" alt="small image product"><div class="modaleZoom__container__carrousel__image__whiteBox"></div></div>
         <div class="modaleZoom__container__carrousel__image"><img src="./images/image-product-3-thumbnail.jpg" alt="small image product"><div class="modaleZoom__container__carrousel__image__whiteBox"></div></div>
         <div class="modaleZoom__container__carrousel__image"><img src="./images/image-product-4-thumbnail.jpg" alt="small image product"><div class="modaleZoom__container__carrousel__image__whiteBox"></div></div>

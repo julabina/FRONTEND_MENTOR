@@ -13,6 +13,9 @@ main {
     height: 442px;
     object-fit: cover;
     border-radius: 15px;
+    &:hover {
+      cursor: zoom-in;
+    }
   }
   &__carrousel {
     display: flex;

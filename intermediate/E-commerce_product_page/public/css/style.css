@@ -250,6 +250,9 @@ main {
   object-fit: cover;
   border-radius: 15px;
 }
+.imgContainer__primaryImg:hover {
+  cursor: zoom-in;
+}
 .imgContainer__carrousel {
   display: flex;
   justify-content: space-between;
