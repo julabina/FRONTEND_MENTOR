@@ -8,7 +8,7 @@ const minusBtn = document.querySelector(
 const plusBtn = document.querySelector(
   ".informationContainer__addToCart__choice__plusBtn"
 );
-const nbrAdd = document.getElementById("numeberAdd");
+const nbrAdd = document.getElementById("numberAdd");
 const addToCartBtn = document.querySelector(
   ".informationContainer__addToCart__btn"
 );
@@ -24,6 +24,15 @@ const nextBtn = document.querySelector(".next");
 const modaleCloseBtn = document.querySelector(
   ".modaleZoom__container__closeContainer__closeBtn"
 );
+const cartBtn = document.querySelector(".cart__cartImg");
+const cartContainer = document.querySelector(".cartContainer");
+const cartContent = document.querySelector(
+  ".cartContainer__cartContentContainer"
+);
+
+let cart = 0;
+let total;
+let addToCart = 0;
 
 const displayPrimary = () => {
   for (let i = 0; i < previewsImages.length; i++) {
@@ -47,12 +56,49 @@ const displayModalePrimary = () => {
   }
 };
 
+const displayCart = () => {
+  calculTotal();
+  if (cart < 1) {
+    cartContent.innerHTML = `
+    <div class="cartContainer__emptyContainer">
+            <p>Your cart is empty.</p>
+          </div>
+    `;
+  } else {
+    cartContent.innerHTML = `
+    <div class="cartContainer__content">
+            <img class="cartContainer__content__image" src="./images/image-product-1-thumbnail.jpg" alt="product 1 image">
+            <div class="cartContainer__content__item">
+              <p class="cartContainer__content__item__title">Fall Limited Edition Sneakers</p>
+              <p class="cartContainer__content__item__price">$125.00 x ${cart} <span>$${total}.00</span></p>
+            </div>
+            <img onClick="deleteCart()" class="cartContainer__content__delete" src="./images/icon-delete.svg" alt="delete button">
+          </div>
+          <button class="cartContainer__checkoutBtn">Checkout</button>
+    `;
+  }
+};
+
+const displayAddToCart = () => {
+  nbrAdd.textContent = addToCart;
+};
+
 const addActiveClass = () => {
   for (let i = 0; i < previewsImages.length; i++) {
     if (previewsImages[i].classList.contains("carrouselActive")) {
       modalePreviewImg[i].classList.add("modaleActive");
     }
   }
+};
+
+const calculTotal = () => {
+  total = cart * 125;
+  return total;
+};
+
+const deleteCart = () => {
+  cart = 0;
+  displayCart();
 };
 
 const changePreviousImg = () => {
@@ -104,6 +150,8 @@ const resetModaleCarrousel = () => {
 };
 
 displayPrimary();
+displayCart();
+displayAddToCart();
 
 primaryImg.addEventListener("click", () => {
   modale.classList.remove("modaleInvisible");
@@ -170,4 +218,32 @@ previousBtn.addEventListener("click", () => {
 
 nextBtn.addEventListener("click", () => {
   changeNextImg();
+});
+
+cartBtn.addEventListener("click", () => {
+  if (cartContainer.classList.contains("cartInvisible")) {
+    cartContainer.classList.remove("cartInvisible");
+  } else {
+    cartContainer.classList.add("cartInvisible");
+  }
+});
+
+minusBtn.addEventListener("click", () => {
+  if (addToCart === 0) {
+  } else {
+    addToCart -= 1;
+    displayAddToCart();
+  }
+});
+
+plusBtn.addEventListener("click", () => {
+  addToCart += 1;
+  displayAddToCart();
+});
+
+addToCartBtn.addEventListener("click", () => {
+  cart += addToCart;
+  displayCart();
+  addToCart = 0;
+  displayAddToCart();
 });

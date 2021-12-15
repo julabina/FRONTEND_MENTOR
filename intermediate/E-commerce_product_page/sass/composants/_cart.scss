@@ -39,8 +39,18 @@
         font-weight: bold;
       }
       &__title {
-        margin-bottom: 5px;
+        margin: 0 15px 5px 0;
       }
+    }
+  }
+  &__emptyContainer {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    justify-content: center;
+    p {
+      color: map-get($map: $secondary-colors, $key: dark-grayish-blue);
+      font-weight: bold;
     }
   }
   &__checkoutBtn {
@@ -53,4 +63,8 @@
     color: map-get($map: $secondary-colors, $key: white);
     margin-top: 25px;
   }
+}
+
+.cartInvisible {
+  display: none;
 }

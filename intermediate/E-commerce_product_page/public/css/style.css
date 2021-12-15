@@ -67,7 +67,17 @@ body {
   font-weight: bold;
 }
 .cartContainer__content__item__title {
-  margin-bottom: 5px;
+  margin: 0 15px 5px 0;
+}
+.cartContainer__emptyContainer {
+  display: flex;
+  align-items: center;
+  height: 130px;
+  justify-content: center;
+}
+.cartContainer__emptyContainer p {
+  color: #68707d;
+  font-weight: bold;
 }
 .cartContainer__checkoutBtn {
   border: initial;
@@ -78,6 +88,10 @@ body {
   font-weight: bold;
   color: white;
   margin-top: 25px;
+}
+
+.cartInvisible {
+  display: none;
 }
 
 .attribution {
