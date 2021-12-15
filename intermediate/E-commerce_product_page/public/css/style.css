@@ -50,8 +50,10 @@ body {
   height: 50px;
   border-radius: 5px;
   margin-right: 15px;
+  user-select: none;
 }
 .cartContainer__content__delete {
+  user-select: none;
   width: 14px;
   height: 16px;
 }
@@ -114,6 +116,7 @@ body {
   justify-content: center;
   height: 100%;
   width: 100%;
+  user-select: none;
 }
 .modaleZoom__container {
   display: flex;
@@ -277,11 +280,13 @@ nav ul li:hover {
 .menu img {
   width: 138px;
   height: 20px;
+  user-select: none;
 }
 
 .cart {
   display: flex;
   align-items: center;
+  user-select: none;
 }
 .cart__container {
   width: 20px;
@@ -335,6 +340,7 @@ main {
 }
 
 .imgContainer {
+  user-select: none;
   width: 442px;
 }
 .imgContainer__primaryImg {
@@ -416,6 +422,7 @@ main {
 .informationContainer__addToCart {
   display: flex;
   justify-content: space-between;
+  user-select: none;
   height: 55px;
 }
 .informationContainer__addToCart__choice {
