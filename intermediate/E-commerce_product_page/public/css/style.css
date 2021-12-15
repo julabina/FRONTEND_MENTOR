@@ -12,10 +12,72 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
+button {
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.cartContainer {
+  background: white;
+  position: absolute;
+  top: 95px;
+  right: 90px;
+  box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.158);
+  height: 255px;
+  width: 355px;
+  padding: 20px;
+}
+.cartContainer h2 {
+  font-size: 1em;
+  margin-top: -5px;
+}
+.cartContainer__line {
+  border-bottom: solid rgba(0, 0, 0, 0.158) 0.5px;
+  margin: 25px 0 25px 0;
+}
+.cartContainer__content {
+  display: flex;
+  align-items: center;
+}
+.cartContainer__content__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+.cartContainer__content__delete {
+  width: 14px;
+  height: 16px;
+}
+.cartContainer__content__item {
+  display: flex;
+  flex-direction: column;
+}
+.cartContainer__content__item p {
+  color: #68707d;
+}
+.cartContainer__content__item span {
+  color: #1d2025;
+  font-weight: bold;
+}
+.cartContainer__content__item__title {
+  margin-bottom: 5px;
+}
+.cartContainer__checkoutBtn {
+  border: initial;
+  background: #ff7d1a;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+  margin-top: 25px;
 }
 
 .attribution {

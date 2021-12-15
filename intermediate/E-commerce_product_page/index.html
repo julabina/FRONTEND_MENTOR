@@ -29,7 +29,23 @@
         <img class="cart__userImgContainer__userImg" src="./images/image-avatar.png" alt="picture of user">
       </div>
     </div>
+    <!-- start cart -->
+      <div class="cartContainer">
+        <h2>Cart</h2>
+        <div class="cartContainer__line"></div>
+        <div class="cartContainer__content">
+          <img class="cartContainer__content__image" src="./images/image-product-1-thumbnail.jpg" alt="product 1 image">
+          <div class="cartContainer__content__item">
+            <p class="cartContainer__content__item__title">Fall Limited Edition Sneakers</p>
+            <p class="cartContainer__content__item__price">$125.00 x 3 <span>$375.00</span></p>
+          </div>
+          <img class="cartContainer__content__delete" src="./images/icon-delete.svg" alt="delete button">
+        </div>
+        <button class="cartContainer__checkoutBtn">Checkout</button>
+      </div>
+    <!-- end cart -->
   </header>
+
   <main>
     <div class="imgContainer">
       <div class="containerImgPrimary">
@@ -68,6 +84,8 @@
     </div>
   </main>
    
+<!-- start modale -->
+
   <div class="modaleZoom modaleInvisible">
     <div class="modaleZoom__container">
       <div class="modaleZoom__container__closeContainer">
@@ -93,7 +111,7 @@
     </div>
   </div>
   
-  
+<!-- end modale -->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
