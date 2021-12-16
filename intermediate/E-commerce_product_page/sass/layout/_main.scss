@@ -139,6 +139,7 @@ main {
   }
   &__description {
     color: map-get($map: $secondary-colors, $key: dark-grayish-blue);
+    line-height: 26px;
     letter-spacing: 0.5px;
     @include mobile-only {
       font-size: 0.9em;
