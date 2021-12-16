@@ -7,6 +7,10 @@ main {
   @include tablet-only {
     flex-direction: column;
   }
+  @include mobile-only {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .imgContainer {
@@ -26,6 +30,52 @@ main {
     }
     @include tablet-only {
       width: 100%;
+      &:hover {
+        cursor: initial;
+      }
+    }
+    @include mobile-only {
+      border-radius: 0;
+      height: 300px;
+    }
+  }
+  &__previous {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    @include mobile-only {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 10px;
+      height: 12px;
+      margin-right: 5px;
+    }
+  }
+  &__next {
+    display: none;
+    position: absolute;
+    top: 200px;
+    right: 15px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    @include mobile-only {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    img {
+      width: 10px;
+      height: 12px;
     }
   }
   &__carrousel {
@@ -49,12 +99,18 @@ main {
         }
       }
     }
+    @include mobile-only {
+      display: none;
+    }
   }
   @include before-tablet-only {
     width: 400px;
   }
   @include tablet-only {
     width: 90%;
+  }
+  @include mobile-only {
+    width: 100%;
   }
 }
 
@@ -76,10 +132,18 @@ main {
     @include before-tablet-only {
       font-size: 2.2em;
     }
+    @include mobile-only {
+      font-size: 1.9em;
+      margin-bottom: 20px;
+    }
   }
   &__description {
     color: map-get($map: $secondary-colors, $key: dark-grayish-blue);
     letter-spacing: 0.5px;
+    @include mobile-only {
+      font-size: 0.9em;
+      line-height: 23px;
+    }
   }
   &__price {
     display: flex;
@@ -105,6 +169,10 @@ main {
       color: map-get($map: $secondary-colors, $key: grayish-blue);
       margin-top: 8px;
     }
+    @include mobile-only {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__addToCart {
@@ -129,6 +197,9 @@ main {
         color: map-get($map: $secondary-colors, $key: very-dark-blue);
         font-weight: bold;
       }
+      @include mobile-only {
+        width: 100%;
+      }
     }
     &__btn {
       display: flex;
@@ -149,11 +220,27 @@ main {
         opacity: 0.7;
         cursor: pointer;
       }
+      @include mobile-only {
+        height: 55px;
+        width: 100%;
+        margin: 15px 0 50px 0;
+        &:hover {
+          opacity: 1;
+          cursor: initial;
+        }
+      }
+    }
+    @include mobile-only {
+      flex-direction: column;
+      height: auto;
     }
   }
   @include tablet-only {
     width: 90%;
     margin: 50px 0;
+  }
+  @include mobile-only {
+    margin: 20px 0 50px 0;
   }
 }
 
@@ -169,5 +256,11 @@ main {
     img {
       opacity: 0.3;
     }
+  }
+}
+
+.containerImgPrimary {
+  @include mobile-only {
+    display: flex;
   }
 }

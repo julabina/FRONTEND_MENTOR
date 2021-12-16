@@ -41,7 +41,13 @@ const displayPrimary = () => {
     let a = i + 1;
     if (previewsImages[i].classList.contains("carrouselActive")) {
       primaryImg.innerHTML = `
+        <div class="imgContainer__previous">     
+          <img src="./images/icon-previous.svg" alt="icon previous">
+        </div>   
         <img class="imgContainer__primaryImg" src="./images/image-product-${a}.jpg" alt="product-${a} image">
+        <div class="imgContainer__next">     
+          <img src="./images/icon-next.svg" alt="icon next">
+        </div>   
         `;
     }
   }

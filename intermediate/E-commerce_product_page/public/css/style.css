@@ -107,6 +107,12 @@ body {
 .attribution a {
   color: #3e52a3;
 }
+@media screen and (max-width: 600px) {
+  .attribution {
+    position: absolute;
+    bottom: -50px;
+  }
+}
 
 .modaleZoom {
   background: rgba(0, 0, 0, 0.75);
@@ -422,6 +428,12 @@ main {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
 .imgContainer {
   user-select: none;
@@ -446,6 +458,58 @@ main {
   .imgContainer__primaryImg {
     width: 100%;
   }
+  .imgContainer__primaryImg:hover {
+    cursor: initial;
+  }
+}
+@media screen and (max-width: 600px) {
+  .imgContainer__primaryImg {
+    border-radius: 0;
+    height: 300px;
+  }
+}
+.imgContainer__previous {
+  display: none;
+  position: absolute;
+  top: 200px;
+  left: 15px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+@media screen and (max-width: 600px) {
+  .imgContainer__previous {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.imgContainer__previous img {
+  width: 10px;
+  height: 12px;
+  margin-right: 5px;
+}
+.imgContainer__next {
+  display: none;
+  position: absolute;
+  top: 200px;
+  right: 15px;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+@media screen and (max-width: 600px) {
+  .imgContainer__next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.imgContainer__next img {
+  width: 10px;
+  height: 12px;
 }
 .imgContainer__carrousel {
   display: flex;
@@ -467,6 +531,11 @@ main {
   opacity: 0.5;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .imgContainer__carrousel {
+    display: none;
+  }
+}
 @media screen and (max-width: 1080px) {
   .imgContainer {
     width: 400px;
@@ -475,6 +544,11 @@ main {
 @media screen and (max-width: 900px) {
   .imgContainer {
     width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .imgContainer {
+    width: 100%;
   }
 }
 
@@ -500,9 +574,21 @@ main {
     font-size: 2.2em;
   }
 }
+@media screen and (max-width: 600px) {
+  .informationContainer h1 {
+    font-size: 1.9em;
+    margin-bottom: 20px;
+  }
+}
 .informationContainer__description {
   color: #68707d;
   letter-spacing: 0.5px;
+}
+@media screen and (max-width: 600px) {
+  .informationContainer__description {
+    font-size: 0.9em;
+    line-height: 23px;
+  }
 }
 .informationContainer__price {
   display: flex;
@@ -528,6 +614,12 @@ main {
   text-decoration: line-through;
   color: #b6bcc8;
   margin-top: 8px;
+}
+@media screen and (max-width: 600px) {
+  .informationContainer__price {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .informationContainer__addToCart {
   display: flex;
@@ -556,6 +648,12 @@ main {
   opacity: 0.7;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .informationContainer__addToCart__choice__minusBtn:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
 .informationContainer__addToCart__choice__plusBtn {
   display: flex;
   align-items: center;
@@ -569,9 +667,20 @@ main {
   opacity: 0.7;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .informationContainer__addToCart__choice__plusBtn:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
 .informationContainer__addToCart__choice p {
   color: #1d2025;
   font-weight: bold;
+}
+@media screen and (max-width: 600px) {
+  .informationContainer__addToCart__choice {
+    width: 100%;
+  }
 }
 .informationContainer__addToCart__btn {
   display: flex;
@@ -593,10 +702,32 @@ main {
   opacity: 0.7;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .informationContainer__addToCart__btn {
+    height: 55px;
+    width: 100%;
+    margin: 15px 0 50px 0;
+  }
+  .informationContainer__addToCart__btn:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
+@media screen and (max-width: 600px) {
+  .informationContainer__addToCart {
+    flex-direction: column;
+    height: auto;
+  }
+}
 @media screen and (max-width: 900px) {
   .informationContainer {
     width: 90%;
     margin: 50px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .informationContainer {
+    margin: 20px 0 50px 0;
   }
 }
 
@@ -609,6 +740,12 @@ main {
 }
 .carrouselActive:hover img {
   opacity: 0.3;
+}
+
+@media screen and (max-width: 600px) {
+  .containerImgPrimary {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
