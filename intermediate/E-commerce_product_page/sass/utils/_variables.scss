@@ -10,3 +10,9 @@ $secondary-colors: (
   ligth-grayish-blue: hsl(223, 64%, 98%),
   white: hsl(0, 0%, 100%),
 );
+
+$queries: (
+  before: 1080px,
+  tablet: 900px,
+  mobile: 600px,
+);

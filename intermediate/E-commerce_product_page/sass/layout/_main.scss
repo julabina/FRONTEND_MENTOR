@@ -4,6 +4,9 @@ main {
   align-items: center;
   width: 81%;
   margin-top: 90px;
+  @include tablet-only {
+    flex-direction: column;
+  }
 }
 
 .imgContainer {
@@ -16,6 +19,13 @@ main {
     border-radius: 15px;
     &:hover {
       cursor: zoom-in;
+    }
+    @include before-tablet-only {
+      width: 400px;
+      height: 400px;
+    }
+    @include tablet-only {
+      width: 100%;
     }
   }
   &__carrousel {
@@ -40,6 +50,12 @@ main {
       }
     }
   }
+  @include before-tablet-only {
+    width: 400px;
+  }
+  @include tablet-only {
+    width: 90%;
+  }
 }
 
 .informationContainer {
@@ -57,6 +73,9 @@ main {
     color: map-get($map: $secondary-colors, $key: very-dark-blue);
     font-size: 2.6em;
     margin: 17px 0 30px 0;
+    @include before-tablet-only {
+      font-size: 2.2em;
+    }
   }
   &__description {
     color: map-get($map: $secondary-colors, $key: dark-grayish-blue);
@@ -131,6 +150,10 @@ main {
         cursor: pointer;
       }
     }
+  }
+  @include tablet-only {
+    width: 90%;
+    margin: 50px 0;
   }
 }
 

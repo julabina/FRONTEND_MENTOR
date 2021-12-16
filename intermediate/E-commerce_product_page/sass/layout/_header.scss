@@ -6,33 +6,13 @@ header {
   border-bottom: 1px solid rgba(0, 0, 0, 0.082);
   width: 81%;
   height: 110px;
-}
-
-nav {
-  margin-top: 2px;
-  width: 600px;
-  color: map-get($map: $secondary-colors, $key: dark-grayish-blue);
-  margin-left: 40px;
-  font-size: 0.9em;
-  ul {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    list-style: none;
-    margin-left: 0;
-    padding-left: 0;
-    li {
-      display: flex;
-      align-items: center;
-      height: 105px;
-      margin: 0 17px;
-      &:hover {
-        color: map-get($map: $secondary-colors, $key: very-dark-blue);
-        cursor: pointer;
-        margin-top: 3px;
-        border-bottom: map-get($map: $primary-colors, $key: orange) solid 3px;
-      }
-    }
+  @include tablet-only {
+    width: 90%;
+    padding: initial;
+  }
+  @include mobile-only {
+    height: 70px;
+    border-bottom: initial;
   }
 }
 
@@ -40,10 +20,60 @@ nav {
   display: flex;
   align-items: center;
   height: 120px;
-  img {
+  &__menuImg {
+    display: none;
+    width: 16px;
+    height: 15px;
+    margin-right: 15px;
+    margin-top: 3px;
+    user-select: none;
+    @include mobile-only {
+      display: initial;
+    }
+  }
+  &__logo {
     width: 138px;
     height: 20px;
     user-select: none;
+  }
+  &__nav {
+    margin-top: 2px;
+    width: 600px;
+    color: map-get($map: $secondary-colors, $key: dark-grayish-blue);
+    margin-left: 40px;
+    font-size: 0.9em;
+    ul {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      list-style: none;
+      margin-left: 0;
+      padding-left: 0;
+      li {
+        display: flex;
+        align-items: center;
+        height: 105px;
+        margin: 0 17px;
+        &:hover {
+          color: map-get($map: $secondary-colors, $key: very-dark-blue);
+          cursor: pointer;
+          margin-top: 3px;
+          border-bottom: map-get($map: $primary-colors, $key: orange) solid 3px;
+        }
+        @include before-tablet-only {
+          margin: 0 10px;
+        }
+        @include tablet-only {
+          margin: 0 5px;
+        }
+      }
+    }
+    @include before-tablet-only {
+      width: 50%;
+    }
+    @include tablet-only {
+      margin-left: 15px;
+    }
   }
 }
 
@@ -75,6 +105,12 @@ nav {
           brightness(50%);
         cursor: pointer;
       }
+      @include tablet-only {
+        &:hover {
+          filter: none;
+          cursor: initial;
+        }
+      }
     }
   }
   &__userImgContainer {
@@ -87,11 +123,34 @@ nav {
     &__userImg {
       width: 50px;
       height: 50px;
+      @include mobile-only {
+        width: 25px;
+        height: 25px;
+      }
     }
     &:hover {
       border: 5px map-get($map: $primary-colors, $key: orange) solid;
       border-radius: 50px;
       cursor: pointer;
     }
+    @include tablet-only {
+      margin-left: 15px;
+      &:hover {
+        border: initial;
+        border-radius: initial;
+        cursor: initial;
+      }
+    }
+    @include mobile-only {
+      width: 25px;
+      height: 25px;
+      margin-left: 28px;
+    }
+  }
+}
+
+.forMobileNav {
+  @include mobile-only {
+    display: none;
   }
 }
