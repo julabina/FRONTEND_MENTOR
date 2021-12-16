@@ -65,6 +65,14 @@
     color: map-get($map: $secondary-colors, $key: white);
     margin-top: 25px;
   }
+  @include mobile-only {
+    z-index: 1;
+    top: 80px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
 }
 
 .cartInvisible {
