@@ -223,7 +223,7 @@ main {
       @include mobile-only {
         height: 55px;
         width: 100%;
-        margin: 15px 0 50px 0;
+        margin: 15px 0 0px 0;
         &:hover {
           opacity: 1;
           cursor: initial;
@@ -240,7 +240,7 @@ main {
     margin: 50px 0;
   }
   @include mobile-only {
-    margin: 20px 0 50px 0;
+    margin: 20px 0 20px 0;
   }
 }
 
