@@ -213,6 +213,11 @@ body {
   opacity: 0.5;
   cursor: pointer;
 }
+@media screen and (max-width: 600px) {
+  .modaleZoom {
+    display: none;
+  }
+}
 
 .previous {
   margin-right: -30px;
@@ -317,6 +322,7 @@ header {
 }
 .menu__nav img {
   display: none;
+  margin: 15px 0 0 5px;
 }
 @media screen and (max-width: 600px) {
   .menu__nav img {
@@ -351,6 +357,11 @@ header {
 @media screen and (max-width: 900px) {
   .menu__nav ul li {
     margin: 0 5px;
+  }
+  .menu__nav ul li:hover {
+    cursor: initial;
+    margin-top: initial;
+    border-bottom: initial;
   }
 }
 @media screen and (max-width: 600px) {

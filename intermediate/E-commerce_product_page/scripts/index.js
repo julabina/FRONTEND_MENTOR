@@ -1,4 +1,5 @@
 const primaryImg = document.querySelector(".containerImgPrimary");
+const navMenu = document.querySelector(".menu__nav");
 const previewsImages = document.querySelectorAll(
   ".imgContainer__carrousel__image"
 );
@@ -31,6 +32,11 @@ const cartContent = document.querySelector(
 );
 const miniCartNbr = document.querySelector(".cart__container__numberAdd__para");
 const miniCartDiv = document.querySelector(".cart__container__numberAdd");
+const mobilePreviousBtn = document.querySelector(".imgContainer__previous");
+const mobileNextBtn = document.querySelector(".imgContainer__next");
+const mobileMenuBtn = document.querySelector(".menu__menuImg");
+const mobileMenuDarkBg = document.querySelector(".menu__darkBGForMobileOnly");
+const mobileMenuClose = document.querySelector(".menu__nav__cross");
 
 let cart = 0;
 let total;
@@ -41,11 +47,11 @@ const displayPrimary = () => {
     let a = i + 1;
     if (previewsImages[i].classList.contains("carrouselActive")) {
       primaryImg.innerHTML = `
-        <div class="imgContainer__previous">     
+        <div class="imgContainer__previous" onClick="changeMobilePrimaryPreviousImg()">     
           <img src="./images/icon-previous.svg" alt="icon previous">
         </div>   
         <img class="imgContainer__primaryImg" src="./images/image-product-${a}.jpg" alt="product-${a} image">
-        <div class="imgContainer__next">     
+        <div class="imgContainer__next" onClick="changeMobilePrimaryNextImg()">     
           <img src="./images/icon-next.svg" alt="icon next">
         </div>   
         `;
@@ -112,7 +118,43 @@ const deleteCart = () => {
   displayCart();
 };
 
-const changePreviousImg = () => {
+const changeMobilePrimaryPreviousImg = () => {
+  for (let i = 0; i < previewsImages.length; i++) {
+    if (previewsImages[i].classList.contains("carrouselActive")) {
+      if (i === 0) {
+        previewsImages[0].classList.remove("carrouselActive");
+        previewsImages[3].classList.add("carrouselActive");
+        break;
+      } else {
+        let a = i - 1;
+        previewsImages[i].classList.remove("carrouselActive");
+        previewsImages[a].classList.add("carrouselActive");
+        break;
+      }
+    }
+  }
+  displayPrimary();
+};
+
+const changeMobilePrimaryNextImg = () => {
+  for (let i = 0; i < previewsImages.length; i++) {
+    if (previewsImages[i].classList.contains("carrouselActive")) {
+      if (i === 3) {
+        previewsImages[3].classList.remove("carrouselActive");
+        previewsImages[0].classList.add("carrouselActive");
+        break;
+      } else {
+        let a = i + 1;
+        previewsImages[i].classList.remove("carrouselActive");
+        previewsImages[a].classList.add("carrouselActive");
+        break;
+      }
+    }
+  }
+  displayPrimary();
+};
+
+const changeModalePreviousImg = () => {
   for (let i = 0; i < modalePreviewImg.length; i++) {
     if (modalePreviewImg[i].classList.contains("modaleActive")) {
       if (i === 0) {
@@ -130,7 +172,7 @@ const changePreviousImg = () => {
   displayModalePrimary();
 };
 
-const changeNextImg = () => {
+const changeModaleNextImg = () => {
   for (let i = 0; i < modalePreviewImg.length; i++) {
     if (modalePreviewImg[i].classList.contains("modaleActive")) {
       if (i === 3) {
@@ -224,11 +266,11 @@ modalePreviewImg[3].addEventListener("click", () => {
 });
 
 previousBtn.addEventListener("click", () => {
-  changePreviousImg();
+  changeModalePreviousImg();
 });
 
 nextBtn.addEventListener("click", () => {
-  changeNextImg();
+  changeModaleNextImg();
 });
 
 cartBtn.addEventListener("click", () => {
@@ -257,4 +299,14 @@ addToCartBtn.addEventListener("click", () => {
   displayCart();
   addToCart = 0;
   displayAddToCart();
+});
+
+mobileMenuBtn.addEventListener("click", () => {
+  navMenu.classList.remove("forMobileNav");
+  mobileMenuDarkBg.classList.remove("forMobileNav");
+});
+
+mobileMenuClose.addEventListener("click", () => {
+  navMenu.classList.add("forMobileNav");
+  mobileMenuDarkBg.classList.add("forMobileNav");
 });

@@ -90,6 +90,9 @@
       }
     }
   }
+  @include mobile-only {
+    display: none;
+  }
 }
 
 .previous {

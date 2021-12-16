@@ -56,6 +56,7 @@ header {
     font-size: 0.9em;
     img {
       display: none;
+      margin: 15px 0 0 5px;
       @include mobile-only {
         display: initial;
       }
@@ -83,6 +84,11 @@ header {
         }
         @include tablet-only {
           margin: 0 5px;
+          &:hover {
+            cursor: initial;
+            margin-top: initial;
+            border-bottom: initial;
+          }
         }
         @include mobile-only {
           height: auto;
