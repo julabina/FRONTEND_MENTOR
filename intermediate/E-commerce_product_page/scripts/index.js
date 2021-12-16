@@ -310,3 +310,28 @@ mobileMenuClose.addEventListener("click", () => {
   navMenu.classList.add("forMobileNav");
   mobileMenuDarkBg.classList.add("forMobileNav");
 });
+
+/* preload images */
+
+const preloadImg = (url) => {
+  const img = new Image();
+  img.src = url;
+  return img;
+};
+
+const preloadImages = (images) => {
+  for (let i = 0; i < images.length; i++) {
+    images[i] = preloadImg(images[i]);
+  }
+};
+
+let imgToPreload = [
+  "./images/image-product2.jpg",
+  "./images/image-product2-thumbnail.jpg",
+  "./images/image-product3.jpg",
+  "./images/image-product3-thumbnail.jpg",
+  "./images/image-product4.jpg",
+  "./images/image-product4-thumbnail.jpg",
+];
+
+preloadImages(imgToPreload);
