@@ -1,4 +1,6 @@
 /* utils */
+@import "./utils/variables";
+@import "./utils/mixin";
 
 /* base */
 @import "./base/reset";
@@ -8,3 +10,4 @@
 
 /* layouts */
 @import "./layouts/header";
+@import "./layouts/main";
