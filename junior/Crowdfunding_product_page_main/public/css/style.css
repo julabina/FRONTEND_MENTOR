@@ -67,7 +67,7 @@ main {
 }
 .mainContainer__titleDescription {
   font-weight: 500;
-  /* color: map-get($map: , $key: ); */
+  color: #7a7a7a;
   text-align: center;
   letter-spacing: 0.3px;
 }

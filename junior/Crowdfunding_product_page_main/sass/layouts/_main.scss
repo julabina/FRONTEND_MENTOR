@@ -25,7 +25,7 @@ main {
   }
   &__titleDescription {
     font-weight: 500;
-    /* color: map-get($map: , $key: ); */
+    color: map-get($map: $neutral-colors, $key: dark-gray);
     text-align: center;
     letter-spacing: 0.3px;
   }
