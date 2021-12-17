@@ -1,0 +1,11 @@
+{
+  "name": "crowdfunding_product_page_main",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Crowdfunding product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/crowdfunding-product-page-7uvcZe7ZR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "Lenfume Julien",
+  "license": "ISC"
+}
