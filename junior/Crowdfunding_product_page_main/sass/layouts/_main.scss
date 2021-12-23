@@ -132,15 +132,20 @@ main {
       margin-top: 25px;
     }
     &__btn {
+      @include btn;
       height: 45px;
       width: 150px;
       font-size: 0.85em;
       font-weight: 500;
-      color: white;
-      background: map-get($primary-colors, moderate-cyan);
-      border: initial;
       border-radius: 45px;
       margin-right: 5px;
+    }
+    &--0left {
+      opacity: 0.5;
+      user-select: none;
+      button {
+        pointer-events: none;
+      }
     }
   }
 }

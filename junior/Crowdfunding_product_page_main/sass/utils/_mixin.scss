@@ -4,6 +4,7 @@
   border: initial;
   &:hover {
     background: map-get($map: $primary-colors, $key: dark-cyan);
+    cursor: pointer;
   }
 }
 

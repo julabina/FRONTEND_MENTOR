@@ -97,6 +97,7 @@ main {
 }
 .mainContainer__topBtnContainer__backProjectBtn:hover {
   background: #147b74;
+  cursor: pointer;
 }
 .mainContainer__topBtnContainer__bookmarkBtn {
   display: flex;
@@ -185,15 +186,26 @@ main {
   margin-top: 25px;
 }
 .mainContainer__pack__btn {
+  color: white;
+  background: #3cb4ac;
+  border: initial;
   height: 45px;
   width: 150px;
   font-size: 0.85em;
   font-weight: 500;
-  color: white;
-  background: #3cb4ac;
-  border: initial;
   border-radius: 45px;
   margin-right: 5px;
+}
+.mainContainer__pack__btn:hover {
+  background: #147b74;
+  cursor: pointer;
+}
+.mainContainer__pack--0left {
+  opacity: 0.5;
+  user-select: none;
+}
+.mainContainer__pack--0left button {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */
