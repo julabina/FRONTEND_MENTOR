@@ -42,6 +42,10 @@ button {
   list-style: none;
   padding-left: 0;
   margin-left: 40px;
+  color: white;
+}
+.header__menu ul li:hover {
+  cursor: pointer;
 }
 
 main {
@@ -113,6 +117,12 @@ main {
   font-weight: 700;
   color: #7a7a7a;
   margin-left: 10px;
+}
+.mainContainer__topBtnContainer__bookmarkBtn:hover {
+  cursor: pointer;
+}
+.mainContainer__topBtnContainer__bookmarkBtn:hover div {
+  opacity: 0.7;
 }
 .mainContainer__goal__stats {
   display: flex;
