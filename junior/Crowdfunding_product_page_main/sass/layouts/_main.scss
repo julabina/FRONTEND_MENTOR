@@ -7,7 +7,11 @@ main {
   margin-top: -90px;
   width: 50%;
   background: white;
-  border: black solid 1px;
+  border-radius: 7px;
+  padding: 0 44px;
+  p {
+    color: map-get($map: $neutral-colors, $key: dark-gray);
+  }
   &__logoContainer {
     display: flex;
     justify-content: center;
@@ -28,5 +32,115 @@ main {
     color: map-get($map: $neutral-colors, $key: dark-gray);
     text-align: center;
     letter-spacing: 0.3px;
+  }
+  &__topBtnContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 120px 0;
+    &__backProjectBtn {
+      @include btn;
+      height: 56px;
+      width: 200px;
+      border-radius: 56px;
+      font-size: 1.05em;
+      font-weight: 700;
+    }
+    &__bookmarkBtn {
+      display: flex;
+      height: 56px;
+      width: 180px;
+      border: initial;
+      border-radius: 56px;
+      span {
+        line-height: 56px;
+        white-space: nowrap;
+        font-size: 1.1em;
+        font-weight: 700;
+        color: map-get($map: $neutral-colors, $key: dark-gray);
+        margin-left: 10px;
+      }
+    }
+  }
+  &__goal {
+    &__stats {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 18%;
+      h2 {
+        font-size: 1.8em;
+        margin-bottom: 7px;
+      }
+      &__backed {
+        display: flex;
+        flex-direction: column;
+      }
+      &__bakers {
+        display: flex;
+        flex-direction: column;
+      }
+      &__daysLeft {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__progressBar {
+      background: initial;
+      height: 12px;
+      width: 81%;
+      border: 1px solid rgba(180, 180, 180, 0.342);
+      border-radius: 12px;
+      margin-top: 40px;
+      &__progress {
+        background: map-get($map: $primary-colors, $key: moderate-cyan);
+        width: 70%;
+        height: 12px;
+        border-radius: 12px;
+      }
+    }
+  }
+  &__about {
+    margin: 100px 0 70px 0;
+    @include para;
+    p {
+      margin-top: 25px;
+    }
+  }
+  &__pack {
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 5px;
+    padding: 40px 18px 25px 18px;
+    margin-bottom: 18px;
+    h2 {
+      font-size: 1.8em;
+      span {
+        font-size: 0.5em;
+        color: map-get($map: $neutral-colors, $key: dark-gray);
+        margin-left: 5px;
+      }
+    }
+    p {
+      @include para;
+    }
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 25px;
+    }
+    &__btn {
+      height: 45px;
+      width: 150px;
+      font-size: 0.85em;
+      font-weight: 500;
+      color: white;
+      background: map-get($primary-colors, moderate-cyan);
+      border: initial;
+      border-radius: 45px;
+      margin-right: 5px;
+    }
   }
 }

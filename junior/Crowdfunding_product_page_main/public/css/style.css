@@ -14,6 +14,11 @@ body {
   font-size: 16px;
 }
 
+button {
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+}
+
 /* componants */
 /* layouts */
 .header {
@@ -48,7 +53,11 @@ main {
   margin-top: -90px;
   width: 50%;
   background: white;
-  border: black solid 1px;
+  border-radius: 7px;
+  padding: 0 44px;
+}
+.mainContainer p {
+  color: #7a7a7a;
 }
 .mainContainer__logoContainer {
   display: flex;
@@ -70,6 +79,121 @@ main {
   color: #7a7a7a;
   text-align: center;
   letter-spacing: 0.3px;
+}
+.mainContainer__topBtnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 120px 0;
+}
+.mainContainer__topBtnContainer__backProjectBtn {
+  color: white;
+  background: #3cb4ac;
+  border: initial;
+  height: 56px;
+  width: 200px;
+  border-radius: 56px;
+  font-size: 1.05em;
+  font-weight: 700;
+}
+.mainContainer__topBtnContainer__backProjectBtn:hover {
+  background: #147b74;
+}
+.mainContainer__topBtnContainer__bookmarkBtn {
+  display: flex;
+  height: 56px;
+  width: 180px;
+  border: initial;
+  border-radius: 56px;
+}
+.mainContainer__topBtnContainer__bookmarkBtn span {
+  line-height: 56px;
+  white-space: nowrap;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #7a7a7a;
+  margin-left: 10px;
+}
+.mainContainer__goal__stats {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 18%;
+}
+.mainContainer__goal__stats h2 {
+  font-size: 1.8em;
+  margin-bottom: 7px;
+}
+.mainContainer__goal__stats__backed {
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer__goal__stats__bakers {
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer__goal__stats__daysLeft {
+  display: flex;
+  flex-direction: column;
+}
+.mainContainer__goal__progressBar {
+  background: initial;
+  height: 12px;
+  width: 81%;
+  border: 1px solid rgba(180, 180, 180, 0.342);
+  border-radius: 12px;
+  margin-top: 40px;
+}
+.mainContainer__goal__progressBar__progress {
+  background: #3cb4ac;
+  width: 70%;
+  height: 12px;
+  border-radius: 12px;
+}
+.mainContainer__about {
+  margin: 100px 0 70px 0;
+  line-height: 28px;
+  font-size: 0.9em;
+}
+.mainContainer__about p {
+  margin-top: 25px;
+}
+.mainContainer__pack {
+  border: 1px solid rgba(0, 0, 0, 0.315);
+  border-radius: 5px;
+  padding: 40px 18px 25px 18px;
+  margin-bottom: 18px;
+}
+.mainContainer__pack h2 {
+  font-size: 1.8em;
+}
+.mainContainer__pack h2 span {
+  font-size: 0.5em;
+  color: #7a7a7a;
+  margin-left: 5px;
+}
+.mainContainer__pack p {
+  line-height: 28px;
+  font-size: 0.9em;
+}
+.mainContainer__pack__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.mainContainer__pack__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.mainContainer__pack__btn {
+  height: 45px;
+  width: 150px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: white;
+  background: #3cb4ac;
+  border: initial;
+  border-radius: 45px;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

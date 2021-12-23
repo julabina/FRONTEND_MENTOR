@@ -1,0 +1,13 @@
+@mixin btn {
+  color: white;
+  background: map-get($map: $primary-colors, $key: moderate-cyan);
+  border: initial;
+  &:hover {
+    background: map-get($map: $primary-colors, $key: dark-cyan);
+  }
+}
+
+@mixin para {
+  line-height: 28px;
+  font-size: 0.9em;
+}
