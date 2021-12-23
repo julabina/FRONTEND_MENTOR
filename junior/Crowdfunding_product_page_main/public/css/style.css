@@ -218,4 +218,8 @@ main {
   pointer-events: none;
 }
 
+.bookmarkImgFiltered img {
+  filter: invert(35%) sepia(77%) saturate(445%) hue-rotate(127deg) brightness(94%) contrast(92%);
+}
+
 /*# sourceMappingURL=style.css.map */

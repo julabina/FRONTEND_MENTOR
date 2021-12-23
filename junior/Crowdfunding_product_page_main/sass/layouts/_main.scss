@@ -155,3 +155,10 @@ main {
     }
   }
 }
+
+.bookmarkImgFiltered {
+  img {
+    filter: invert(35%) sepia(77%) saturate(445%) hue-rotate(127deg)
+      brightness(94%) contrast(92%);
+  }
+}
