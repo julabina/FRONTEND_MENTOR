@@ -1,0 +1,42 @@
+/* modale succes */
+
+.modaleSucces {
+   @include modaleContainer;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include modale;
+        
+        width: 550px;height: auto;
+        img {
+            width: 70px;
+            margin-bottom: 40px;
+        }
+        p {
+            color: map-get($map: $neutral-colors, $key:dark-gray );
+            @include para;
+            text-align: center;
+            padding: 0 5px;
+            margin: 25px 0 25px 0;
+        }
+        &__btn {
+            @include btn;
+            width: 90px;
+            height: 40px;
+            font-size: 0.7em;
+            font-weight: 700;
+            border-radius: 30px;
+        }
+    }
+}
+
+
+.overflowHidden {
+    height: 100%;
+    overflow: hidden;
+}
+
+.modaleOff {
+    display: none;
+}
