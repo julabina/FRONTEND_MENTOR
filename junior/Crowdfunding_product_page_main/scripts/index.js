@@ -8,11 +8,12 @@ const bookmarkSpan = document.getElementById("bookmark");
 const bookmarkImg = document.querySelector(
   ".mainContainer__topBtnContainer__bookmarkBtn__img"
 );
-/* modales start*/
+/* modales back this project start*/
 const noReward = document.querySelector(".modaleChoseBack__container__noRewardContainer");
+const noRewardSelect = document.querySelector(".modaleChoseBack__container__noRewardContainer__selectContainer__select");
 const choices = document.querySelectorAll(".modaleChoseBack__container__choiceContainer");
-const choicesSelectDiv = document.querySelectorAll(".modaleChoseBack__container__choiceContainer__gridContainer__select")
-/* modales end */
+const choicesSelectDiv = document.querySelectorAll(".modaleChoseBack__container__choiceContainer__gridContainer__select");
+/* modales back this project end */
 
 let backed = 89914;
 let backedGoal = 100000;
@@ -46,13 +47,21 @@ bookmarkBtn.addEventListener("click", () => {
 });
 
 
-/* modales start */
+/* modales back this project start */
 const resetChoices = () => {
+  noReward.classList.remove("modaleChoseBack__container__noRewardContainer--selected");
+  noRewardSelect.classList.remove("modaleChoseBack__container__noRewardContainer__selectContainer__select--selected");
   for (let i = 0; i < choices.length; i++) {
     choices[i].classList.remove("modaleChoseBack__container__choiceContainer--selected");
-    choicesSelectDiv[i].classList.remove("modaleChoseBack__container__choiceContainer__gridContainer__select--selected")
+    choicesSelectDiv[i].classList.remove("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
   }
 }
+
+noReward.addEventListener("click", () => {
+  resetChoices();
+  noReward.classList.add("modaleChoseBack__container__noRewardContainer--selected");
+  noRewardSelect.classList.add("modaleChoseBack__container__noRewardContainer__selectContainer__select--selected");
+})
 
 choices[0].addEventListener("click", () => {
   resetChoices();
@@ -71,4 +80,4 @@ choices[2].addEventListener("click", () => {
   choices[2].classList.add("modaleChoseBack__container__choiceContainer--selected");
   choicesSelectDiv[2].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
 })
-/* modales end */
+/* modales back this project end */

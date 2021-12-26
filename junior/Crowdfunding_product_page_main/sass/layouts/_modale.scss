@@ -21,13 +21,35 @@
         }
         &__noRewardContainer {
             @include modaleChoice;
+            display: flex;
+            &--selected {
+                border: 1px solid map-get($map: $primary-colors, $key:moderate-cyan );
+                border-radius: 5px;
+            }
+            &__selectContainer {
+                margin-right: 20px;
+                &__select {
+                    height: 20px;width: 20px;
+                    border: 1px solid transparentize(map-get($primary-colors, moderate-cyan) ,0.3);
+                    border-radius: 20px;
+                    &--selected {
+                        height: 20px;width: 20px;
+                        background: map-get($map: $primary-colors, $key: moderate-cyan);
+                        border-radius: 20px;
+                        border : 5px solid white;
+                    }
+                }
+            }
+            &__content {
+                /* to delete */
+                background: rgba(255, 255, 0, 0);
+            }
         }
         &__choiceContainer {
             @include modaleChoice;
             &--selected {
                 border: 1px solid map-get($map: $primary-colors, $key:moderate-cyan );
                 border-radius: 5px;
-
             }
             &__gridContainer {
                 display: grid;
@@ -35,7 +57,7 @@
                 &__select {
                     grid-area: 1 / 1 / 2 / 2; 
                     height: 20px;width: 20px;
-                    border: 1px solid transparentize(map-get($primary-colors, moderate-cyan) ,0.4);
+                    border: 1px solid transparentize(map-get($primary-colors, moderate-cyan) ,0.3);
                     border-radius: 20px;
                     &--selected {
                         height: 20px;width: 20px;
