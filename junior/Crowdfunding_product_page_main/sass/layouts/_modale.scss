@@ -3,7 +3,8 @@
 .modaleChoseBack {
     @include modaleContainer;
     h2 {
-        font-size: 1.3em
+        font-size: 1.3em;
+        margin-bottom: 25px; 
     }
     p {
         color: map-get($map: $neutral-colors, $key:dark-gray );
@@ -15,6 +16,9 @@
     &__container {
         @include modale;
         width: 650px;height: auto;
+        &__top {
+            margin-bottom: 60px;
+        }
         &__choiceContainerBorder {
             border: 1px solid transparentize(map-get($primary-colors, moderate-cyan), 0.7);
             border-radius: 5px; 

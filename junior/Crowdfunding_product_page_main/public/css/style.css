@@ -238,6 +238,7 @@ main {
 }
 .modaleChoseBack h2 {
   font-size: 1.3em;
+  margin-bottom: 25px;
 }
 .modaleChoseBack p {
   color: #7a7a7a;
@@ -252,6 +253,9 @@ main {
   padding: 50px;
   width: 650px;
   height: auto;
+}
+.modaleChoseBack__container__top {
+  margin-bottom: 60px;
 }
 .modaleChoseBack__container__choiceContainerBorder {
   border: 1px solid rgba(60, 180, 172, 0.3);
