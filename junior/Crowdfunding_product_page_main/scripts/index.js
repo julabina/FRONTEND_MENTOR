@@ -8,6 +8,11 @@ const bookmarkSpan = document.getElementById("bookmark");
 const bookmarkImg = document.querySelector(
   ".mainContainer__topBtnContainer__bookmarkBtn__img"
 );
+/* modales start*/
+const noReward = document.querySelector(".modaleChoseBack__container__noRewardContainer");
+const choices = document.querySelectorAll(".modaleChoseBack__container__choiceContainer");
+const choicesSelectDiv = document.querySelectorAll(".modaleChoseBack__container__choiceContainer__gridContainer__select")
+/* modales end */
 
 let backed = 89914;
 let backedGoal = 100000;
@@ -39,3 +44,31 @@ bookmarkBtn.addEventListener("click", () => {
     bookmarkImg.classList.add("bookmarkImgFiltered");
   }
 });
+
+
+/* modales start */
+const resetChoices = () => {
+  for (let i = 0; i < choices.length; i++) {
+    choices[i].classList.remove("modaleChoseBack__container__choiceContainer--selected");
+    choicesSelectDiv[i].classList.remove("modaleChoseBack__container__choiceContainer__gridContainer__select--selected")
+  }
+}
+
+choices[0].addEventListener("click", () => {
+  resetChoices();
+  choices[0].classList.add("modaleChoseBack__container__choiceContainer--selected");
+  choicesSelectDiv[0].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
+})
+
+choices[1].addEventListener("click", () => {
+  resetChoices();
+  choices[1].classList.add("modaleChoseBack__container__choiceContainer--selected");
+  choicesSelectDiv[1].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
+})
+
+choices[2].addEventListener("click", () => {
+  resetChoices();
+  choices[2].classList.add("modaleChoseBack__container__choiceContainer--selected");
+  choicesSelectDiv[2].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
+})
+/* modales end */
