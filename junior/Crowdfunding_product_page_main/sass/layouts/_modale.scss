@@ -1,4 +1,4 @@
-/* modale succes */
+/* modale back start*/
 
 .modaleChoseBack {
     @include modaleContainer;
@@ -17,7 +17,7 @@
         @include modale;
         width: 650px;height: auto;
         &__top {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         &__choiceContainerBorder {
             border: 1px solid transparentize(map-get($primary-colors, moderate-cyan), 0.7);
@@ -51,6 +51,9 @@
         }
         &__choiceContainer {
             @include modaleChoice;
+            &--0left {
+                opacity: 0.5;
+            }
             &--selected {
                 border: 1px solid map-get($map: $primary-colors, $key:moderate-cyan );
                 border-radius: 5px;
@@ -96,7 +99,10 @@
         }
     }
 }
+/* Modale back end */
 
+
+/* Modale success start */
 
 .modaleSucces {
    @include modaleContainer;
@@ -127,6 +133,8 @@
         }
     }
 }
+
+/* Modale success end */
 
 
 .overflowHidden {

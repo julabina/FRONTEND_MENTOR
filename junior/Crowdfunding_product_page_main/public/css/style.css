@@ -222,7 +222,7 @@ main {
   filter: invert(35%) sepia(77%) saturate(445%) hue-rotate(127deg) brightness(94%) contrast(92%);
 }
 
-/* modale succes */
+/* modale back start*/
 .modaleChoseBack {
   position: absolute;
   display: flex;
@@ -255,7 +255,7 @@ main {
   height: auto;
 }
 .modaleChoseBack__container__top {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .modaleChoseBack__container__choiceContainerBorder {
   border: 1px solid rgba(60, 180, 172, 0.3);
@@ -291,6 +291,9 @@ main {
 }
 .modaleChoseBack__container__choiceContainer {
   padding: 25px;
+}
+.modaleChoseBack__container__choiceContainer--0left {
+  opacity: 0.5;
 }
 .modaleChoseBack__container__choiceContainer--selected {
   border: 1px solid #3cb4ac;
@@ -337,6 +340,8 @@ main {
   grid-area: 2/2/3/4;
 }
 
+/* Modale back end */
+/* Modale success start */
 .modaleSucces {
   position: absolute;
   display: flex;
@@ -387,6 +392,7 @@ main {
   cursor: pointer;
 }
 
+/* Modale success end */
 .overflowHidden {
   height: 100%;
   overflow: hidden;
