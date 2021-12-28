@@ -35,6 +35,14 @@
                         cursor: pointer;
                     }
                 }
+                @include mobile-only {
+                    img {
+                        &:hover {
+                            cursor: initial;
+                            filter: opacity(0.4) invert(1);
+                        }
+                    }
+                }
             }
         }
         &__noRewardContainer {
@@ -70,6 +78,12 @@
             &:hover {
                 cursor: pointer;
                 color: map-get($map: $primary-colors, $key:moderate-cyan);
+            }
+            @include mobile-only {
+                &:hover {
+                    cursor: initial;
+                    color: initial;
+                }
             }
         }
         &__choiceContainer {
@@ -156,6 +170,12 @@
                     }
                 }
                 @include mobile-only {
+                    &:hover {
+                        cursor: initial;
+                        h3 {
+                            color: initial;
+                        }
+                    }
                     grid-template: auto auto auto / 40px auto auto;
                 }
             }
@@ -210,7 +230,7 @@
         }
         @include tablet-only {
             width: 90%;
-            margin-top: 500px;
+            margin-top: 400px;
         }
         @include mobile-only {
             width: 90%;
@@ -258,8 +278,14 @@
 /* Modale success end */
 
 
-.modaleOff, .notSelect {
+.modaleOff, .notSelect { 
     display: none;
+}
+
+.menuMobileOff {
+    @include mobile-only {
+        display: none;
+    }
 }
 
 .darkenBody {
@@ -269,4 +295,15 @@
     background: black;
     opacity: 0.5;
     top: 0;left: 0;
+}
+
+.darkenMobile {
+    @include mobile-only {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: black;
+        opacity: 0.5;
+        top: 0;left: 0;
+    }
 }

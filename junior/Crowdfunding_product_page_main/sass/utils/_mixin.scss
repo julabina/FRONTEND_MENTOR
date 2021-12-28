@@ -6,6 +6,12 @@
     background: map-get($map: $primary-colors, $key: dark-cyan);
     cursor: pointer;
   }
+  @media screen and (max-width: map-get($queries, mobile)) {
+    &:hover {
+      cursor: initial;
+      background: map-get($map: $primary-colors, $key: moderate-cyan);
+    }
+  }
 }
 
 @mixin para {

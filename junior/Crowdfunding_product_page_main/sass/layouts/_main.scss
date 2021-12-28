@@ -1,6 +1,7 @@
 main {
   display: flex;
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 .mainContainer {
@@ -81,6 +82,12 @@ main {
       @include mobile-only {
         width: 56px;
         margin-left: 10px;
+        &:hover {
+            cursor: initial;
+            div {
+              opacity: initial;
+            }
+        }
       }
     }
     @include mobile-only {
@@ -140,9 +147,11 @@ main {
       margin-top: 40px;
       &__progress {
         background: map-get($map: $primary-colors, $key: moderate-cyan);
-        width: 70%;
         height: 12px;
         border-radius: 12px;
+      }
+      @include mobile-only {
+        width: 100%;
       }
     }
   }

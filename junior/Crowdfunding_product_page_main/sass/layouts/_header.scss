@@ -33,7 +33,9 @@
           padding-left: 30px;
           height: 70px;
           border-bottom: rgba(0, 0, 0, 0.137) 1px solid;
-          
+          &:hover {
+            cursor: initial;
+          }
         }
       }
       @include mobile-only {

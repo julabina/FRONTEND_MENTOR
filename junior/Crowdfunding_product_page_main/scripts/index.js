@@ -13,6 +13,7 @@ const backThisProjectBtn = document.querySelector(".mainContainer__topBtnContain
 const hambMenu = document.querySelector(".header__mobileMenu")
 const menuMobile = document.querySelector(".header__menu")
 const logo = document.querySelector(".header__logoImg")
+const darkenMobile = document.querySelector(".darkenMobile")
 /* modales back this project start*/
 const modaleSuccess = document.querySelector(".modaleSucces")
 const gotItBtn = document.querySelector(".modaleSucces__container__btn")
@@ -50,7 +51,7 @@ const mobileImage = () => {
     hambMenu.innerHTML = `
     <img src="./images/icon-hamburger.svg" alt="hambuerger icon">
     `
-    darkenBody.classList.add("modaleOff");
+    darkenMobile.classList.add("menuMobileOff");
     hambMenu.classList.remove("addZindex");
     logo.classList.remove("addZindex")
   } else {
@@ -58,7 +59,7 @@ const mobileImage = () => {
     hambMenu.innerHTML = `
     <img src="./images/icon-close-menu.svg" alt="close menu icon">
     `
-    darkenBody.classList.remove("modaleOff");
+    darkenMobile.classList.remove("menuMobileOff");
     hambMenu.classList.add("addZindex");
     logo.classList.add("addZindex")
   }
