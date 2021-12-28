@@ -49,6 +49,7 @@
     }
     @include mobile-only {
       position:absolute;
+      z-index: 1;
       top: 80px;
       left: 0;right: 0;
       margin-left: 5%;
@@ -60,7 +61,7 @@
   &__mobileMenu {
     display: none;
     @include mobile-only {
-     display: initial;     
+     display: initial;    
     }
   }
   @include mobile-only {
@@ -70,4 +71,8 @@
     padding-left: 25px ;
     padding-right: 25px;
   }
+}
+
+.addZindex {
+  z-index: 1;
 }

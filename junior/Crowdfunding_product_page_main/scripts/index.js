@@ -10,6 +10,9 @@ const bookmarkImg = document.querySelector(
 );
 const selectRewardBtns = document.querySelectorAll(".mainContainer__pack__btn");
 const backThisProjectBtn = document.querySelector(".mainContainer__topBtnContainer__backProjectBtn");
+const hambMenu = document.querySelector(".header__mobileMenu")
+const menuMobile = document.querySelector(".header__menu")
+const logo = document.querySelector(".header__logoImg")
 /* modales back this project start*/
 const modaleSuccess = document.querySelector(".modaleSucces")
 const gotItBtn = document.querySelector(".modaleSucces__container__btn")
@@ -41,7 +44,33 @@ const calculProgress = () => {
   pourcent = poucentBase * backed;
 };
 
+const mobileImage = () => {
+  if (menuMobile.classList.contains("header__menu--off")) {
+    resetImgMobile();
+    hambMenu.innerHTML = `
+    <img src="./images/icon-hamburger.svg" alt="hambuerger icon">
+    `
+    darkenBody.classList.add("modaleOff");
+    hambMenu.classList.remove("addZindex");
+    logo.classList.remove("addZindex")
+  } else {
+    resetImgMobile();
+    hambMenu.innerHTML = `
+    <img src="./images/icon-close-menu.svg" alt="close menu icon">
+    `
+    darkenBody.classList.remove("modaleOff");
+    hambMenu.classList.add("addZindex");
+    logo.classList.add("addZindex")
+  }
+}
+
+const resetImgMobile = () => {
+  hambMenu.innerHTML = `
+  `;
+}
+
 displayProgress();
+mobileImage();
 
 bookmarkBtn.addEventListener("click", () => {
   if (bookmarkBtn.classList.contains("bookmarked")) {
@@ -91,6 +120,17 @@ backThisProjectBtn.addEventListener("click", () => {
   resetChoices();
 })
 
+hambMenu.addEventListener("click", () => {
+  if (menuMobile.classList.contains("header__menu--off")) {
+    console.log("1");
+    menuMobile.classList.remove("header__menu--off");
+    mobileImage();
+  } else {
+    console.log("2");
+    menuMobile.classList.add("header__menu--off");
+    mobileImage();
+  }
+})
 
 /* modales back this project start */
 const resetChoices = () => {
