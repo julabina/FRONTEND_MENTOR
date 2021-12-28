@@ -260,10 +260,14 @@ main {
   display: flex;
   justify-content: space-between;
 }
-.modaleChoseBack__container__top__part1__closeBtn {
+.modaleChoseBack__container__top__part1 img {
+  filter: invert(1);
   width: 15px;
   height: 15px;
   margin: -15px -15px 0 0;
+}
+.modaleChoseBack__container__top__part1 img:hover {
+  cursor: pointer;
 }
 .modaleChoseBack__container__noRewardContainer {
   padding: 25px;

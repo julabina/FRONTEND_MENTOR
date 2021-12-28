@@ -17,15 +17,18 @@
     &__container {
         @include modale;
         width: 55%;height: auto;
-        
         &__top {
             margin-bottom: 40px;
             &__part1 {
                 display: flex;
                 justify-content: space-between;
-                &__closeBtn {
+                img {
+                    filter: invert(1);
                     width: 15px;height: 15px;
                     margin: -15px -15px 0 0;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
