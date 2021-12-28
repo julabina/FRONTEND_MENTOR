@@ -25,6 +25,9 @@ button {
   display: flex;
   justify-content: space-between;
   background-image: url("../../images/image-hero-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   object-fit: cover;
   width: 100%;
   height: 400px;
