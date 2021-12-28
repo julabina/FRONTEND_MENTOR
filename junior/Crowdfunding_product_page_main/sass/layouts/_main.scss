@@ -26,12 +26,19 @@ main {
     text-align: center;
     font-size: 1.9em;
     margin: 27px 0 20px 0;
+    @include mobile-only {
+      font-size: 1.4em;
+    }
   }
   &__titleDescription {
     font-weight: 500;
     color: map-get($map: $neutral-colors, $key: dark-gray);
     text-align: center;
     letter-spacing: 0.3px;
+    @include mobile-only {
+      font-size: 0.8em;
+      line-height: 1.8em; 
+    }
   }
   &__topBtnContainer {
     display: flex;
@@ -44,6 +51,9 @@ main {
       border-radius: 56px;
       font-size: 1.05em;
       font-weight: 700;
+      @include mobile-only {
+        width: 230px;
+      }
     }
     &__bookmarkBtn {
       display: flex;
@@ -58,6 +68,9 @@ main {
         font-weight: 700;
         color: map-get($map: $neutral-colors, $key: dark-gray);
         margin-left: 10px;
+        @include mobile-only {
+          display: none;
+        }
       }
       &:hover {
         cursor: pointer;
@@ -65,6 +78,13 @@ main {
           opacity: 0.7;
         }
       }
+      @include mobile-only {
+        width: 56px;
+        margin-left: 10px;
+      }
+    }
+    @include mobile-only {
+     margin: 30px 0 110px 0; 
     }
   }
   &__goal {
@@ -75,6 +95,23 @@ main {
       h2 {
         font-size: 1.8em;
         margin-bottom: 7px;
+        @include mobile-only {
+         font-size: 2em; 
+        }
+      }
+      p {
+        @include mobile-only {
+         font-size: 0.9em; 
+        }
+      }
+      &__line {
+        display: none;
+        border-top: rgba(0, 0, 0, 0.322) solid 1px;
+        width: 30%;
+        @include mobile-only {
+          display: initial;
+          margin: 25px 0;
+        }
       }
       &__backed {
         display: flex;
@@ -87,6 +124,10 @@ main {
       &__daysLeft {
         display: flex;
         flex-direction: column;
+      }
+      @include mobile-only {
+        flex-direction: column;
+        align-items: center;
       }
     }
     &__progressBar {
@@ -124,18 +165,33 @@ main {
         margin-left: 5px;
       }
     }
+    h3 {
+      @include mobile-only {
+        font-size: 1em;
+        margin-bottom: 3px;   
+      }
+    }
     p {
       @include para;
+      @include mobile-only {
+       font-size: 1em;   
+      }
     }
     &__top {
       display: flex;
       justify-content: space-between;
       margin-bottom: 30px;
+      @include mobile-only {
+        flex-direction: column;   
+      }
     }
     &__bottom {
       display: flex;
       justify-content: space-between;
       margin-top: 25px;
+      @include mobile-only {
+       flex-direction: column   
+      }
     }
     &__btn {
       @include btn;
@@ -145,6 +201,9 @@ main {
       font-weight: 500;
       border-radius: 45px;
       margin-right: 5px;
+      @include mobile-only {
+       margin-top: 25px;   
+      }
     }
     &--0left {
       opacity: 0.5;
@@ -153,6 +212,10 @@ main {
         pointer-events: none;
       }
     }
+  }
+  @include tablet-only {
+    width: 90%;
+    padding: 0 20px;
   }
 }
 

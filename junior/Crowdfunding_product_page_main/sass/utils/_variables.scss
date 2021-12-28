@@ -7,3 +7,8 @@ $neutral-colors: (
   black: hsl(0, 0%, 0%),
   dark-gray: hsl(0, 0%, 48%),
 );
+
+$queries: (
+  tablet : 1180px,
+  mobile : 600px, 
+)

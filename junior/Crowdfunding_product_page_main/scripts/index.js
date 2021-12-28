@@ -88,6 +88,7 @@ selectRewardBtns[2].addEventListener("click", () => {
 backThisProjectBtn.addEventListener("click", () => {
   modaleBack.classList.remove("modaleOff");
   darkenBody.classList.remove("modaleOff");
+  resetChoices();
 })
 
 

@@ -27,8 +27,23 @@
   background: white;
   border-radius: 8px;
   padding: 50px;
+  @include mobile-only {
+   padding: 30px 20px;       
+  }
 }
 
 @mixin modaleChoice {
   padding:25px;
+}
+
+@mixin tablet-only {
+  @media screen and (max-width: map-get($queries, tablet)) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: map-get($queries, mobile)) {
+    @content;
+  }
 }

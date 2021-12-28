@@ -25,7 +25,49 @@
         &:hover {
           cursor: pointer;
         }
+        @include mobile-only {
+          color: black; 
+          font-size: 1.2em;
+          margin-left: 0px;
+          line-height: 70px;
+          padding-left: 30px;
+          height: 70px;
+          border-bottom: rgba(0, 0, 0, 0.137) 1px solid;
+          
+        }
+      }
+      @include mobile-only {
+       flex-direction: column;  
+       justify-content: space-between;
+       height: 100%;
       }
     }
+    &--off {
+      @include mobile-only {
+        display: none;   
+      }
+    }
+    @include mobile-only {
+      position:absolute;
+      top: 80px;
+      left: 0;right: 0;
+      margin-left: 5%;
+      width: 90%;
+      background: white;
+      border-radius: 10px;
+    }
+  }
+  &__mobileMenu {
+    display: none;
+    @include mobile-only {
+     display: initial;     
+    }
+  }
+  @include mobile-only {
+    background-image: url("../../images/image-hero-mobile.jpg");
+    background-position: center;
+    height: 325px;
+    padding-left: 25px ;
+    padding-right: 25px;
   }
 }
