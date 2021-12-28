@@ -261,12 +261,13 @@ main {
   justify-content: space-between;
 }
 .modaleChoseBack__container__top__part1 img {
-  filter: invert(1);
   width: 15px;
   height: 15px;
   margin: -15px -15px 0 0;
+  filter: opacity(0.4) invert(1);
 }
 .modaleChoseBack__container__top__part1 img:hover {
+  filter: invert(1);
   cursor: pointer;
 }
 .modaleChoseBack__container__noRewardContainer {
