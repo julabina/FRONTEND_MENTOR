@@ -199,3 +199,15 @@ gotItBtn.addEventListener("click", () => {
   darkenBody.classList.add("modaleOff");
 })
 /* modales back this project end */
+
+
+
+
+
+
+/* Attribution */
+
+console.log("Challenge by :");
+console.log("https://www.frontendmentor.io?ref=challenge");
+console.log("by Lenfumé Julien");
+console.log("https://github.com/julabina");
