@@ -8,12 +8,20 @@ const bookmarkSpan = document.getElementById("bookmark");
 const bookmarkImg = document.querySelector(
   ".mainContainer__topBtnContainer__bookmarkBtn__img"
 );
+const selectRewardBtns = document.querySelectorAll(".mainContainer__pack__btn");
+const backThisProjectBtn = document.querySelector(".mainContainer__topBtnContainer__backProjectBtn");
 /* modales back this project start*/
+const modaleSuccess = document.querySelector(".modaleSucces")
+const gotItBtn = document.querySelector(".modaleSucces__container__btn")
 const noReward = document.querySelector(".modaleChoseBack__container__noRewardContainer");
 const noRewardSelect = document.querySelector(".modaleChoseBack__container__noRewardContainer__selectContainer__select");
 const choices = document.querySelectorAll(".modaleChoseBack__container__choiceContainer");
 const choicesSelectDiv = document.querySelectorAll(".modaleChoseBack__container__choiceContainer__gridContainer__select");
 const bottomContainer = document.querySelectorAll(".modaleChoseBack__container__choiceContainer__bottom");
+const darkenBody = document.querySelector(".darkenBody");
+const modaleBack = document.querySelector(".modaleChoseBack");
+const closeModale = document.querySelector(".modaleChoseBack__container__top__part1__closeBtn");
+const continueBtn = document.querySelectorAll(".modaleChoseBack__container__choiceContainer__bottom__btns__continue")
 /* modales back this project end */
 
 let backed = 89914;
@@ -46,6 +54,41 @@ bookmarkBtn.addEventListener("click", () => {
     bookmarkImg.classList.add("bookmarkImgFiltered");
   }
 });
+
+selectRewardBtns[0].addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  modaleBack.classList.remove("modaleOff");
+  darkenBody.classList.remove("modaleOff");
+  resetChoices();
+  choices[0].classList.add("modaleChoseBack__container__choiceContainer--selected");
+  choicesSelectDiv[0].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
+  bottomContainer[0].classList.remove("notSelect");
+})
+
+selectRewardBtns[1].addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  modaleBack.classList.remove("modaleOff");
+  darkenBody.classList.remove("modaleOff");
+  resetChoices();
+  choices[1].classList.add("modaleChoseBack__container__choiceContainer--selected");
+  choicesSelectDiv[1].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
+  bottomContainer[1].classList.remove("notSelect");
+})
+
+selectRewardBtns[2].addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  modaleBack.classList.remove("modaleOff");
+  darkenBody.classList.remove("modaleOff");
+  resetChoices();
+  choices[2].classList.add("modaleChoseBack__container__choiceContainer--selected");
+  choicesSelectDiv[2].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
+  bottomContainer[2].classList.remove("notSelect");
+})
+
+backThisProjectBtn.addEventListener("click", () => {
+  modaleBack.classList.remove("modaleOff");
+  darkenBody.classList.remove("modaleOff");
+})
 
 
 /* modales back this project start */
@@ -84,5 +127,33 @@ choices[2].addEventListener("click", () => {
   choices[2].classList.add("modaleChoseBack__container__choiceContainer--selected");
   choicesSelectDiv[2].classList.add("modaleChoseBack__container__choiceContainer__gridContainer__select--selected");
   bottomContainer[2].classList.remove("notSelect");
+})
+
+closeModale.addEventListener("click", () => {
+    modaleBack.classList.add("modaleOff");
+    darkenBody.classList.add("modaleOff");
+})
+
+continueBtn[0].addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  modaleBack.classList.add("modaleOff");
+  modaleSuccess.classList.remove("modaleOff");
+})
+
+continueBtn[1].addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  modaleBack.classList.add("modaleOff");
+  modaleSuccess.classList.remove("modaleOff");
+})
+
+continueBtn[2].addEventListener("click", () => {
+  window.scrollTo(0, 0);
+  modaleBack.classList.add("modaleOff");
+  modaleSuccess.classList.remove("modaleOff");
+})
+
+gotItBtn.addEventListener("click", () => {
+  modaleSuccess.classList.add("modaleOff");
+  darkenBody.classList.add("modaleOff");
 })
 /* modales back this project end */
