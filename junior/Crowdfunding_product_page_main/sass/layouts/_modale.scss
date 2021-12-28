@@ -17,8 +17,17 @@
     &__container {
         @include modale;
         width: 55%;height: auto;
+        
         &__top {
             margin-bottom: 40px;
+            &__part1 {
+                display: flex;
+                justify-content: space-between;
+                &__closeBtn {
+                    width: 15px;height: 15px;
+                    margin: -15px -15px 0 0;
+                }
+            }
         }
         &__noRewardContainer {
             @include modaleChoice;

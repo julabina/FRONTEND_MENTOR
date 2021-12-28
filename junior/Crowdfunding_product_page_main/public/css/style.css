@@ -256,6 +256,15 @@ main {
 .modaleChoseBack__container__top {
   margin-bottom: 40px;
 }
+.modaleChoseBack__container__top__part1 {
+  display: flex;
+  justify-content: space-between;
+}
+.modaleChoseBack__container__top__part1__closeBtn {
+  width: 15px;
+  height: 15px;
+  margin: -15px -15px 0 0;
+}
 .modaleChoseBack__container__noRewardContainer {
   padding: 25px;
   display: flex;
