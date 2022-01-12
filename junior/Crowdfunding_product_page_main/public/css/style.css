@@ -51,7 +51,7 @@ button {
 .header {
   display: flex;
   justify-content: space-between;
-  background-image: url("../../images/image-hero-desktop.jpg");
+  background-image: url("../../images/image-hero-desktop.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,7 +126,7 @@ button {
 }
 @media screen and (max-width: 600px) {
   .header {
-    background-image: url("../../images/image-hero-mobile.jpg");
+    background-image: url("../../images/image-hero-mobile.webp");
     background-position: center;
     height: 325px;
     padding-left: 25px;

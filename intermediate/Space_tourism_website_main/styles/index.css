@@ -1,5 +1,5 @@
 body {
-  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-image: url("../assets/home/background-home-desktop.webp");
   background-size: 100%;
 }
 
@@ -71,7 +71,7 @@ main {
 
 @media screen and (max-width: 1300px) {
   body {
-    background-image: url("../assets/home/background-home-tablet.jpg");
+    background-image: url("../assets/home/background-home-tablet.webp");
   }
 
   main {
@@ -117,7 +117,7 @@ main {
 
 @media screen and (max-width: 600px) {
   body {
-    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-image: url("../assets/home/background-home-mobile.webp");
     object-fit: cover;
   }
 

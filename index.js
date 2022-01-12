@@ -101,7 +101,7 @@ const challengeDisplay = () => {
   <h2>${challenges.challenge[i].title}</h2>
   <span class="challengeLink"></span>
   <div class="screenshotContainer">
-      <img src="./${challenges.challenge[i].folder_name}/screenshot.png" alt="screenshot challenge 12" class="screenshot">
+      <img src="./${challenges.challenge[i].folder_name}/screenshot.webp" alt="screenshot challenge 12" class="screenshot">
       <ul class="link">
           <li><a href="./${challenges.challenge[i].folder_name}/index.html"><p>Online websit</p></a></li>
           <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/julabina/FRONTEND_MENTOR/tree/master/${challenges.challenge[i].folder_name}"><p>Github repository</p></a></li>
@@ -117,7 +117,7 @@ const challengeDisplay = () => {
     <div class="screenshotContainer">
         <img src="./${
           challenges.challenge[i].folder_name
-        }/screenshot.png" alt="screenshot challenge 12" class="screenshot">
+        }/screenshot.webp" alt="screenshot challenge 12" class="screenshot">
         <ul class="link">
             <li><a href="./${
               challenges.challenge[i].folder_name

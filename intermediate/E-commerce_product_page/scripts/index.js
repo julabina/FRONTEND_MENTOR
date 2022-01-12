@@ -50,7 +50,7 @@ const displayPrimary = () => {
         <div class="imgContainer__previous" onClick="changeMobilePrimaryPreviousImg()">     
           <img src="./images/icon-previous.svg" alt="icon previous">
         </div>   
-        <img class="imgContainer__primaryImg" src="./images/image-product-${a}.jpg" alt="product-${a} image">
+        <img class="imgContainer__primaryImg" src="./images/image-product-${a}.webp" alt="product-${a} image">
         <div class="imgContainer__next" onClick="changeMobilePrimaryNextImg()">     
           <img src="./images/icon-next.svg" alt="icon next">
         </div>   
@@ -64,7 +64,7 @@ const displayModalePrimary = () => {
     let a = i + 1;
     if (modalePreviewImg[i].classList.contains("modaleActive")) {
       modalePrimaryImg.innerHTML = `
-            <img class="modaleZoom__container__imgContainer__primaryImg" src="./images/image-product-${a}.jpg" alt="product-${a} image">
+            <img class="modaleZoom__container__imgContainer__primaryImg" src="./images/image-product-${a}.webp" alt="product-${a} image">
             `;
     }
   }
@@ -82,7 +82,7 @@ const displayCart = () => {
   } else {
     cartContent.innerHTML = `
     <div class="cartContainer__content">
-    <img class="cartContainer__content__image" src="./images/image-product-1-thumbnail.jpg" alt="product 1 image">
+    <img class="cartContainer__content__image" src="./images/image-product-1-thumbnail.webp" alt="product 1 image">
     <div class="cartContainer__content__item">
     <p class="cartContainer__content__item__title">Fall Limited Edition Sneakers</p>
     <p class="cartContainer__content__item__price">$125.00 x ${cart} <span>$${total}.00</span></p>
@@ -326,12 +326,12 @@ const preloadImages = (images) => {
 };
 
 let imgToPreload = [
-  "./images/image-product2.jpg",
-  "./images/image-product2-thumbnail.jpg",
-  "./images/image-product3.jpg",
-  "./images/image-product3-thumbnail.jpg",
-  "./images/image-product4.jpg",
-  "./images/image-product4-thumbnail.jpg",
+  "./images/image-product2.webp",
+  "./images/image-product2-thumbnail.webp",
+  "./images/image-product3.webp",
+  "./images/image-product3-thumbnail.webp",
+  "./images/image-product4.webp",
+  "./images/image-product4-thumbnail.webp",
 ];
 
 preloadImages(imgToPreload);
