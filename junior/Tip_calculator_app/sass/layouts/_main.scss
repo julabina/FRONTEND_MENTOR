@@ -1,0 +1,26 @@
+main {
+    display: flex;
+    justify-content: center;
+    background: map-get($colors, ligth-grayish-cyan1);
+}
+
+.sectionContainer {
+    display: flex;
+    justify-content: center;
+    width: 63%;
+    border-radius: 25px;
+    padding: 32px;
+    background: map-get($colors, white);
+}
+
+.left {
+    width: 52%;
+}
+
+.right {
+    width: 48%;
+    background: yellow;
+    background: map-get($colors, very-dark-cyan);
+    border-radius: 15px;
+    padding: 32px;
+}
