@@ -1,0 +1,26 @@
+@mixin input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background: map-get($colors, ligth-grayish-cyan2);
+    border-radius: 5px;
+    color: map-get($colors, very-dark-cyan); 
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 15px;
+    &::placeholder {
+        color: map-get($colors, ligth-grayish-cyan1); 
+    }
+    &:focus {
+        outline: none;
+        border:  map-get($map: $colors, $key: dark-grayish-cyan2 ) 1px solid;
+    }
+    
+}
+
+@mixin imgInput {
+    position:relative; 
+    left: 12px;
+    top: 37px;
+}
