@@ -16,7 +16,10 @@
         outline: none;
         border:  map-get($map: $colors, $key: dark-grayish-cyan2 ) 1px solid;
     }
-    
+    &:hover {
+        border:  map-get($map: $colors, $key: dark-grayish-cyan1) 1px solid;
+        cursor: pointer;
+    }
 }
 
 @mixin imgInput {
