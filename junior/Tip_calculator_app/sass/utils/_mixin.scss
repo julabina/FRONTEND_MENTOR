@@ -1,6 +1,7 @@
 @mixin input {
     height: 45px;
     width: 100%;
+    -moz-appearance: textfield;
     border: none;
     background: map-get($colors, ligth-grayish-cyan2);
     border-radius: 5px;

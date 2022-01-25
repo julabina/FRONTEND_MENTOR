@@ -5,6 +5,12 @@
   box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 body, input, button {
   font-family: "Space Mono", monospace;
 }
@@ -83,6 +89,7 @@ main p {
 .left__bill__cont__input {
   height: 45px;
   width: 100%;
+  -moz-appearance: textfield;
   border: none;
   background: #f4fafa;
   border-radius: 5px;
@@ -139,6 +146,7 @@ main p {
 .left__selectTips__cont__custom {
   width: 100%;
   height: 45px;
+  -moz-appearance: textfield;
   background: #f4fafa;
   border: initial;
   border-radius: 5px;
@@ -183,6 +191,7 @@ main p {
 .left__numberPeople__cont__input {
   height: 45px;
   width: 100%;
+  -moz-appearance: textfield;
   border: none;
   background: #f4fafa;
   border-radius: 5px;

@@ -81,6 +81,7 @@ main {
             &__custom {
                 width: 100%;
                 height: 45px;
+                -moz-appearance: textfield;
                 background: map-get($colors, ligth-grayish-cyan2);
                 border: initial;
                 border-radius: 5px;
