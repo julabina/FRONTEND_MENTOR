@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    img {
+        height: 115px;
+        margin: 120px 0 70px 0;
+    }
+    h1 {
+        font-size: 2.4em;
+        color: map-get($map: $secondary-color, $key: dark-grayish-blue);
+    }
+    p {
+        text-align: center;
+        width: 48%;
+        letter-spacing: 0.8px;
+        line-height: 30px;
+        margin: 20px 0 40px 0;
+    }
+}
+
+.btnContainer {
+    &__ios {
+        background: map-get($primary-color, strong-cyan );
+        @include btn;
+    }
+    &__mac {
+        background: map-get($primary-color, ligth-blue );
+        @include btn;
+    }
+}

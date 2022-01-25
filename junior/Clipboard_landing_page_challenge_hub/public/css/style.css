@@ -13,4 +13,62 @@ body {
   font-size: 18px;
 }
 
+p {
+  color: #9fabb2;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+header img {
+  height: 115px;
+  margin: 120px 0 70px 0;
+}
+header h1 {
+  font-size: 2.4em;
+  color: #4c545d;
+}
+header p {
+  text-align: center;
+  width: 48%;
+  letter-spacing: 0.8px;
+  line-height: 30px;
+  margin: 20px 0 40px 0;
+}
+
+.btnContainer__ios {
+  background: #26baa4;
+  height: 55px;
+  width: 215px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 55px;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+}
+.btnContainer__mac {
+  background: #6173ff;
+  height: 55px;
+  width: 215px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 55px;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
 /*# sourceMappingURL=style.css.map */
