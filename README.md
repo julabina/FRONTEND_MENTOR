@@ -106,6 +106,12 @@ Live site : [Link](./junior/Time_tracking_dashboard_challenge_hub/index.html)
 
 Live site : [Link](./junior/Crowdfunding_product_page_main/index.html)
 
+### Tip calculator app
+
+![](./junior/Tip_calculator_app/screenshot.webp)
+
+Live site : [Link](./junior/Tip_calculator_app/index.html)
+
 
 ## Intermediate level
 
