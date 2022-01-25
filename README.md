@@ -4,6 +4,30 @@ Solutions to challenge from [FONTEND MENTOR](https://www.frontendmentor.io).
 
 Live Site URL: [Challenges](https://julabina.github.io/FRONTEND_MENTOR/)
 
+## Summary
+
+- [Newbie level](#Newbie-level)
+    -[Stats preview card component](#Stats-preview-card-component)
+    -[3-column preview card component](#3-column-preview-card-component)
+    -[Profil card component](#Profil-card-component)
+    -[FAQ accordion card](#FAQ-accordion-card)
+    -[Social proof section](#Social-proof-section)
+    -[Article preview component](#Article-preview-component)
+    -[Four card feature section](#Four-card-feature-section)
+    -[Base apparel coming soon page](#Base-apparel-coming-soon-page)
+    -[Intro component with sign-up](#Intro-component-with-sign-up)
+    -[Order summary component](#Order-summary-component)
+    -[Single price grid component](#Single-price-grid-component)
+    -[Ping single column coming soon page](#Ping-single-column-coming-soon-page)
+    -[Huddle landing page with a single introductory section](#Huddle-landing-page-with-a-single-introductory-section)
+    -[Nft preview card component main](#Nft-preview-card-component-main)
+- [Junior level](#Junior-level)
+    -[Time tracking dashboard challenge hub](#Time-tracking-dashboard-challenge-hub)
+    -[Crowdfunding product page main](#Crowdfunding-product-page-main)
+    -[Tip calculator app](#Tip-calculator-app)
+- [Intermediate level](#Intermediate-level)
+    -[Space tourism website main](#Space-tourism-website-main)
+    -[E-commerce product page](#E-commerce-product-page)
 
 ## Newbie level
 
