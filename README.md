@@ -1,8 +1,8 @@
 # Frontend mentor challenge :
 
-Solutions to challenge from [FONTEND MENTOR](https://www.frontendmentor.io).
+Solutions to challenges from [FONTEND MENTOR](https://www.frontendmentor.io).
 
-Live Site URL: [Challenges](https://julabina.github.io/FRONTEND_MENTOR/)
+Live Site URL : [Challenges](https://julabina.github.io/FRONTEND_MENTOR/)
 
 ## Summary
 
