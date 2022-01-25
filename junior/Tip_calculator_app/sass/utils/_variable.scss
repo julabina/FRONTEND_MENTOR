@@ -6,4 +6,10 @@ $colors : (
     ligth-grayish-cyan1 : hsl(185, 41%, 84%),
     ligth-grayish-cyan2 : hsl(185, 41%, 97%),
     white : #ffffff
-)
+);
+
+$queries : (
+    desktop1 : 1200px,
+    tablet: 860px,
+    mobile : 530px
+);
