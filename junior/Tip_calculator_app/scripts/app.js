@@ -22,7 +22,7 @@ const calcul = () => {
     } else {
         errorInput.classList.add("left__numberPeople__cont__input__error--off");
         errorMsg.classList.add("left__numberPeople__top__error--off");
-        tipResult = Math.round(((billVal / 100) * tipPercent) * 100) / 100;
+        tipResult = (Math.round(((billVal / 100) * tipPercent) * 100) / 100) / nbrPeopleVal;
         totalResult = Math.round(((billVal / nbrPeopleVal) + tipResult) * 100) / 100;
         display();
     }
