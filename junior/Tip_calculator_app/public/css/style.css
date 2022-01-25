@@ -236,8 +236,12 @@ main p {
   color: #00494d;
   border: none;
   border-radius: 4px;
+  opacity: 0.3;
 }
-.right__resetBtn:hover {
+.right__resetBtn--notEmpty {
+  opacity: 1;
+}
+.right__resetBtn--notEmpty:hover {
   background: #c5e4e7;
   cursor: pointer;
 }

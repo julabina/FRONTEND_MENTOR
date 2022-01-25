@@ -167,9 +167,13 @@ main {
         color: map-get($map: $colors, $key:very-dark-cyan );
         border: none;
         border-radius: 4px;
-        &:hover {
-            background:  map-get($map: $colors, $key: ligth-grayish-cyan1);
-            cursor: pointer;
+        opacity: 0.3;
+        &--notEmpty {
+            opacity: 1;
+            &:hover {
+                background:  map-get($map: $colors, $key: ligth-grayish-cyan1);
+                cursor: pointer;
+            }
         }
     }
 }
