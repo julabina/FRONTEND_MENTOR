@@ -59,10 +59,12 @@ main {
                 font-size: 1.4em;
                 font-weight: 700;
                 &--selected {
-                    background: map-get($map: $colors, $key: ligth-grayish-cyan1 );
+                    background: map-get($colors, strong-cyan);
                     color: map-get($map: $colors, $key:very-dark-cyan );
                 }
                 &:hover {
+                    background: map-get($map: $colors, $key: ligth-grayish-cyan1 );
+                    color: map-get($map: $colors, $key:very-dark-cyan );
                     cursor: pointer;
                 }
             }
@@ -115,7 +117,11 @@ main {
 }
 
 .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 48%;
+    height: 100%;
     background: yellow;
     background: map-get($colors, very-dark-cyan);
     border-radius: 15px;
@@ -123,7 +129,38 @@ main {
     h2 {
         color: map-get($map: $colors, $key: ligth-grayish-cyan2 );
     }
+    h1 {
+        font-size: 3em;
+        color: map-get($map: $colors, $key:strong-cyan );
+    }
     p {
         color: map-get($map: $colors, $key: dark-grayish-cyan2 );
+    }
+    &__tipAmount {
+        display: flex;
+        justify-content: space-between;
+        &__textContainer {
+            @include textCont;
+        }
+    }
+    &__total {
+        display: flex;
+        justify-content: space-between;
+        &__textContainer {
+            @include textCont;
+        }
+    }
+    &__space {
+        height: 80px;
+    }
+    &__resetBtn {
+        width: 100%;
+        height: 50px;
+        text-transform: uppercase;
+        font-size: 1.3em;
+        font-weight: 700;
+        background: map-get($colors, dark-grayish-cyan2);
+        border: none;
+        border-radius: 4px;
     }
 }
