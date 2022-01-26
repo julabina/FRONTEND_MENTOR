@@ -174,7 +174,7 @@ Repository : [Link](./junior/Tip_calculator_app/index.html)
 
 ![](./junior/Clipboard_landing_page_challenge_hub/screenshot.webp)
 
-Live site : [Link]()
+Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Clipboard_landing_page_challenge_hub/index.html)
 
 Repository : [Link](./junior/Clipboard_landing_page_challenge_hub/index.html)
 

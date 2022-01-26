@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/julabina/FRONTEND_MENTOR/tree/master/junior/Clipboard_landing_page_challenge_hub)
-- Live Site URL: [github page](https://your-live-site-url.com)
+- Live Site URL: [github page](https://julabina.github.io/FRONTEND_MENTOR/junior/Clipboard_landing_page_challenge_hub/index.html)
 
 ## My process
 
