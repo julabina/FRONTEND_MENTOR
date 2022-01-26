@@ -170,6 +170,13 @@ Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Tip_calcula
 
 Repository : [Link](./junior/Tip_calculator_app/index.html)
 
+### Clipboard landing page challenge hub
+
+![](./junior/Clipboard_landing_page_challenge_hub/screenshot.webp)
+
+Live site : [Link]()
+
+Repository : [Link](./junior/Clipboard_landing_page_challenge_hub/index.html)
 
 ## Intermediate level
 
