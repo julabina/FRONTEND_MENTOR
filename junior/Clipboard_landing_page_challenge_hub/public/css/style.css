@@ -25,7 +25,7 @@ p {
   color: #9fabb2;
 }
 
-h2, h3 {
+h2, h3, h4 {
   color: #4c545d;
 }
 
@@ -198,14 +198,62 @@ main h2 {
 }
 
 footer {
-  background: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 160px;
+  background: #ebebeb;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+  width: 88%;
+}
+.top__footerLogo {
+  width: 50px;
+}
+.top__textsCont {
+  display: flex;
+  margin-right: 120px;
+}
+.top__textsCont__bloc1 {
+  margin-right: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
+.top__textsCont__bloc2 {
+  margin: 0 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
+.top__textsCont__bloc3 {
+  margin-left: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60px;
+}
+.top__social img {
+  margin-left: 20px;
+}
+
+.bot {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
-
 .attribution a {
   color: #3e52a3;
 }

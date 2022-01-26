@@ -6,6 +6,6 @@ p {
     color: map-get($map: $secondary-color, $key:grayish-blue );
 }
 
-h2, h3 {
+h2, h3, h4 {
     color: map-get($map: $secondary-color, $key: dark-grayish-blue );
 }

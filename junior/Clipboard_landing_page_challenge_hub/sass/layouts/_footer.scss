@@ -1,3 +1,45 @@
 footer {
-    background: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 160px;
+    background: rgb(235, 235, 235);
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 88%;
+    &__footerLogo {
+        width: 50px;
+    }
+    &__textsCont {
+        display: flex;
+        margin-right: 120px;
+        &__bloc1{
+            margin-right: 48px;
+            @include blocFooter;
+        }
+        &__bloc2{
+            margin: 0 48px;
+            @include blocFooter;
+        }
+        &__bloc3{
+            margin-left: 48px;
+            @include blocFooter;
+        }
+    }
+    &__social {
+        img {
+            margin-left: 20px;
+        }
+    }
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
