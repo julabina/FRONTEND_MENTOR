@@ -8,3 +8,9 @@
     font-weight: 600;
     color: white;
 }
+
+@mixin sectionDisplay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

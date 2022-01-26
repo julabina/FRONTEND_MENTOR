@@ -9,12 +9,24 @@ body, button {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
 body {
   font-size: 18px;
 }
 
 p {
   color: #9fabb2;
+}
+
+h2, h3 {
+  color: #4c545d;
 }
 
 header {
@@ -60,6 +72,133 @@ header p {
   font-size: 1em;
   font-weight: 600;
   color: white;
+}
+
+main h2 {
+  margin-bottom: 20px;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section1 p {
+  width: 48%;
+  line-height: 30px;
+  text-align: center;
+}
+.section1__computerContainer {
+  display: flex;
+  height: 100%;
+  margin: 78px 0 145px 0;
+}
+.section1__computerContainer img {
+  margin: 0 120px 0 -70px;
+  height: 572px;
+  width: 752px;
+}
+.section1__computerContainer__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 15px 0 90px 0;
+}
+.section1__computerContainer__text__bloc p {
+  text-align: left;
+  font-size: 0.8em;
+  width: 55%;
+  margin-top: 8px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section2 p {
+  text-align: center;
+  line-height: 30px;
+  width: 50%;
+}
+.section2__deviceContainer {
+  margin: 95px 0 0 0;
+}
+.section2__deviceContainer__deviceImg {
+  width: 905px;
+  height: 575px;
+}
+
+.section3 {
+  margin-bottom: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section3__text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 73px;
+}
+.section3__text__bloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+}
+.section3__text__bloc h3 {
+  margin: 40px 0 20px 0;
+}
+.section3__text__bloc p {
+  text-align: center;
+  width: 95%;
+  font-size: 0.8em;
+  line-height: 30px;
+}
+.section3__sponsor {
+  margin: 136px 0 150px 0;
+}
+.section3__sponsor img {
+  margin: 0 35px;
+}
+.section3__btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section3__btnContainer p {
+  line-height: 30px;
+  text-align: center;
+  width: 65%;
+}
+.section3__btnContainer__cont {
+  margin-top: 53px;
+}
+.section3__btnContainer__cont__ios {
+  background: #6173ff;
+  height: 55px;
+  width: 215px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 55px;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+}
+.section3__btnContainer__cont__mac {
+  background: #26baa4;
+  height: 55px;
+  width: 215px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 55px;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+}
+
+footer {
+  background: blue;
 }
 
 .attribution {
