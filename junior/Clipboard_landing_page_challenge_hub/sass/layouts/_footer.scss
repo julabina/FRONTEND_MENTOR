@@ -3,7 +3,7 @@ footer {
     flex-direction: column;
     align-items: center;
     height: 160px;
-    background: rgb(235, 235, 235);
+    background: lighten($color: map-get($map: $secondary-color, $key: grayish-blue), $amount: 29);
 }
 
 .top {
