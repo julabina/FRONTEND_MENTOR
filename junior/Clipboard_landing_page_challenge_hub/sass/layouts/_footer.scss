@@ -4,6 +4,9 @@ footer {
     align-items: center;
     height: 160px;
     background: lighten($color: map-get($map: $secondary-color, $key: grayish-blue), $amount: 29);
+    @include mobile {
+        height: auto;
+    }
 }
 
 .top {
@@ -14,6 +17,9 @@ footer {
     width: 88%;
     &__footerLogo {
         width: 50px;
+        @include mobile {
+            margin: 50px 0 ;   
+        }
     }
     &__textsCont {
         display: flex;
@@ -23,18 +29,51 @@ footer {
                 opacity: 0.7;
                 cursor: pointer;
             }
+            @include mobile {
+                margin-bottom: 25px;
+                &:hover {
+                    opacity: 1;
+                    cursor: initial;
+                }
+            }
         }
         &__bloc1{
             margin-right: 48px;
             @include blocFooter;
+            @include hdDesktop {
+                margin-right: 30px;
+            }
+            @include mobile {
+                margin-right: 0;
+            }
         }
         &__bloc2{
             margin: 0 48px;
             @include blocFooter;
+            @include hdDesktop {
+                margin:0 30px;
+            }
+            @include mobile {
+                margin: 0 ;
+            }
         }
         &__bloc3{
             margin-left: 48px;
             @include blocFooter;
+            @include hdDesktop {
+                margin-left: 30px;
+            }
+            @include mobile {
+                margin-left: 0;
+            }
+        }
+        @include hdDesktop {
+            margin-right: 40px;
+        }
+        @include mobile {
+            flex-direction: column;
+            text-align: center;
+            margin-right: 0;
         }
     }
     &__social {
@@ -44,7 +83,28 @@ footer {
                 opacity: 0.7;
                 cursor: pointer;
             }
+            @include mobile {
+                margin-left: 0;
+                &:hover {
+                    opacity: 1;
+                    cursor: initial;
+                }
+            }
         }
+        @include mobile {
+            display: flex;
+            justify-content: space-around;   
+            width: 180px;
+            margin: 25px 0 50px 0;
+        }
+    }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: initial;
+        height: initial;
+        width: 100%;
     }
 }
 

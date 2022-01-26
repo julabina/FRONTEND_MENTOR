@@ -12,6 +12,12 @@ body, button {
 h2 {
   font-size: 1.8em;
 }
+@media screen and (max-width: 900px) {
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
 
 h3 {
   font-size: 1.3em;
@@ -39,9 +45,21 @@ header img {
   height: 115px;
   margin: 120px 0 70px 0;
 }
+@media screen and (max-width: 900px) {
+  header img {
+    height: 125px;
+    margin-top: 82px;
+  }
+}
 header h1 {
   font-size: 2.4em;
   color: #4c545d;
+}
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 1.7em;
+    text-align: center;
+  }
 }
 header p {
   text-align: center;
@@ -50,7 +68,26 @@ header p {
   line-height: 30px;
   margin: 20px 0 40px 0;
 }
+@media screen and (max-width: 900px) {
+  header p {
+    width: 100%;
+    line-height: 25px;
+    font-size: 0.78em;
+    margin-bottom: 47px;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    margin-bottom: 127px;
+    padding: 35px 35px 0 35px;
+  }
+}
 
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .btnContainer__ios {
   background: #26baa4;
   box-shadow: 0 3px 2px #1d907f;
@@ -66,6 +103,17 @@ header p {
 .btnContainer__ios:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .btnContainer__ios {
+    width: 100%;
+    margin: initial;
+    margin-bottom: 27px;
+  }
+  .btnContainer__ios:hover {
+    opacity: 1;
+    cursor: initial;
+  }
 }
 .btnContainer__mac {
   background: #6173ff;
@@ -83,9 +131,31 @@ header p {
   opacity: 0.7;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .btnContainer__mac {
+    width: 100%;
+    margin: initial;
+    margin-bottom: 27px;
+  }
+  .btnContainer__mac:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
+@media screen and (max-width: 900px) {
+  .btnContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 main h2 {
   margin-bottom: 20px;
+}
+@media screen and (max-width: 900px) {
+  main {
+    padding: 0 35px;
+  }
 }
 
 .section1 {
@@ -98,6 +168,13 @@ main h2 {
   line-height: 30px;
   text-align: center;
 }
+@media screen and (max-width: 900px) {
+  .section1 p {
+    width: 100%;
+    font-size: 0.87em;
+    line-height: 25px;
+  }
+}
 .section1__computerContainer {
   display: flex;
   height: 100%;
@@ -107,6 +184,18 @@ main h2 {
   margin: 0 120px 0 -70px;
   height: 572px;
   width: 752px;
+}
+@media screen and (max-width: 1280px) {
+  .section1__computerContainer img {
+    margin: 0 50px 0 -200px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section1__computerContainer img {
+    margin: initial;
+    width: 100%;
+    height: 100%;
+  }
 }
 .section1__computerContainer__text {
   display: flex;
@@ -120,6 +209,32 @@ main h2 {
   width: 55%;
   margin-top: 8px;
 }
+@media screen and (max-width: 1280px) {
+  .section1__computerContainer__text__bloc p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section1__computerContainer__text__bloc {
+    margin-top: 46px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section1__computerContainer__text {
+    text-align: center;
+  }
+  .section1__computerContainer__text p {
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section1__computerContainer {
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0 105px 0;
+  }
+}
 
 .section2 {
   display: flex;
@@ -131,6 +246,13 @@ main h2 {
   line-height: 30px;
   width: 50%;
 }
+@media screen and (max-width: 900px) {
+  .section2 p {
+    width: 100%;
+    font-size: 0.87em;
+    line-height: 25px;
+  }
+}
 .section2__deviceContainer {
   margin: 95px 0 0 0;
 }
@@ -138,12 +260,31 @@ main h2 {
   width: 905px;
   height: 575px;
 }
+@media screen and (max-width: 900px) {
+  .section2__deviceContainer__deviceImg {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section2__deviceContainer {
+    margin: 70px 0 90px 0;
+  }
+}
 
 .section3 {
   margin-bottom: 145px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .section3__textIntro {
+    text-align: center;
+    width: 100%;
+    font-size: 0.87em;
+    line-height: 25px;
+  }
 }
 .section3__text {
   display: flex;
@@ -156,6 +297,14 @@ main h2 {
   align-items: center;
   width: 340px;
 }
+.section3__text__bloc img {
+  height: 40px;
+}
+@media screen and (max-width: 900px) {
+  .section3__text__bloc img {
+    height: initial;
+  }
+}
 .section3__text__bloc h3 {
   margin: 40px 0 20px 0;
 }
@@ -165,11 +314,52 @@ main h2 {
   font-size: 0.8em;
   line-height: 30px;
 }
+@media screen and (max-width: 900px) {
+  .section3__text__bloc p {
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .section3__text__bloc {
+    width: 290px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section3__text__bloc {
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section3__text {
+    margin-top: 100px;
+    justify-content: initial;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .section3__sponsor {
   margin: 136px 0 150px 0;
 }
 .section3__sponsor img {
   margin: 0 35px;
+}
+@media screen and (max-width: 1280px) {
+  .section3__sponsor img {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section3__sponsor img {
+    margin: 35px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section3__sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px 0 120px 0;
+  }
 }
 .section3__btnContainer {
   display: flex;
@@ -180,6 +370,13 @@ main h2 {
   line-height: 30px;
   text-align: center;
   width: 65%;
+}
+@media screen and (max-width: 900px) {
+  .section3__btnContainer p {
+    width: 100%;
+    font-size: 0.9em;
+    line-height: 25px;
+  }
 }
 .section3__btnContainer__cont {
   margin-top: 53px;
@@ -200,6 +397,17 @@ main h2 {
   opacity: 0.7;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .section3__btnContainer__cont__ios {
+    width: 100%;
+    margin: initial;
+    margin-bottom: 27px;
+  }
+  .section3__btnContainer__cont__ios:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
 .section3__btnContainer__cont__mac {
   background: #6173ff;
   box-shadow: 0 3px 2px #2e46ff;
@@ -216,6 +424,17 @@ main h2 {
   opacity: 0.7;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .section3__btnContainer__cont__mac {
+    width: 100%;
+    margin: initial;
+    margin-bottom: 27px;
+  }
+  .section3__btnContainer__cont__mac:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
 
 footer {
   display: flex;
@@ -223,6 +442,11 @@ footer {
   align-items: center;
   height: 160px;
   background: #f1f3f4;
+}
+@media screen and (max-width: 900px) {
+  footer {
+    height: auto;
+  }
 }
 
 .top {
@@ -235,6 +459,11 @@ footer {
 .top__footerLogo {
   width: 50px;
 }
+@media screen and (max-width: 900px) {
+  .top__footerLogo {
+    margin: 50px 0;
+  }
+}
 .top__textsCont {
   display: flex;
   margin-right: 120px;
@@ -243,12 +472,36 @@ footer {
   opacity: 0.7;
   cursor: pointer;
 }
+@media screen and (max-width: 900px) {
+  .top__textsCont h4 {
+    margin-bottom: 25px;
+  }
+  .top__textsCont h4:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
 .top__textsCont__bloc1 {
   margin-right: 48px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 60px;
+}
+@media screen and (max-width: 900px) {
+  .top__textsCont__bloc1 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .top__textsCont__bloc1 {
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top__textsCont__bloc1 {
+    margin-right: 0;
+  }
 }
 .top__textsCont__bloc2 {
   margin: 0 48px;
@@ -257,6 +510,21 @@ footer {
   justify-content: space-between;
   height: 60px;
 }
+@media screen and (max-width: 900px) {
+  .top__textsCont__bloc2 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .top__textsCont__bloc2 {
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top__textsCont__bloc2 {
+    margin: 0;
+  }
+}
 .top__textsCont__bloc3 {
   margin-left: 48px;
   display: flex;
@@ -264,12 +532,66 @@ footer {
   justify-content: space-between;
   height: 60px;
 }
+@media screen and (max-width: 900px) {
+  .top__textsCont__bloc3 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .top__textsCont__bloc3 {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top__textsCont__bloc3 {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .top__textsCont {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top__textsCont {
+    flex-direction: column;
+    text-align: center;
+    margin-right: 0;
+  }
+}
 .top__social img {
   margin-left: 20px;
 }
 .top__social img:hover {
   opacity: 0.7;
   cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .top__social img {
+    margin-left: 0;
+  }
+  .top__social img:hover {
+    opacity: 1;
+    cursor: initial;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top__social {
+    display: flex;
+    justify-content: space-around;
+    width: 180px;
+    margin: 25px 0 50px 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: initial;
+    height: initial;
+    width: 100%;
+  }
 }
 
 .bot {
@@ -281,6 +603,7 @@ footer {
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: black;
 }
 .attribution a {
   color: #3e52a3;

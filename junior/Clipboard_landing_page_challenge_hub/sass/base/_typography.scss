@@ -6,6 +6,10 @@ body, button {
 
 h2 {
     font-size: 1.8em;
+    @include mobile {
+        text-align: center;
+        font-size: 1.5em;
+    }
 }
 
 h3 {

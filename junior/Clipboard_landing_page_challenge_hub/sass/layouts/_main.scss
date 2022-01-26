@@ -2,6 +2,9 @@ main {
     h2 {
         margin-bottom: 20px;
     }
+    @include mobile {
+        padding: 0 35px;
+    }
 }
 
 .section1 {
@@ -10,6 +13,11 @@ main {
         width: 48%;
         line-height: 30px;
         text-align: center;
+        @include mobile {
+            width: 100%;
+            font-size: 0.87em;
+            line-height: 25px;
+        }
     }
     &__computerContainer {
         display: flex;
@@ -19,6 +27,14 @@ main {
             margin: 0 120px 0 -70px;
             height: 572px;
             width: 752px;
+            @include hdDesktop {
+                margin:0 50px 0 -200px;
+            }
+            @include mobile {
+                margin:initial;
+                width: 100%;
+                height: 100%;
+            }
         }
         &__text {
             display: flex;
@@ -31,8 +47,26 @@ main {
                     font-size: 0.8em;
                     width: 55%;
                     margin-top: 8px;
+                    @include hdDesktop {
+                        width: 100%;
+                    }
+                }
+                @include mobile {
+                    margin-top: 46px;
                 }
             }
+            @include mobile {
+                text-align: center;
+                p {
+                    text-align: center;
+                    font-size: 0.9em;
+                }
+            }
+        }
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            margin: 60px 0 105px 0;
         }
     }
 }
@@ -43,12 +77,24 @@ main {
         text-align: center;
         line-height: 30px;
         width: 50%;
+        @include mobile {
+            width: 100%;
+            font-size: 0.87em;
+            line-height: 25px;
+        }
     }
     &__deviceContainer {
         margin: 95px 0 0 0;
         &__deviceImg {
             width: 905px;
             height: 575px;
+            @include mobile {
+                width: 100%;
+                height: 100%; 
+            }
+        }
+        @include mobile {
+            margin: 70px 0 90px 0;       
         }
     }
 }
@@ -56,6 +102,14 @@ main {
 .section3 {
     margin-bottom: 145px;
     @include sectionDisplay;
+    &__textIntro {
+        @include mobile {
+                text-align: center;
+                width: 100%;
+                font-size: 0.87em;
+                line-height: 25px;       
+        }
+    }
     &__text {
         display: flex;
         justify-content: space-between;
@@ -65,6 +119,12 @@ main {
             flex-direction: column;
             align-items: center;
             width: 340px;
+            img {
+                height: 40px;
+                @include mobile {
+                    height: initial;
+                }
+            }
             h3 {
                 margin: 40px 0 20px 0;
             }
@@ -73,13 +133,40 @@ main {
                 width: 95%;
                 font-size: 0.8em;
                 line-height: 30px;
+                @include mobile {
+                    line-height: 25px;
+                }
             }
+            @include hdDesktop {
+                width: 290px;
+            }
+            @include mobile {
+                margin-bottom: 55px;
+            }
+        }
+        @include mobile {
+            margin-top: 100px;
+            justify-content: initial;
+            flex-direction: column;
+            align-items: center;
         }
     }
     &__sponsor {
         margin: 136px 0 150px 0;
         img {
             margin: 0 35px;
+            @include hdDesktop {
+                margin: 0 10px;
+            }
+            @include mobile {
+                margin: 35px 0;
+            }
+        }
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;   
+            margin: 45px 0 120px 0;
         }
     }
     &__btnContainer {
@@ -90,6 +177,11 @@ main {
             line-height: 30px;
             text-align: center;
             width: 65%;
+            @include mobile {
+                width: 100%;
+                font-size: 0.9em;
+                line-height: 25px;
+            }
         }
         &__cont {
             margin-top: 53px;
