@@ -179,6 +179,7 @@ Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Clipboard_l
 
 Repository : [Link](./junior/Clipboard_landing_page_challenge_hub/index.html)
 
+
 ## Intermediate level
 
 ### Space tourism website main
