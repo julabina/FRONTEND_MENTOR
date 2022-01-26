@@ -6,7 +6,7 @@ body, button {
 
 h2 {
     font-size: 1.8em;
-    @include mobile {
+    @include tablet {
         text-align: center;
         font-size: 1.5em;
     }

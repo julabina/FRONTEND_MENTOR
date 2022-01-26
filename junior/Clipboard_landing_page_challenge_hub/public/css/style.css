@@ -70,10 +70,15 @@ header p {
 }
 @media screen and (max-width: 900px) {
   header p {
-    width: 100%;
+    width: 80%;
     line-height: 25px;
     font-size: 0.78em;
     margin-bottom: 47px;
+  }
+}
+@media screen and (max-width: 450px) {
+  header p {
+    width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
@@ -106,13 +111,18 @@ header p {
 }
 @media screen and (max-width: 900px) {
   .btnContainer__ios {
-    width: 100%;
+    width: 60%;
     margin: initial;
     margin-bottom: 27px;
   }
   .btnContainer__ios:hover {
     opacity: 1;
     cursor: initial;
+  }
+}
+@media screen and (max-width: 450px) {
+  .btnContainer__ios {
+    width: 100%;
   }
 }
 .btnContainer__mac {
@@ -133,7 +143,7 @@ header p {
 }
 @media screen and (max-width: 900px) {
   .btnContainer__mac {
-    width: 100%;
+    width: 60%;
     margin: initial;
     margin-bottom: 27px;
   }
@@ -142,10 +152,16 @@ header p {
     cursor: initial;
   }
 }
+@media screen and (max-width: 450px) {
+  .btnContainer__mac {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 900px) {
   .btnContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -170,9 +186,14 @@ main h2 {
 }
 @media screen and (max-width: 900px) {
   .section1 p {
-    width: 100%;
+    width: 80%;
     font-size: 0.87em;
     line-height: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section1 p {
+    width: 100%;
   }
 }
 .section1__computerContainer {
@@ -215,7 +236,20 @@ main h2 {
   }
 }
 @media screen and (max-width: 900px) {
+  .section1__computerContainer__text__bloc p {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section1__computerContainer__text__bloc p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
   .section1__computerContainer__text__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 46px;
   }
 }
@@ -248,9 +282,14 @@ main h2 {
 }
 @media screen and (max-width: 900px) {
   .section2 p {
-    width: 100%;
+    width: 80%;
     font-size: 0.87em;
     line-height: 25px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section2 p {
+    width: 100%;
   }
 }
 .section2__deviceContainer {
@@ -373,12 +412,20 @@ main h2 {
 }
 @media screen and (max-width: 900px) {
   .section3__btnContainer p {
-    width: 100%;
+    width: 80%;
     font-size: 0.9em;
     line-height: 25px;
   }
 }
+@media screen and (max-width: 450px) {
+  .section3__btnContainer p {
+    width: 100%;
+  }
+}
 .section3__btnContainer__cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-top: 53px;
 }
 .section3__btnContainer__cont__ios {
@@ -399,13 +446,18 @@ main h2 {
 }
 @media screen and (max-width: 900px) {
   .section3__btnContainer__cont__ios {
-    width: 100%;
+    width: 60%;
     margin: initial;
     margin-bottom: 27px;
   }
   .section3__btnContainer__cont__ios:hover {
     opacity: 1;
     cursor: initial;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section3__btnContainer__cont__ios {
+    width: 100%;
   }
 }
 .section3__btnContainer__cont__mac {
@@ -426,13 +478,24 @@ main h2 {
 }
 @media screen and (max-width: 900px) {
   .section3__btnContainer__cont__mac {
-    width: 100%;
+    width: 60%;
     margin: initial;
     margin-bottom: 27px;
   }
   .section3__btnContainer__cont__mac:hover {
     opacity: 1;
     cursor: initial;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section3__btnContainer__cont__mac {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .section3__btnContainer__cont {
+    flex-direction: column;
+    align-items: center;
   }
 }
 

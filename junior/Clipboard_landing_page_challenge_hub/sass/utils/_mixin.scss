@@ -11,14 +11,17 @@
         opacity: 0.7;
         cursor: pointer;
     }
-    @include mobile {
-        width: 100%;
+    @include tablet {
+        width: 60%;
         margin: initial;
         margin-bottom: 27px;
         &:hover {
             opacity: 1;
             cursor: initial;
         }
+    }
+    @include mobile {
+        width: 100%;
     }
 }
 
@@ -33,13 +36,19 @@
     flex-direction: column;
     justify-content: space-between;
     height: 60px;
-    @include mobile {
+    @include tablet {
         height: auto;       
     }
 }
 
 @mixin hdDesktop {
     @media screen and (max-width: map-get($queries, hd)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($queries, tablet)) {
         @content;
     }
 }

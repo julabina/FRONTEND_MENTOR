@@ -4,7 +4,7 @@ footer {
     align-items: center;
     height: 160px;
     background: lighten($color: map-get($map: $secondary-color, $key: grayish-blue), $amount: 29);
-    @include mobile {
+    @include tablet {
         height: auto;
     }
 }
@@ -17,7 +17,7 @@ footer {
     width: 88%;
     &__footerLogo {
         width: 50px;
-        @include mobile {
+        @include tablet {
             margin: 50px 0 ;   
         }
     }
@@ -29,7 +29,7 @@ footer {
                 opacity: 0.7;
                 cursor: pointer;
             }
-            @include mobile {
+            @include tablet {
                 margin-bottom: 25px;
                 &:hover {
                     opacity: 1;
@@ -43,7 +43,7 @@ footer {
             @include hdDesktop {
                 margin-right: 30px;
             }
-            @include mobile {
+            @include tablet {
                 margin-right: 0;
             }
         }
@@ -53,7 +53,7 @@ footer {
             @include hdDesktop {
                 margin:0 30px;
             }
-            @include mobile {
+            @include tablet {
                 margin: 0 ;
             }
         }
@@ -63,14 +63,14 @@ footer {
             @include hdDesktop {
                 margin-left: 30px;
             }
-            @include mobile {
+            @include tablet {
                 margin-left: 0;
             }
         }
         @include hdDesktop {
             margin-right: 40px;
         }
-        @include mobile {
+        @include tablet {
             flex-direction: column;
             text-align: center;
             margin-right: 0;
@@ -83,7 +83,7 @@ footer {
                 opacity: 0.7;
                 cursor: pointer;
             }
-            @include mobile {
+            @include tablet {
                 margin-left: 0;
                 &:hover {
                     opacity: 1;
@@ -91,14 +91,14 @@ footer {
                 }
             }
         }
-        @include mobile {
+        @include tablet {
             display: flex;
             justify-content: space-around;   
             width: 180px;
             margin: 25px 0 50px 0;
         }
     }
-    @include mobile {
+    @include tablet {
         display: flex;
         flex-direction: column;
         align-items: center;
