@@ -7,6 +7,10 @@
     font-size: 1em;
     font-weight: 600;
     color: white;
+    &:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
 }
 
 @mixin sectionDisplay {
