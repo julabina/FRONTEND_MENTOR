@@ -23,10 +23,12 @@ header {
 .btnContainer {
     &__ios {
         background: map-get($primary-color, strong-cyan );
+        box-shadow: 0 3px 2px darken($color: map-get($primary-color, strong-cyan ), $amount: 10);
         @include btn;
     }
     &__mac {
-        background: map-get($primary-color, ligth-blue );
+        background: map-get($primary-color, ligth-blue);
+        box-shadow: 0 3px 2px darken($color: map-get($primary-color, ligth-blue), $amount: 10);
         @include btn;
     }
 }

@@ -53,6 +53,7 @@ header p {
 
 .btnContainer__ios {
   background: #26baa4;
+  box-shadow: 0 3px 2px #1d907f;
   height: 55px;
   width: 215px;
   margin: 0 5px;
@@ -64,6 +65,7 @@ header p {
 }
 .btnContainer__mac {
   background: #6173ff;
+  box-shadow: 0 3px 2px #2e46ff;
   height: 55px;
   width: 215px;
   margin: 0 5px;
@@ -175,7 +177,8 @@ main h2 {
   margin-top: 53px;
 }
 .section3__btnContainer__cont__ios {
-  background: #6173ff;
+  background: #26baa4;
+  box-shadow: 0 3px 2px #1d907f;
   height: 55px;
   width: 215px;
   margin: 0 5px;
@@ -186,7 +189,8 @@ main h2 {
   color: white;
 }
 .section3__btnContainer__cont__mac {
-  background: #26baa4;
+  background: #6173ff;
+  box-shadow: 0 3px 2px #2e46ff;
   height: 55px;
   width: 215px;
   margin: 0 5px;
