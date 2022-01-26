@@ -3,6 +3,9 @@ header {
     flex-direction: column;
     align-items: center;
     margin-bottom: 150px;
+    background-image:url("../../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
     img {
         height: 115px;
         margin: 120px 0 70px 0;
@@ -16,7 +19,7 @@ header {
         color: map-get($map: $secondary-color, $key: dark-grayish-blue);
         @include tablet {
             font-size: 1.7em;
-        text-align: center;
+            text-align: center;
         }
     }
     p {
@@ -38,6 +41,9 @@ header {
     @include tablet {
         margin-bottom: 127px;
         padding: 35px 35px 0 35px;
+    }
+    @include mobile {
+        background-image:url("../../images/bg-header-mobile.png");
     }
 }
 
