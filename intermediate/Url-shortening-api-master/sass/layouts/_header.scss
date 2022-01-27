@@ -1,0 +1,48 @@
+header {
+    display: flex;
+    width: 100%;
+    padding: 55px 165px 0 165px;
+    margin-bottom: 100px;
+    img {
+        width: 121px;
+        height: 33px;
+        margin-right: 45px;
+    }
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    &__list {
+        display: flex;
+        li {
+            font-size: 0.9em;
+            font-weight: 700;
+            margin-right: 30px;
+            color: map-get($map: $secondary-colors, $key: gray);
+        }
+    }
+    &__btnContainer {
+        &__login {
+            background: white;
+            color: map-get($map: $secondary-colors, $key: gray);
+            width: 105px;
+            border: none;
+            font-size: 0.9em;
+            font-weight: 700;
+        }
+        &__sign {
+            height: 40px;
+            width: 105px;
+            font-size: 0.9em;
+            border-radius: 40px;
+            @include btn;
+        }
+    }
+}

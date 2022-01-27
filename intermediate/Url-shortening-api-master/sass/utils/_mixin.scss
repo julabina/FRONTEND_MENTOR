@@ -1,0 +1,6 @@
+@mixin btn {
+    background: map-get($primary-colors, cyan);
+    color: white;
+    border: none;
+    font-weight: 700;
+}
