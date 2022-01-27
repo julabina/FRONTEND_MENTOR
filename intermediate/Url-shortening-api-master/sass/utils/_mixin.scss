@@ -4,3 +4,10 @@
     border: none;
     font-weight: 700;
 }
+
+@mixin starterBtn {
+    font-size: 1.3em;
+    width: 195px;
+    height: 55px;
+    border-radius: 55px;
+}

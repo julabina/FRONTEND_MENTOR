@@ -1,0 +1,38 @@
+main {
+    padding: 0 165px;
+}
+
+/* section 1 start */
+.starter {
+    display: flex;
+    &__textContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        h1 {
+            font-size: 5em;
+            letter-spacing: -3px;
+            line-height: 90px;
+            color: map-get($map: $secondary-colors, $key:very-dark-blue );
+        }
+        p {
+            font-size: 1.35em;
+            width: 80%;
+            line-height: 37px;
+            color: map-get($map: $secondary-colors, $key: gray);
+            margin: 0px 0 35px 0;
+        }
+        &__btn {
+            @include btn;
+            @include starterBtn;
+        }
+    }
+    &__imgContainer {
+        width: 40%;
+        img {
+            width: 733px;height: 482px;
+        }
+    }
+}
+/* section 1 end */
