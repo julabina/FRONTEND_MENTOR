@@ -2,7 +2,7 @@ main {
     padding: 0 165px;
 }
 
-/* section 1 start */
+/* section 1 */
 .starter {
     display: flex;
     &__textContainer {
@@ -35,4 +35,41 @@ main {
         }
     }
 }
-/* section 1 end */
+/* section 2 */
+.shortener {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../images/bg-shorten-desktop.svg");
+    background-color: map-get($map: $primary-colors, $key: dark-violet);
+    background-size: 100% 100%;
+    height: 168px;
+    width: 100%;
+    border-radius: 12px;
+    margin: 65px 0 130px 0;
+    &__container {
+        display: flex;
+        width: 100%;
+        padding: 0 60px;
+        input {
+            height: 65px;
+            width: 100%;
+            font-size: 1.2em;
+            border-radius: 12px;
+            border: none;
+            padding-left: 35px;
+            ::placeholder {
+                color: map-get($map: $secondary-colors, $key: gray);
+            }
+        }
+        button {
+            width: 230px;
+            height: 65px;
+            border-radius: 12px;
+            font-size: 1.2em;
+            margin-left: 25px;
+            @include btn;
+        }
+    }
+}
+/* section3 */
