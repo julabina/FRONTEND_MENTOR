@@ -1,6 +1,9 @@
 footer {
     padding: 0 165px;
     background: map-get($secondary-colors, very-dark-violet);
+    @include tablet {
+        padding: 0 25px;
+    }
 }
 
 #logo {
@@ -29,12 +32,31 @@ footer {
             margin-top: 10px;
             &:hover {
                 color: map-get($map: $primary-colors, $key: cyan);
-                cursor: pointer;
+                @include tablet {
+                    color: map-get($map: $secondary-colors, $key:gray );
+                    cursor: initial;
+                }
             }
         }
         > * {
             width: 150px;
             margin-left: 40px;
+            @include lowDesktop {
+                width: 110px;
+                margin-left: 10px;
+            }
+            @include tablet {
+                margin-left: 0;
+                width: auto;
+                margin-top: 45px;
+            }
+        }
+        @include lowDesktop {
+         margin-right: 0;   
+        }
+        @include tablet {
+            flex-direction: column;
+            text-align: center;
         }
     }
     &__socialContainer {
@@ -47,7 +69,29 @@ footer {
                 filter: invert(45%) sepia(64%) saturate(2308%) hue-rotate(162deg) brightness(96%) contrast(101%);
                 -webkit-filter: invert(45%) sepia(64%) saturate(2308%) hue-rotate(162deg) brightness(96%) contrast(101%);
                 cursor: pointer;
+                @include tablet {
+                    filter: none;
+                    -webkit-filter: none;
+                    cursor: initial;
+                }
             }
         }
+        @include lowDesktop {
+            flex-direction: column;   
+            img {
+                width: 24px;
+            }
+        }
+        @include tablet {
+            flex-direction: initial;
+            width: 45%;
+            margin-top: 50px;
+        }
+    }
+    @include tablet {
+        flex-direction: column;  
+        align-items: center;
+        height: auto;    
+        padding-top: 50px;
     }
 }

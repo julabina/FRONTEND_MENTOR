@@ -12,12 +12,20 @@
 <body>
   <header>
     <img src="./images/logo.svg" alt="logo">
-    <div class="menu">
-      <nav>
-        <ul class="menu__list">
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Resources</li>
+    <div class="menuHamburger">
+      <div class="menuHamburger__cont">
+        <div class="menuHamburger__cont__hamb"></div>
+        <div class="menuHamburger__cont__hamb"></div>
+        <div class="menuHamburger__cont__hamb"></div>
+      </div>
+    </div>
+    <div class="menu menu--off">
+      <div class="menu__forMobile">
+        <nav>
+          <ul class="menu__list">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
           </ul>
         </nav>
         <div class="menu__separator"></div>
@@ -25,6 +33,7 @@
           <button class="menu__btnContainer__login">Login</button>
           <button class="menu__btnContainer__sign">Sign Up</button>
         </div>
+      </div>
       </div>
   </header>
   <main>
@@ -64,7 +73,9 @@
         <div class="stats__bot__left">
         <div class="stats__bot__left__top">
           <div class="stats__bot__left__top__imgContainer">
-            <img src="./images/icon-brand-recognition.svg" alt="brand recognition">
+            <div class="stats__bot__left__top__imgContainer__forMobile">
+              <img src="./images/icon-brand-recognition.svg" alt="brand recognition">
+            </div>
           </div>
         </div>
         <div class="stats__bot__left__bot">
@@ -76,7 +87,9 @@
       <div class="stats__bot__center">
         <div class="stats__bot__center__top">
           <div class="stats__bot__center__top__imgContainer">
-            <img src="./images/icon-detailed-records.svg" alt="detailed records">
+            <div class="stats__bot__left__top__imgContainer__forMobile">
+              <img src="./images/icon-detailed-records.svg" alt="detailed records">
+            </div>
           </div>
         </div>
         <div class="stats__bot__center__bot">
@@ -88,7 +101,9 @@
       <div class="stats__bot__right">
         <div class="stats__bot__right__top">
           <div class="stats__bot__right__top__imgContainer">
-            <img src="./images/icon-fully-customizable.svg" alt="fully customizable">
+            <div class="stats__bot__left__top__imgContainer__forMobile">
+              <img src="./images/icon-fully-customizable.svg" alt="fully customizable">
+            </div>
           </div>
         </div>
         <div class="stats__bot__right__bot">

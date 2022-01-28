@@ -8,4 +8,10 @@
      a {
           color: hsl(228, 39%, 47%); 
         }
+        @include tablet {
+          font-size: 1em;
+          text-align: center;
+          line-height: 30px;
+          margin-top: 40px;
+        }
     }

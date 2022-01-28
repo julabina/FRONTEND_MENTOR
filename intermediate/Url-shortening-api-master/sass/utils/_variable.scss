@@ -10,3 +10,8 @@ $secondary-colors : (
     very-dark-blue: hsl(255, 11%, 22%),
     very-dark-violet: hsl(260, 8%, 14%)
 );
+
+$queries: (
+    laptopLow : 1200px,
+    tablet: 1020px
+);

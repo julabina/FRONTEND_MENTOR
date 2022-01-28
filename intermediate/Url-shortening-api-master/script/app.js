@@ -2,8 +2,10 @@ const input = document.querySelector(".shortener__imgCont__container__inputCont_
 const submitBtn = document.querySelector(".shortener__imgCont__container__btn");
 const shortLinkContainer = document.querySelector(".shortLinkContainer");
 const errorSpan = document.querySelector(".shortener__imgCont__container__inputCont__error"); 
+const menu = document.querySelector(".menu");
+const hambBtn = document.querySelector(".menuHamburger__cont");
 
-let links = [];let t = false;
+links = [];let t = false;
 
 const verifyLink = () => {
     if (input.value === "") {
@@ -87,4 +89,12 @@ verifySessionStorage();
 submitBtn.addEventListener("click", (e) => {
     verifyLink();
     e.preventDefault();
+})
+
+hambBtn.addEventListener("click", () => {
+    if (menu.classList.contains("menu--off")) {
+        menu.classList.remove("menu--off");
+    } else {
+        menu.classList.add("menu--off");
+    }
 })

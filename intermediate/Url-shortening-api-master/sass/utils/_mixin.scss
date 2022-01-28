@@ -6,6 +6,10 @@
     &:hover {
         background: lighten($color: map-get($primary-colors, cyan), $amount: 28) ;
         cursor: pointer;
+        @include tablet {
+            background: map-get($primary-colors, cyan) ;
+            cursor: initial;
+        }
     }
 }
 
@@ -30,6 +34,19 @@
             height: 85px;width: 85px;
             border-radius: 85px;
             margin-bottom: -42.5px; 
+            @include tablet {
+                position: static;
+                width: 100%;          
+                background: initial;
+            }
+            &__forMobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 85px;width: 85px;
+                border-radius: 85px;
+                background: map-get($map: $primary-colors, $key: dark-violet);
+            }
         }
     }
     &__bot {
@@ -40,15 +57,51 @@
     h3 {
         color: map-get($map: $primary-colors, $key: dark-violet);
         margin-bottom: 20px;
+        @include tablet {
+            font-size: 1.3em;
+            text-align: center;               
+        }
     }
     p{
         color: map-get($map: $secondary-colors, $key: grayish-violet);
         font-size: 0.9em;
+        @include tablet {
+            text-align: center;               
+        }
+    }
+    @include tablet {
+        width: 100%;                   
     }
 }
 
-@mixin bg-shortBoost {
+@mixin bg-short {
         background-image: url("../../images/bg-shorten-desktop.svg");
         background-color: map-get($map: $primary-colors, $key: dark-violet);
         background-size: 100% 100%;
+        @include tablet {
+            background-image: url("../../images/bg-shorten-mobile.svg");   
+        }
+}
+
+@mixin bg-boost {
+        background-image: url("../../images/bg-boost-desktop.svg");
+        background-color: map-get($map: $primary-colors, $key: dark-violet);
+        background-size: 100% 100%;
+        @include tablet {
+            background-image: url("../../images/bg-boost-mobile.svg");
+        }
+}
+
+/* MEDIA QUERIES */
+
+@mixin lowDesktop {
+    @media screen and (max-width: map-get($queries, laptopLow)) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: map-get($queries, tablet)) {
+        @content;
+    }
 }
