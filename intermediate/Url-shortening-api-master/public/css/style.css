@@ -63,13 +63,10 @@ nav {
   font-weight: 700;
 }
 
-main {
-  padding: 0 165px;
-}
-
 /* section 1 */
 .starter {
   display: flex;
+  padding: 0 165px;
 }
 .starter__textContainer {
   display: flex;
@@ -110,23 +107,26 @@ main {
 
 /* section 2 */
 .shortener {
+  padding: 0 165px;
+}
+.shortener__imgCont {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../images/bg-shorten-desktop.svg");
-  background-color: #3b3054;
-  background-size: 100% 100%;
   height: 168px;
   width: 100%;
   border-radius: 12px;
   margin: 65px 0 110px 0;
+  background-image: url("../../images/bg-shorten-desktop.svg");
+  background-color: #3b3054;
+  background-size: 100% 100%;
 }
-.shortener__container {
+.shortener__imgCont__container {
   display: flex;
   width: 100%;
   padding: 0 60px;
 }
-.shortener__container input {
+.shortener__imgCont__container input {
   height: 65px;
   width: 100%;
   font-size: 1.2em;
@@ -134,10 +134,10 @@ main {
   border: none;
   padding-left: 35px;
 }
-.shortener__container input ::placeholder {
+.shortener__imgCont__container input ::placeholder {
   color: #bfbfbf;
 }
-.shortener__container button {
+.shortener__imgCont__container button {
   width: 230px;
   height: 65px;
   border-radius: 12px;
@@ -150,6 +150,9 @@ main {
 }
 
 /* section3 */
+.stats {
+  padding: 0 165px;
+}
 .stats__top {
   display: flex;
   flex-direction: column;
@@ -265,6 +268,34 @@ main {
 .stats__bot__right p {
   color: #9e9aa7;
   font-size: 0.9em;
+}
+
+/* section 4 */
+.botStarter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-image: url("../../images/bg-shorten-desktop.svg");
+  background-color: #3b3054;
+  background-size: 100% 100%;
+}
+.botStarter h2 {
+  color: white;
+  font-size: 2.3em;
+  margin-bottom: 23px;
+}
+.botStarter__btn {
+  background: #2acfcf;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1.3em;
+  width: 195px;
+  height: 55px;
+  border-radius: 55px;
 }
 
 footer {
