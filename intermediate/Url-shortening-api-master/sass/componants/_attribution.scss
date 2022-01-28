@@ -1,9 +1,11 @@
 .attribution {
     display: flex;
     justify-content: center;
+    align-items: center;
      font-size: 11px; 
      margin-top:  10px;
+     color: map-get($map: $secondary-colors, $key: gray );
      a {
-          color: hsl(228, 45%, 44%); 
+          color: hsl(228, 39%, 47%); 
         }
     }

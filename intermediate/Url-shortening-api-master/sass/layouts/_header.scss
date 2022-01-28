@@ -34,7 +34,7 @@ nav {
     }
     &__btnContainer {
         &__login {
-            background: white;
+            background: rgb(245, 245, 245);
             color: map-get($map: $secondary-colors, $key: gray);
             width: 105px;
             border: none;

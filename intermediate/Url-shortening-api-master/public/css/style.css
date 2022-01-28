@@ -9,6 +9,10 @@ li {
   list-style: none;
 }
 
+body {
+  background: whitesmoke;
+}
+
 body, button, ::placeholder {
   font-family: "Poppins", sans-serif;
 }
@@ -49,7 +53,7 @@ nav {
   cursor: pointer;
 }
 .menu__btnContainer__login {
-  background: white;
+  background: whitesmoke;
   color: #bfbfbf;
   width: 105px;
   border: none;
@@ -124,6 +128,7 @@ main {
 /* section 2 */
 .shortener {
   padding: 0 165px;
+  margin: 65px 0 110px 0;
 }
 .shortener__imgCont {
   display: flex;
@@ -132,7 +137,7 @@ main {
   height: 168px;
   width: 100%;
   border-radius: 12px;
-  margin: 65px 0 110px 0;
+  margin-bottom: 20px;
   background-image: url("../../images/bg-shorten-desktop.svg");
   background-color: #3b3054;
   background-size: 100% 100%;
@@ -142,16 +147,31 @@ main {
   width: 100%;
   padding: 0 60px;
 }
-.shortener__imgCont__container input {
+.shortener__imgCont__container__inputCont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.shortener__imgCont__container__inputCont input {
   height: 65px;
   width: 100%;
   font-size: 1.2em;
   border-radius: 12px;
-  border: none;
   padding-left: 35px;
 }
-.shortener__imgCont__container input ::placeholder {
+.shortener__imgCont__container__inputCont input ::placeholder {
   color: #bfbfbf;
+}
+.shortener__imgCont__container__inputCont__input {
+  border: none;
+}
+.shortener__imgCont__container__inputCont__input--error {
+  border: #f46262 3px solid;
+}
+.shortener__imgCont__container__inputCont span {
+  position: absolute;
+  color: #f46262;
+  margin: 68px 0 0 5px;
 }
 .shortener__imgCont__container button {
   width: 230px;
@@ -167,6 +187,56 @@ main {
 .shortener__imgCont__container button:hover {
   background: #9eebeb;
   cursor: pointer;
+}
+
+.shortLinkContainer__bloc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 0 25px 0 35px;
+  margin-top: 15px;
+  background: white;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+.shortLinkContainer__bloc__original {
+  white-space: nowrap;
+  overflow: hidden;
+  color: #35323e;
+}
+.shortLinkContainer__bloc__shortLink {
+  display: flex;
+  align-items: center;
+}
+.shortLinkContainer__bloc__shortLink__short {
+  white-space: nowrap;
+  overflow: visible;
+  padding-left: 20px;
+  color: #2acfcf;
+}
+.shortLinkContainer__bloc__shortLink__btn {
+  height: 40px;
+  width: 100px;
+  min-width: 100px;
+  border-radius: 5px;
+  margin-left: 30px;
+  background: #2acfcf;
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+.shortLinkContainer__bloc__shortLink__btn:hover {
+  background: #9eebeb;
+  cursor: pointer;
+}
+.shortLinkContainer__bloc__shortLink__btn--copied {
+  background: #3b3054;
+}
+.shortLinkContainer__bloc__shortLink__btn--copied:hover {
+  background: #3b3054;
+  cursor: initial;
 }
 
 /* section3 */
@@ -298,6 +368,7 @@ main {
   align-items: center;
   height: 250px;
   width: 100%;
+  margin-top: 150px;
   background-image: url("../../images/bg-shorten-desktop.svg");
   background-color: #3b3054;
   background-size: 100% 100%;
@@ -380,11 +451,13 @@ footer {
 .attribution {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 11px;
   margin-top: 10px;
+  color: #bfbfbf;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #495ca7;
 }
 
 /*# sourceMappingURL=style.css.map */
