@@ -26,6 +26,10 @@ nav {
             font-weight: 700;
             margin-right: 30px;
             color: map-get($map: $secondary-colors, $key: gray);
+            &:hover {
+                color: map-get($map: $secondary-colors, $key: very-dark-blue);
+                cursor: pointer;
+            }
         }
     }
     &__btnContainer {

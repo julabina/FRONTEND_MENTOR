@@ -3,6 +3,10 @@
     color: white;
     border: none;
     font-weight: 700;
+    &:hover {
+        background: lighten($color: map-get($primary-colors, cyan), $amount: 28) ;
+        cursor: pointer;
+    }
 }
 
 @mixin starterBtn {

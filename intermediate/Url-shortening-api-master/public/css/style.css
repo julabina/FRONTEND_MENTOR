@@ -44,6 +44,10 @@ nav {
   margin-right: 30px;
   color: #bfbfbf;
 }
+.menu__list li:hover {
+  color: #35323e;
+  cursor: pointer;
+}
 .menu__btnContainer__login {
   background: white;
   color: #bfbfbf;
@@ -61,6 +65,10 @@ nav {
   color: white;
   border: none;
   font-weight: 700;
+}
+.menu__btnContainer__sign:hover {
+  background: #9eebeb;
+  cursor: pointer;
 }
 
 main {
@@ -100,6 +108,10 @@ main {
   width: 195px;
   height: 55px;
   border-radius: 55px;
+}
+.starter__textContainer__btn:hover {
+  background: #9eebeb;
+  cursor: pointer;
 }
 .starter__imgContainer {
   width: 40%;
@@ -151,6 +163,10 @@ main {
   color: white;
   border: none;
   font-weight: 700;
+}
+.shortener__imgCont__container button:hover {
+  background: #9eebeb;
+  cursor: pointer;
 }
 
 /* section3 */
@@ -301,6 +317,10 @@ main {
   height: 55px;
   border-radius: 55px;
 }
+.botStarter__btn:hover {
+  background: #9eebeb;
+  cursor: pointer;
+}
 
 footer {
   padding: 0 165px;
@@ -335,6 +355,10 @@ footer {
   letter-spacing: 0.05px;
   margin-top: 10px;
 }
+.footerTop__linkContainer li:hover {
+  color: #2acfcf;
+  cursor: pointer;
+}
 .footerTop__linkContainer > * {
   width: 150px;
   margin-left: 40px;
@@ -346,6 +370,11 @@ footer {
 }
 .footerTop__socialContainer img {
   height: 24px;
+}
+.footerTop__socialContainer img:hover {
+  filter: invert(45%) sepia(64%) saturate(2308%) hue-rotate(162deg) brightness(96%) contrast(101%);
+  -webkit-filter: invert(45%) sepia(64%) saturate(2308%) hue-rotate(162deg) brightness(96%) contrast(101%);
+  cursor: pointer;
 }
 
 .attribution {

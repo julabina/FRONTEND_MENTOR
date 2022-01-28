@@ -27,6 +27,10 @@ footer {
             font-weight: 700;
             letter-spacing: 0.05px;
             margin-top: 10px;
+            &:hover {
+                color: map-get($map: $primary-colors, $key: cyan);
+                cursor: pointer;
+            }
         }
         > * {
             width: 150px;
@@ -39,6 +43,11 @@ footer {
         width: 16%;
         img {
             height: 24px;
+            &:hover {
+                filter: invert(45%) sepia(64%) saturate(2308%) hue-rotate(162deg) brightness(96%) contrast(101%);
+                -webkit-filter: invert(45%) sepia(64%) saturate(2308%) hue-rotate(162deg) brightness(96%) contrast(101%);
+                cursor: pointer;
+            }
         }
     }
 }
