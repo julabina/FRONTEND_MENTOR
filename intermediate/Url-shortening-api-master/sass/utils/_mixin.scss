@@ -11,3 +11,39 @@
     height: 55px;
     border-radius: 55px;
 }
+
+@mixin h2 {
+    color: map-get($map: $secondary-colors, $key: very-dark-blue );
+    font-size: 2.3em;
+}
+
+@mixin stats {
+    width: 32%;
+    border-radius: 5px; 
+    &__top {
+        &__imgContainer {
+            position: relative;
+            left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: map-get($map: $primary-colors, $key: dark-violet);
+            height: 85px;width: 85px;
+            border-radius: 85px;
+            margin-bottom: -42.5px; 
+        }
+    }
+    &__bot {
+        padding: 70px 30px 40px 30px;
+        background: white;
+        border-radius: 5px;
+    }
+    h3 {
+        color: map-get($map: $primary-colors, $key: dark-violet);
+        margin-bottom: 20px;
+    }
+    p{
+        color: map-get($map: $secondary-colors, $key: grayish-violet);
+        font-size: 0.9em;
+    }
+}

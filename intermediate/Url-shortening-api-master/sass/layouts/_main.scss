@@ -46,7 +46,7 @@ main {
     height: 168px;
     width: 100%;
     border-radius: 12px;
-    margin: 65px 0 130px 0;
+    margin: 65px 0 110px 0;
     &__container {
         display: flex;
         width: 100%;
@@ -73,3 +73,44 @@ main {
     }
 }
 /* section3 */
+.stats {
+    &__top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        h2 {
+            @include h2;
+        }
+        p {
+            width: 47%;
+            font-size: 1.1em;
+            margin: 10px 0 0 0;
+            color: map-get($map: $secondary-colors, $key: gray);
+        }
+    }
+    &__bot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 70px
+        ;
+        &__left {
+            @include stats;
+            margin-top: -60px;
+        }
+        &__separator {
+            height: 5px;
+            width: 3%;
+            border: 4px solid map-get($map: $primary-colors, $key:cyan )
+        }
+        &__center {
+            @include stats;
+        }
+        &__right {
+            @include stats;
+            margin-top: 60px;
+        }
+    }
+}
+
