@@ -1,3 +1,44 @@
 footer {
+    padding: 0 165px;
     background: map-get($secondary-colors, very-dark-violet);
+}
+
+#logo {
+    width: 121px;height: 33px; 
+    filter: brightness(10); 
+    -webkit-filter: brightness(10);  
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    height: 260px;
+    padding-top: 80px;
+    &__linkContainer {
+        display: flex;
+        margin: 0 -15% 0 0;
+        h4 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        li {
+            color: map-get($map: $secondary-colors, $key:gray );
+            font-size: 0.9em;
+            font-weight: 700;
+            letter-spacing: 0.05px;
+            margin-top: 10px;
+        }
+        > * {
+            width: 150px;
+            margin-left: 40px;
+        }
+    }
+    &__socialContainer {
+        display: flex;
+        justify-content: space-between;
+        width: 16%;
+        img {
+            height: 24px;
+        }
+    }
 }
