@@ -827,6 +827,7 @@ footer {
 }
 .footerTop__linkContainer li:hover {
   color: #2acfcf;
+  cursor: pointer;
 }
 @media screen and (max-width: 1020px) {
   .footerTop__linkContainer li:hover {
