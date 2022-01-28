@@ -32,6 +32,7 @@ footer {
             margin-top: 10px;
             &:hover {
                 color: map-get($map: $primary-colors, $key: cyan);
+                cursor: pointer;
                 @include tablet {
                     color: map-get($map: $secondary-colors, $key:gray );
                     cursor: initial;
