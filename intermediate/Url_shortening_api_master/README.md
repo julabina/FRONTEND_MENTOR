@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [github](https://github.com/julabina/FRONTEND_MENTOR/tree/master/intermediate/Url-shortening-api-master)
+- Solution URL: [github](https://github.com/julabina/FRONTEND_MENTOR/tree/master/intermediate/Url_shortening_api_master)
 - Live Site URL: [Github pages](https://julabina.github.io/FRONTEND_MENTOR/intermediate/Url_shortening_api_master/index.html)
 
 ## My process

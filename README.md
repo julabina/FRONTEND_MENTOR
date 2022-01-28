@@ -197,3 +197,11 @@ Repository : [Link](./intermediate/Space_tourism_website_main/index.html)
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/intermediate/E-commerce_product_page/index.html)
 
 Repository : [Link](./intermediate/E-commerce_product_page/index.html)
+
+### Url shortening api master
+
+![](./intermediate/Url_shortening_api_master/screenshot.webp)
+
+Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/intermediate/Url_shortening_api_master/index.html)
+
+Repository : [Link](./intermediate/Url_shortening_api_master/index.html)
