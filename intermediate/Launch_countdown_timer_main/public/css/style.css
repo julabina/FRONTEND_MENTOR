@@ -13,6 +13,25 @@ body {
   font-family: "Red Hat Text", sans-serif;
 }
 
+.timer {
+  display: flex;
+}
+.timer__cont__card {
+  margin: 5px;
+}
+.timer__cont__card__top {
+  width: 150px;
+  height: 80px;
+  background: blue;
+  border-radius: 5px;
+}
+.timer__cont__card__bot {
+  width: 150px;
+  height: 80px;
+  background: orange;
+  border-radius: 5px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
