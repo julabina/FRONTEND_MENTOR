@@ -10,12 +10,138 @@ body {
   font-size: 28px;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #323a49;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 38%;
+  height: auto;
+  min-height: 330px;
+  background: #4e5d73;
+  color: #cee3e9;
+  text-align: center;
+  border-radius: 20px;
+  padding: 0 30px;
+}
+@media screen and (max-width: 1400px) {
+  main {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 900px) {
+  main {
+    width: 80%;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  main {
+    width: 95%;
+  }
+}
+
+h1 {
+  margin: 47px 0 28px 0;
+  font-size: 0.45em;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: #52ffa8;
+}
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 0.4em;
+    letter-spacing: 3px;
+    margin: 43px 0 22px 0;
+  }
+}
+
+p {
+  min-height: 130px;
+  height: auto;
+  line-height: 35px;
+}
+@media screen and (max-width: 900px) {
+  p {
+    font-size: 0.8em;
+  }
+}
+
+.space {
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+.space__line {
+  border-bottom: 1px solid #8b8b8b;
+  width: 100%;
+  margin-bottom: 8px;
+}
+.space__mid {
+  display: flex;
+  margin: 0 10px;
+}
+.space__mid__item {
+  width: 6px;
+  height: 16px;
+  border-radius: 5px;
+  background: #cee3e9;
+  margin: 0 3.5px;
+}
+@media screen and (max-width: 900px) {
+  .space {
+    padding: 0 10px;
+  }
+}
+
+.dice {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  background: #cee3e9;
+  border-radius: 65px;
+  top: 40px;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+.dice:hover {
+  cursor: pointer;
+  background: #52ffa8;
+  box-shadow: 0 0 15px #52ffa8;
+  transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+}
+@media screen and (max-width: 900px) {
+  .dice:hover {
+    cursor: initial;
+    background: #cee3e9;
+    box-shadow: initial;
+  }
+}
+
 .attribution {
+  position: absolute;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
+  color: #F6F6F6;
 }
 .attribution a {
-  color: #3e52a3;
+  color: cyan;
 }
 
 /*# sourceMappingURL=style.css.map */

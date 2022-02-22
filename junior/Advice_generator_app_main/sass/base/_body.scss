@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:  100vh;
+    background: map-get($map: $neutral-colors, $key: dark-grayish-blue );
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38%;
+    height: auto;
+    min-height: 330px;
+    background: map-get($map: $neutral-colors, $key: grayish-blue );
+    color: map-get($map: $primary-colors, $key:light-cyan );
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 30px;
+    @include desk2 {
+        width: 45%;
+    }
+    @include tablet {
+        width: 60%;
+    }
+    @include tablet2 {
+        width: 80%;
+        padding: 0 15px;
+    }
+    @include mobile {
+        width: 95%;
+    }
+}
+
+h1 {
+    margin: 47px 0 28px 0;
+    font-size: 0.45em;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    color: map-get($map: $primary-colors, $key:neon-green );
+    @include tablet2 {
+        font-size: 0.4em;
+        letter-spacing: 3px;
+        margin: 43px 0 22px 0;
+    }
+}
+
+p {
+    min-height: 130px;
+    height: auto;
+    line-height: 35px;
+    @include tablet2 {
+       font-size: 0.8em;
+    }
+}
+
+.space {
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 20px;
+    &__line {
+        border-bottom: 1px solid rgb(139, 139, 139);
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    &__mid {
+        display: flex;
+        margin: 0 10px;
+        &__item {
+            width: 6px;
+            height: 16px;
+            border-radius: 5px;
+            background: map-get($map: $primary-colors, $key: light-cyan );
+            margin: 0 3.5px;
+        }
+    }
+    @include tablet2 {
+        padding: 0 10px;
+    }
+}
+
+.dice {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;height: 65px;
+    background: map-get($map: $primary-colors, $key:light-cyan );
+    border-radius: 65px;
+    top: 40px;
+    transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+    &:hover {
+        cursor: pointer;
+        background: map-get($primary-colors, neon-green);
+        box-shadow: 0 0 15px map-get($map: $primary-colors, $key:neon-green );
+        transition: background-color 200ms ease-in-out, box-shadow 200ms ease-in-out;
+        @include tablet2 {
+            cursor: initial;
+            background: map-get($map: $primary-colors, $key:light-cyan );
+            box-shadow: initial;    
+        }
+    }
+}
