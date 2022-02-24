@@ -26,6 +26,7 @@ Live Site URL : [Challenges](https://julabina.github.io/FRONTEND_MENTOR/)
     - [Crowdfunding product page main](#Crowdfunding-product-page-main)
     - [Tip calculator app](#Tip-calculator-app)
     - [Clipboard landing page challenge hub](#Clipboard-landing-page-challenge-hub)
+    - [Advice generator app main](#Advice-generator-app-main)
 - [Intermediate level](#Intermediate-level)
     - [Space tourism website main](#Space-tourism-website-main)
     - [E-commerce product page](#E-commerce-product-page)
@@ -180,6 +181,13 @@ Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Clipboard_l
 
 Repository : [Link](./junior/Clipboard_landing_page_challenge_hub/index.html)
 
+### Advice generator app main
+
+![](./junior/Advice_generator_app_main/screenshot.webp)
+
+Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Advice_generator_app_main/index.html)
+
+Repository : [Link](./junior/Advice_generator_app_main/index.html)
 
 ## Intermediate level
 
