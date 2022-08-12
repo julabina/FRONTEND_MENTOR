@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![full page screenshot](./screenshot.png)
+![full page screenshot](./screenshot.webp)
 
 ### Links
 
