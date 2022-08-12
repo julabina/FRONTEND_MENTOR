@@ -40,7 +40,7 @@ Live Site URL : [Challenges](https://julabina.github.io/FRONTEND_MENTOR/)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Stats_preview_card_component/index.html)
 
-Repository : [Link](./newbie/Stats_preview_card_component/index.html)
+Repository : [Link](./newbie/Stats_preview_card_component/)
 
 ### 3-column preview card component
 
@@ -48,7 +48,7 @@ Repository : [Link](./newbie/Stats_preview_card_component/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/3-column_preview_car_component/index.html)
 
-Repository : [Link](./newbie/3-column_preview_car_component/index.html)
+Repository : [Link](./newbie/3-column_preview_car_component/)
 
 ### Profile card component
 
@@ -56,7 +56,7 @@ Repository : [Link](./newbie/3-column_preview_car_component/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Profile_card_component/index.html)
 
-Repository : [Link](./newbie/Profile_card_component/index.html)
+Repository : [Link](./newbie/Profile_card_component/)
 
 ### FAQ accordion card
 
@@ -64,7 +64,7 @@ Repository : [Link](./newbie/Profile_card_component/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/FAQ_accordion_card/index.html)
 
-Repository : [Link](./newbie/FAQ_accordion_card/index.html)
+Repository : [Link](./newbie/FAQ_accordion_card/)
 
 ### Social proof section
 
@@ -72,7 +72,7 @@ Repository : [Link](./newbie/FAQ_accordion_card/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Social_proof_section/index.html)
 
-Repository : [Link](./newbie/Social_proof_section/index.html)
+Repository : [Link](./newbie/Social_proof_section/)
 
 ### Article preview component
 
@@ -80,7 +80,7 @@ Repository : [Link](./newbie/Social_proof_section/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Article_preview_component/index.html)
 
-Repository : [Link](./newbie/Article_preview_component/index.html)
+Repository : [Link](./newbie/Article_preview_component/)
 
 ### Four card feature section
 
@@ -88,7 +88,7 @@ Repository : [Link](./newbie/Article_preview_component/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Four_card_feature_section/index.html)
 
-Repository : [Link](./newbie/Four_card_feature_section/index.html)
+Repository : [Link](./newbie/Four_card_feature_section/)
 
 ### Base apparel coming soon page
 
@@ -96,7 +96,7 @@ Repository : [Link](./newbie/Four_card_feature_section/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Base_apparel_coming_soon_page/index.html)
 
-Repository : [Link](./newbie/Base_apparel_coming_soon_page/index.html)
+Repository : [Link](./newbie/Base_apparel_coming_soon_page/)
 
 ### Intro component with sign-up
 
@@ -104,7 +104,7 @@ Repository : [Link](./newbie/Base_apparel_coming_soon_page/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Intro_component_with_sign-up_form/index.html)
 
-Repository : [Link](./newbie/Intro_component_with_sign-up_form/index.html)
+Repository : [Link](./newbie/Intro_component_with_sign-up_form/)
 
 ### Order summary component
 
@@ -112,7 +112,7 @@ Repository : [Link](./newbie/Intro_component_with_sign-up_form/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Order_summary_component/index.html)
 
-Repository : [Link](./newbie/Order_summary_component/index.html)
+Repository : [Link](./newbie/Order_summary_component/)
 
 ### Single price grid component
 
@@ -120,7 +120,7 @@ Repository : [Link](./newbie/Order_summary_component/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Single_price_grid_component/index.html)
 
-Repository : [Link](./newbie/Single_price_grid_component/index.html)
+Repository : [Link](./newbie/Single_price_grid_component/)
 
 ### Ping single column coming soon page
 
@@ -128,7 +128,7 @@ Repository : [Link](./newbie/Single_price_grid_component/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Ping_single_column_coming_soon_page/index.html)
 
-Repository : [Link](./newbie/Ping_single_column_coming_soon_page/index.html)
+Repository : [Link](./newbie/Ping_single_column_coming_soon_page/)
 
 ### Huddle landing page with a single introductory section
 
@@ -136,7 +136,7 @@ Repository : [Link](./newbie/Ping_single_column_coming_soon_page/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Huddle_landing_page_with_a_single_introductory_section/index.html)
 
-Repository : [Link](./newbie/Huddle_landing_page_with_a_single_introductory_section/index.html)
+Repository : [Link](./newbie/Huddle_landing_page_with_a_single_introductory_section/)
 
 ### Nft preview card component main
 
@@ -144,7 +144,7 @@ Repository : [Link](./newbie/Huddle_landing_page_with_a_single_introductory_sect
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/newbie/Nft_preview_card_component_main/index.html)
 
-Repository : [Link](./newbie/Nft_preview_card_component_main/index.html)
+Repository : [Link](./newbie/Nft_preview_card_component_main/)
 
 
 ## Junior level
@@ -155,7 +155,7 @@ Repository : [Link](./newbie/Nft_preview_card_component_main/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Time_tracking_dashboard_challenge_hub/index.html)
 
-Repository : [Link](./junior/Time_tracking_dashboard_challenge_hub/index.html)
+Repository : [Link](./junior/Time_tracking_dashboard_challenge_hub/)
 
 ### Crowdfunding product page main
 
@@ -163,7 +163,7 @@ Repository : [Link](./junior/Time_tracking_dashboard_challenge_hub/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Crowdfunding_product_page_main/index.html)
 
-Repository : [Link](./junior/Crowdfunding_product_page_main/index.html)
+Repository : [Link](./junior/Crowdfunding_product_page_main/)
 
 ### Tip calculator app
 
@@ -171,7 +171,7 @@ Repository : [Link](./junior/Crowdfunding_product_page_main/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Tip_calculator_app/index.html)
 
-Repository : [Link](./junior/Tip_calculator_app/index.html)
+Repository : [Link](./junior/Tip_calculator_app/)
 
 ### Clipboard landing page challenge hub
 
@@ -179,7 +179,7 @@ Repository : [Link](./junior/Tip_calculator_app/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Clipboard_landing_page_challenge_hub/index.html)
 
-Repository : [Link](./junior/Clipboard_landing_page_challenge_hub/index.html)
+Repository : [Link](./junior/Clipboard_landing_page_challenge_hub/)
 
 ### Advice generator app main
 
@@ -187,7 +187,7 @@ Repository : [Link](./junior/Clipboard_landing_page_challenge_hub/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/junior/Advice_generator_app_main/index.html)
 
-Repository : [Link](./junior/Advice_generator_app_main/index.html)
+Repository : [Link](./junior/Advice_generator_app_main/)
 
 ## Intermediate level
 
@@ -197,7 +197,7 @@ Repository : [Link](./junior/Advice_generator_app_main/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/intermediate/Space_tourism_website_main/index.html)
 
-Repository : [Link](./intermediate/Space_tourism_website_main/index.html)
+Repository : [Link](./intermediate/Space_tourism_website_main/)
 
 ### E-commerce product page
 
@@ -205,7 +205,7 @@ Repository : [Link](./intermediate/Space_tourism_website_main/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/intermediate/E-commerce_product_page/index.html)
 
-Repository : [Link](./intermediate/E-commerce_product_page/index.html)
+Repository : [Link](./intermediate/E-commerce_product_page/)
 
 ### Url shortening api master
 
@@ -213,7 +213,7 @@ Repository : [Link](./intermediate/E-commerce_product_page/index.html)
 
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/intermediate/Url_shortening_api_master/index.html)
 
-Repository : [Link](./intermediate/Url_shortening_api_master/index.html)
+Repository : [Link](./intermediate/Url_shortening_api_master/)
 
 ## About
 
