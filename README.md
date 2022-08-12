@@ -214,3 +214,9 @@ Repository : [Link](./intermediate/E-commerce_product_page/index.html)
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/intermediate/Url_shortening_api_master/index.html)
 
 Repository : [Link](./intermediate/Url_shortening_api_master/index.html)
+
+## About
+
+- [Github](https://github.com/julabina)
+- [Linkedin](https://www.linkedin.com/in/julien-lenfum%C3%A9-bb2979215/)
+- [Portfolio](https://julienlenfume.com/)
