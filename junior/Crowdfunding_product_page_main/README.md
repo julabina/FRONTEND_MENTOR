@@ -50,7 +50,9 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@julabina](https://www.frontendmentor.io/profile/yourusername)
+- [Github](https://github.com/julabina)
+- [Linkedin](https://www.linkedin.com/in/julien-lenfum%C3%A9-bb2979215/)
+- [Portfolio](https://julienlenfume.com/)
 
 

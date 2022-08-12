@@ -44,5 +44,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Lenfumé Julien](https://github.com/julabina)
 - Frontend Mentor - [@julabina](https://www.frontendmentor.io/profile/julabina)
+- [Github](https://github.com/julabina)
+- [Linkedin](https://www.linkedin.com/in/julien-lenfum%C3%A9-bb2979215/)
+- [Portfolio](https://julienlenfume.com/)
