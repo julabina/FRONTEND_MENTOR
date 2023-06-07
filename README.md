@@ -31,6 +31,8 @@ Live Site URL : [Challenges](https://julabina.github.io/FRONTEND_MENTOR/)
     - [Space tourism website main](#Space-tourism-website-main)
     - [E-commerce product page](#E-commerce-product-page)
     - [Url shortening api master](#Url-shortening-api-master)
+- [Guru level](#Guru-level)
+    - [Kanban task management web app](#Kanban-task-management-web-app)
 
 ## Newbie level
 
@@ -214,6 +216,18 @@ Repository : [Link](./intermediate/E-commerce_product_page/)
 Live site : [Link](https://julabina.github.io/FRONTEND_MENTOR/intermediate/Url_shortening_api_master/index.html)
 
 Repository : [Link](./intermediate/Url_shortening_api_master/)
+
+## Guru level
+
+### Kanban task management web app
+
+![](./guru/kanban/screenshot.webp)
+
+Live site : [Link](https://kanban.julienlenfume.com/)
+
+Repository : [Link](https://github.com/julabina/react_kanban-)
+
+Challenge : [Link](https://www.frontendmentor.io/challenges/kanban-task-management-web-app-wgQLt-HlbB)
 
 ## About
 
